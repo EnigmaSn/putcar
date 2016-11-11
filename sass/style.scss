@@ -1,0 +1,19 @@
+@import "global/body.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+
+// index.html
+@import "blocks/profit.scss";
+@import "blocks/credit-calc.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/profitable-terms.scss";
+@import "blocks/steps.scss";
+@import "blocks/order.scss";
+@import "blocks/faq.scss";
+@import "blocks/questionnaire.scss";
+@import "blocks/contacts.scss";
