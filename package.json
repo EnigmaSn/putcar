@@ -1,0 +1,40 @@
+{
+  "name": "putcar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "author": "Анна Пономарёва",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EnigmaSn/putcar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnigmaSn/putcar/issues"
+  },
+  "homepage": "https://github.com/EnigmaSn/putcar",
+  "devDependencies": {
+    "autoprefixer": "6.4.1",
+    "grunt": "1.0.1",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-postcss": "0.8.0",
+    "grunt-sass": "1.2.1",
+    "@htmlacademy/editorconfig-cli": "0.0.7"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "grunt sass && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "6.5"
+  }
+}
