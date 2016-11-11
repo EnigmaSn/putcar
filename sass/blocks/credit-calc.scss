@@ -1,0 +1,100 @@
+.credit-calc__wrapper {
+  @include container;
+
+  h2 {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    @include side-padding;
+    padding-top: 40px;
+    padding-bottom: 35px;
+
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  input {
+    width: 260px;
+  }
+  span {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+    color: #3b3b3b;
+  }
+}
+.credit-calc__costs {
+  padding-bottom: 35px;
+  @include side-margin;
+}
+.credit-calc__days {
+  padding-top: 35px;
+  @include side-margin;
+  border-top: 1px solid #e8e8e8;
+}
+.credit-calc__cost-max {
+  padding-left: 125px;
+}
+.credit-calc__day-max {
+  padding-left: 138px;
+}
+
+// мы не сеем, мы не пашем, с башни пайка хуем машем
+.credit-calc__nb {
+  color: #888888;
+  font-size: 13px;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.credit-calc__results {
+  margin-top: 30px;
+  background-color: $orange;
+  background-image: url("../img/car1-mob.png");
+  background-repeat: no-repeat;
+  background-position: 20px 220px;
+
+  min-height: 387px;
+}
+.credit-calc__results-middle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.credit-calc__results-monthly-payment {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 140px;
+  max-width: 140px;
+  margin-left: 30px;
+}
+.credit-calc__results-about {
+  max-width: 50px;
+}
+.credit-calc__results-rate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 130px;
+  max-width: 130px;
+}
+.credit-calc__results-total {
+  display: block;
+  color: $white;
+  margin-left: 100px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.credit-calc__results-sum {
+  margin-left: 100px;
+  background-color: $white;
+  padding: 10px;
+  font-size: 42px;
+  line-height: 24px;
+  color: $rgbl;
+}

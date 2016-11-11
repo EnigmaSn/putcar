@@ -1,0 +1,43 @@
+.profit__wrapper {
+  @include container;
+  background-color: $rgbl;
+  background-image: url(../img/car-time-mob.png);
+  background-repeat: no-repeat;
+  background-position: 20px 150px;
+
+    h1 {
+      color: $white;
+      font-size: 36px;
+      line-height: 36px;
+      margin: 0;
+      padding: 0;
+      @include side-padding;
+      padding-top: 50px;
+      padding-bottom: 300px
+    }
+    .profit__profits {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      color: $white;
+        div {
+        width: 130px;
+        @include side-padding;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        }
+        div:nth-child(2n) {
+          padding-left: 15px;
+        }
+    }
+    .profit__num {
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
+    .profit__description {
+      font-size: 13px;
+    }
+
+}

@@ -18,7 +18,6 @@
         <span class="page-header__name">Автоломбард</span>
         фоном
         -->
-        <p>Деньги под залог авто за 30 минут до 10 000 000 рублей</p>
       </div>
       <div class="page-header__menu--close">
         <a href="#">
@@ -27,6 +26,7 @@
         </a>
       </div>
       <div class="page-header__menu--open">
+        <p>Деньги под залог авто за 30 минут до 10 000 000 рублей</p>
         <nav class="page-header__nav">
           <ul>
             <li>
@@ -37,8 +37,10 @@
             </li>
           </ul>
         </nav>
-        <a href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
-        <a href="tel:8 (800) 555-35-35">Позвонить</a>
+        <div class="page-header__phone">
+          <a href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
+          <a class="page-header__phone-but" href="tel:8 (800) 555-35-35">Позвонить</a>
+        </div>
       </div>
     </div>
   </header>
@@ -46,22 +48,23 @@
   <section class="profit">
     <div class="profit__wrapper">
       <h1>Деньги под залог авто</h1>
-      <img src="#" alt="car">
-      <div>
-        <span class="profit__num">5%</span>
-        <span class="profit__description">Низкий процент по займу</span>
-      </div>
-      <div>
-        <span class="profit__num">24 часа</span>
-        <span class="profit__description">Круглосуточное оформление заявок</span>
-      </div>
-      <div>
-        <span class="profit__num">90%</span>
-        <span class="profit__description">Сумма займа - до 90% от стоимости автомобиля от 10 тыс до 10 млн руб</span>
-      </div>
-      <div>
-        <span class="profit__num">30 минут</span>
-        <span class="profit__description">Время рассмотрения заявки всего 30 мину</span>
+      <div class="profit__profits">
+        <div>
+          <span class="profit__num">5%</span>
+          <span class="profit__description">Низкий процент по займу</span>
+        </div>
+        <div>
+          <span class="profit__num">24 часа</span>
+          <span class="profit__description">Круглосуточное оформление заявок</span>
+        </div>
+        <div>
+          <span class="profit__num">90%</span>
+          <span class="profit__description">Сумма займа - до 90% от стоимости автомобиля от 10 тыс до 10 млн руб</span>
+        </div>
+        <div>
+          <span class="profit__num">30 минут</span>
+          <span class="profit__description">Время рассмотрения заявки всего 30 мину</span>
+        </div>
       </div>
     </div>
   </section>
@@ -69,26 +72,33 @@
   <section class="credit-calc">
     <div class="credit-calc__wrapper">
       <h2>Кредитный калькулятор</h2>
-      <label for="credit-calc__cost">Стоимость автобомиля</label>
-      <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
-      <span class="credit-calc__cost-min">10 000</span>
-      <span class="credit-calc__cost-max">10 000 000</span>
-      <label for="credit-calc__days">Срок кредита</label>
-      <input id="credit-calc__days" type="range" min="1" max="365" step="5" value="120">
-      <span class="credit-calc__cost-min">1 день</span>
-      <span class="credit-calc__cost-max">365 дней</span>
-      <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
-      </span>
+      <div class="credit-calc__costs">
+        <label for="credit-calc__cost">Стоимость автобомиля</label>
+        <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
+        <span class="credit-calc__cost-min">10 000</span>
+        <span class="credit-calc__cost-max">10 000 000</span>
+      </div>
+      <div class="credit-calc__days">
+        <label for="credit-calc__day">Срок кредита</label>
+        <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
+        <span class="credit-calc__day-min">1 день</span>
+        <span class="credit-calc__day-max">365 дней</span>
+        <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
+        </span>
+      </div>
       <div class="credit-calc__results">
-        <div class="credit-calc__results-monthly-payment">
-          <span class="credit-calc__results-numbers">70 000 руб.</span>
-          <span class="credit-calc__results-description">Ежемесячный платеж</span>
+        <div class="credit-calc__results-middle">
+          <div class="credit-calc__results-monthly-payment">
+            <span class="credit-calc__results-numbers">70 000 руб.</span>
+            <span class="credit-calc__results-description">Ежемесячный платеж</span>
+            <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
+          </div>
+          <div class="credit-calc__results-rate">
+            <span class="credit-calc__results-numbers">5% в месяц</span>
+            <span class="credit-calc__results-description">Ставка по кредиту</span>
+          </div>
         </div>
-        <div class="credit-calc__results-rate">
-          <span class="credit-calc__results-numbers">5% в месяц</span>
-          <span class="credit-calc__results-description">Ставка по кредиту</span>
-        </div>
-        <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
+
         <span class="credit-calc__results-total">Сумма кредита</span>
         <span class="credit-calc__results-sum">1 000 000 руб.</span>
       </div>
