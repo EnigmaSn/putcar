@@ -13,11 +13,6 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <!--
-        <img src="#" alt="logo">
-        <span class="page-header__name">Автоломбард</span>
-        фоном
-        -->
       </div>
       <div class="page-header__menu--close">
         <a href="#">
@@ -72,40 +67,42 @@
   <section class="credit-calc">
     <div class="credit-calc__wrapper">
       <h2>Кредитный калькулятор</h2>
-      <div class="credit-calc__costs">
-        <label for="credit-calc__cost">Стоимость автобомиля</label>
-        <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
-        <div class="credit-calc__value">
-          <span class="credit-calc__cost-min">10 000</span>
-          <span class="credit-calc__cost-max">10 000 000</span>
-        </div>
-      </div>
-      <div class="credit-calc__days">
-        <label for="credit-calc__day">Срок кредита</label>
-        <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
-        <div class="credit-calc__value">
-          <span class="credit-calc__day-min">1 день</span>
-          <span class="credit-calc__day-max">365 дней</span>
-        </div>
-        <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
-        </span>
-      </div>
-      <div class="credit-calc__results">
-        <div class="credit-calc__results-middle">
-          <div class="credit-calc__results-monthly-payment">
-            <span class="credit-calc__results-numbers">70 000 руб.</span>
-            <span class="credit-calc__results-description">Ежемесячный платеж</span>
-            <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
-          </div>
-          <div class="credit-calc__results-rate">
-            <span class="credit-calc__results-numbers">5% в месяц</span>
-            <span class="credit-calc__results-description">Ставка по кредиту</span>
+      <form action="#" class="credit-calc__data">
+        <div class="credit-calc__costs">
+          <label for="credit-calc__cost">Стоимость автобомиля</label>
+          <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
+          <div class="credit-calc__value">
+            <span class="credit-calc__cost-min">10 000</span>
+            <span class="credit-calc__cost-max">10 000 000</span>
           </div>
         </div>
+        <div class="credit-calc__days">
+          <label for="credit-calc__day">Срок кредита</label>
+          <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
+          <div class="credit-calc__value">
+            <span class="credit-calc__day-min">1 день</span>
+            <span class="credit-calc__day-max">365 дней</span>
+          </div>
+          <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
+          </span>
+        </div>
+        <div class="credit-calc__results">
+          <div class="credit-calc__results-middle">
+            <div class="credit-calc__results-monthly-payment">
+              <span class="credit-calc__results-numbers">70 000 руб.</span>
+              <span class="credit-calc__results-description">Ежемесячный платеж</span>
+              <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
+            </div>
+            <div class="credit-calc__results-rate">
+              <span class="credit-calc__results-numbers">5% в месяц</span>
+              <span class="credit-calc__results-description">Ставка по кредиту</span>
+            </div>
+          </div>
 
-        <span class="credit-calc__results-total">Сумма кредита</span>
-        <span class="credit-calc__results-sum">1 000 000 руб.</span>
-      </div>
+          <span class="credit-calc__results-total">Сумма кредита</span>
+          <span class="credit-calc__results-sum">1 000 000 руб.</span>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -220,7 +217,7 @@ agreement">Не требуется согласие супруга</li>
 
   <section class="questionnaire">
     <div class="questionnaire__wrapper">
-      <div>
+      <div class="questionnaire_header">
         <h2>Заполните анкету онлайн</h2>
         <span>Приезжайте за деньгами</span>
       </div>
@@ -249,7 +246,7 @@ agreement">Не требуется согласие супруга</li>
           <label for="email">E-mail</label>
           <input id="email" type="email">
         </div>
-        <span><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
+        <span class="questionnaire__nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
         <button type="submit">Далее</button>
       </form>
       <div class="questionnaire__prompts">
