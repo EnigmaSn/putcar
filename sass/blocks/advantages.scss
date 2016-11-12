@@ -1,0 +1,29 @@
+.advantages {
+  h2 {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-left: 15px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    max-width: 130px;
+    padding-top: 120px;
+    margin-left: 15px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  li:nth-child(2n) {
+    padding-left: 30px;
+  }
+}
+
+.advantages__wrapper {
+  @include container;
+}

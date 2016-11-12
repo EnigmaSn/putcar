@@ -17,7 +17,7 @@
     padding-bottom: 20px;
   }
   input {
-    width: 260px;
+    width: 290px;
   }
   span {
     font-size: 16px;
@@ -27,7 +27,7 @@
   }
 }
 .credit-calc__costs {
-  padding-bottom: 35px;
+  padding-bottom: 10px;
   @include side-margin;
 }
 .credit-calc__days {
@@ -35,11 +35,11 @@
   @include side-margin;
   border-top: 1px solid #e8e8e8;
 }
-.credit-calc__cost-max {
-  padding-left: 125px;
-}
-.credit-calc__day-max {
-  padding-left: 138px;
+
+.credit-calc__value {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 // мы не сеем, мы не пашем, с башни пайка хуем машем
@@ -90,10 +90,12 @@
   margin-bottom: 10px;
 }
 .credit-calc__results-sum {
+  color: $rgbl;
   margin-left: 100px;
-  background-color: $white;
+  border-radius: 4px;
+  background-image: linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(239,205,155) 12%, rgb(255,255,255) 100%);
+  box-shadow: inset 0px 2px 3px 0px rgba(49, 39, 14, 0.39);
   padding: 10px;
   font-size: 42px;
   line-height: 24px;
-  color: $rgbl;
 }

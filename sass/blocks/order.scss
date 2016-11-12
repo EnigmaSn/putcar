@@ -1,0 +1,62 @@
+.order__wrapper {
+  @include container;
+  padding-bottom: 80px;
+}
+.order__profit {
+  background-color: $rgbl;
+  background-image: url(../img/car-time-mob.png);
+  background-repeat: no-repeat;
+  background-position: 15px 50px;
+  min-height: 326px;
+}
+
+.order__now {
+  @include side-margin;
+  h2 {
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 21px;
+    padding-bottom: 35px;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    color: $black;
+  }
+  span {
+    color: #888888;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 25px;
+  }
+}
+.order__questionnaire {
+  color: $white;
+  border-radius: 50px;
+  background-color: $orange;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.order__call {
+  color: $white;
+  border-radius: 50px;
+  background-color: $white;
+  border: 1px solid $orange;
+  color: $orange;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.order__tel {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}

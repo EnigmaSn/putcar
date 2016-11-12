@@ -1,0 +1,29 @@
+.steps__wrapper {
+  @include container;
+  padding-bottom: 40px;
+
+    h2 {
+      font-size: 21px;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin-left: 15px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    li {
+      list-style: none;
+      max-width: 100px;
+      padding-top: 20px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    li:nth-child(2n) {
+      align-self: flex-end;
+    }
+}

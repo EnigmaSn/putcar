@@ -38,8 +38,8 @@
           </ul>
         </nav>
         <div class="page-header__phone">
-          <a href="tel:8 (800) 555-35-35">8 (800) 555-35-35</a>
-          <a class="page-header__phone-but" href="tel:8 (800) 555-35-35">Позвонить</a>
+          <a href="tel:88005553535">8 (800) 555-35-35</a>
+          <a class="page-header__phone-but" href="tel:88005553535">Позвонить</a>
         </div>
       </div>
     </div>
@@ -75,14 +75,18 @@
       <div class="credit-calc__costs">
         <label for="credit-calc__cost">Стоимость автобомиля</label>
         <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
-        <span class="credit-calc__cost-min">10 000</span>
-        <span class="credit-calc__cost-max">10 000 000</span>
+        <div class="credit-calc__value">
+          <span class="credit-calc__cost-min">10 000</span>
+          <span class="credit-calc__cost-max">10 000 000</span>
+        </div>
       </div>
       <div class="credit-calc__days">
         <label for="credit-calc__day">Срок кредита</label>
         <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
-        <span class="credit-calc__day-min">1 день</span>
-        <span class="credit-calc__day-max">365 дней</span>
+        <div class="credit-calc__value">
+          <span class="credit-calc__day-min">1 день</span>
+          <span class="credit-calc__day-max">365 дней</span>
+        </div>
         <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
         </span>
       </div>
@@ -106,17 +110,18 @@
   </section>
 
   <section class="advantages">
-    <div class="advantages__wrapper"></div>
+    <div class="advantages__wrapper">
       <h2>Преимущества работы с нами</h2>
       <ul>
-        <li class="advantages__1">Ваш автомобиль остается на охраняемой стоянке</li>
-        <li class="advantages__2">Пересчет процентов при досрочном погашении долга</li>
-        <li class="advantages__3">Не требуются поручители про оформлении займа</li>
-        <li class="advantages__4">Ваш автомобиль застрахован за наш счет на весь срок договора</li>
-        <li class="advantages__5">Бесплатная пролонгация долгов</li>
-        <li class="advantages__6">Не требуется справки о доходах</li>
-        <li class="advantages__7">Быстрое предоставление займа, деньги вы получаете в день обращения</li>
-        <li class="advantages__8">Не требуется согласие супруга</li>
+        <li class="advantages__item advantages__item--guard">Ваш автомобиль остается на охраняемой стоянке</li>
+        <li class="advantages__item advantages__item--percent">Пересчет процентов при досрочном погашении долга</li>
+        <li class="advantages__item advantages__item--guarantor">Не требуются поручители про оформлении займа</li>
+        <li class="advantages__item advantages__item--insurance">Ваш автомобиль застрахован за наш счет на весь срок договора</li>
+        <li class="advantages__item advantages__item--prolongation">Бесплатная пролонгация долгов</li>
+        <li class="advantages__item advantages__item--certificate">Не требуется справки о доходах</li>
+        <li class="advantages__item advantages__item--loan">Быстрое предоставление займа, деньги вы получаете в день обращения</li>
+        <li class="advantages__item advantages__item--
+agreement">Не требуется согласие супруга</li>
       </ul>
     </div>
   </section>
@@ -125,8 +130,9 @@
     <div class="reviews__wrapper">
       <h2>Отзывы</h2>
       <div class="reviews__slider slider">
-        <div class="slide">
+        <div class="reviews__slide slide">
           <p>Один раз обращался в этот автоломбард, когда срочно понадобились деньги, обзвонил около 10 подобных ломбардов, чтобы узнать где-какие условия. Во многих мне отвечали, что дадут займ только с постановкой на стоянку, другие, что у них нет такой суммы денег, а мне нужно было 180 тысяч. В одном сказали, что решения нужно ждать сутки, еще в одном вообще откровено нахамили, когда я задал больше 2 вопросов и спросил есть ли у них скрытые комиссии.</p>
+          <img src="img/author.png" alt="Автор">
           <span class="reviews__author">Игорь Михайлов</span>
           <time datetime="<2016-10-15>">15.10.2016</time>
         </div>
@@ -178,14 +184,15 @@
 
   <section class="order">
     <div class="order__wrapper">
+      <div class="order__profit"></div>
       <div class="order__now">
         <h2>Оставьте заявку на получение займа прямо сейчас</h2>
         <p>Что бы оформить заявку, позвоните в любое удобное для вас время или заполните анкету онлайн</p>
         <a href="#" class="order__questionnaire">Заполнить анкету</a>
         <a href="#" class="order__call">Обратный звонок</a>
+        <a href="tel:+78312199517" class="order__tel">+7 (831) 219-95-17</a>
         <span>Заявки принимаются круглосуточно</span>
       </div>
-      <div class="order__profit"></div>
     </div>
   </section>
 
@@ -193,12 +200,16 @@
     <div class="faq__wrapper">
       <h2>Как быстро я получу деньги?</h2>
       <p>Вы можете получить займ прямо в день обращения. Заявки принимаем 24 часа в сутки. Оставьте заявку в удобное для вас время, с вами свяжется наш специалист. Мы оцениваем ва автомобиль и уже через 30 минут вы можете получить ваши деньги. Вам остается приехать к нам в офис, чтобы оформить все документы.</p>
-      <a href="#">Вопросы и ответы по услугам ломбарда</a>
+      <a class="questions-answers" href="#">Вопросы и ответы по услугам ломбарда</a>
       <div class="faq__questions">
-        <b>Где будет находиться мой автомобиль?</b>
-        <p>Автомобиль будет находиться на круглосуточно охраняемой стоянке под видеонаблюдением и будет застрахован за счет автоломбарда.</p>
-        <b>Что может являться предметом залога?</b>
-        <p>Автомобили легковые иностранного производства; автомобили легковые отечественного производства; мототехника, катера, яхты; строительная техника, спецтехника.</p>
+        <div>
+          <b>Где будет находиться мой автомобиль?</b>
+          <p>Автомобиль будет находиться на круглосуточно охраняемой стоянке под видеонаблюдением и будет застрахован за счет автоломбарда.</p>
+        </div>
+        <div>
+          <b>Что может являться предметом залога?</b>
+          <p>Автомобили легковые иностранного производства; автомобили легковые отечественного производства; мототехника, катера, яхты; строительная техника, спецтехника.</p>
+        </div>
       </div>
       <div class="another-question">
         <b>Другой вопрос?</b>
@@ -261,7 +272,7 @@
       <p>При оформлении ссуды в автомобильном ломбарде не нужны: поручитель, справки о заработной плате, присутствие и согласие супруга.</p>
       <span class="contacts__message">Мы будем рады видеть вас у нас в гостях!</span>
       <b>Появились  вопросы?</b>
-      <a href="tel:+7(8313)219-95-17">+7 (8313) 219-95-17</a>
+      <a href="tel:+783132199517">+7 (8313) 219-95-17</a>
       <span class="contacts__name">Алексей Анатольевич</span>
       <span class="contacts__position">Менеджер</span>
       <b>Или напишите нам на почту:</b>
