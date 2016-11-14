@@ -33,253 +33,257 @@
           </ul>
         </nav>
         <div class="page-header__phone">
-          <a href="tel:88005553535">8 (800) 555-35-35</a>
+          <a class="page-header__phone-number" href="tel:88005553535">8 (800) 555-35-35</a>
           <a class="page-header__phone-but" href="tel:88005553535">Позвонить</a>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="profit">
-    <div class="profit__wrapper">
-      <h1>Деньги под залог авто</h1>
-      <div class="profit__profits">
-        <div>
-          <span class="profit__num">5%</span>
-          <span class="profit__description">Низкий процент по займу</span>
-        </div>
-        <div>
-          <span class="profit__num">24 часа</span>
-          <span class="profit__description">Круглосуточное оформление заявок</span>
-        </div>
-        <div>
-          <span class="profit__num">90%</span>
-          <span class="profit__description">Сумма займа - до 90% от стоимости автомобиля от 10 тыс до 10 млн руб</span>
-        </div>
-        <div>
-          <span class="profit__num">30 минут</span>
-          <span class="profit__description">Время рассмотрения заявки всего 30 мину</span>
+  <main>
+    <section class="profit">
+      <div class="profit__wrapper">
+        <h1>Деньги под залог авто</h1>
+        <div class="profit__profits">
+          <div>
+            <span class="profit__num">5%</span>
+            <span class="profit__description">Низкий процент по займу</span>
+          </div>
+          <div>
+            <span class="profit__num">24 часа</span>
+            <span class="profit__description">Круглосуточное оформление заявок</span>
+          </div>
+          <div>
+            <span class="profit__num">90%</span>
+            <span class="profit__description">Сумма займа - до 90% от стоимости автомобиля от 10 тыс до 10 млн руб</span>
+          </div>
+          <div>
+            <span class="profit__num">30 минут</span>
+            <span class="profit__description">Время рассмотрения заявки всего 30 мину</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="credit-calc">
-    <div class="credit-calc__wrapper">
-      <h2>Кредитный калькулятор</h2>
-      <form action="#" class="credit-calc__data">
-        <div class="credit-calc__costs">
-          <label for="credit-calc__cost">Стоимость автобомиля</label>
-          <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
-          <div class="credit-calc__value">
-            <span class="credit-calc__cost-min">10 000</span>
-            <span class="credit-calc__cost-max">10 000 000</span>
-          </div>
-        </div>
-        <div class="credit-calc__days">
-          <label for="credit-calc__day">Срок кредита</label>
-          <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
-          <div class="credit-calc__value">
-            <span class="credit-calc__day-min">1 день</span>
-            <span class="credit-calc__day-max">365 дней</span>
-          </div>
-          <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
-          </span>
-        </div>
-        <div class="credit-calc__results">
-          <div class="credit-calc__results-middle">
-            <div class="credit-calc__results-monthly-payment">
-              <span class="credit-calc__results-numbers">70 000 руб.</span>
-              <span class="credit-calc__results-description">Ежемесячный платеж</span>
-              <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
-            </div>
-            <div class="credit-calc__results-rate">
-              <span class="credit-calc__results-numbers">5% в месяц</span>
-              <span class="credit-calc__results-description">Ставка по кредиту</span>
+    <section class="credit-calc">
+      <div class="credit-calc__wrapper">
+        <h2>Кредитный калькулятор</h2>
+        <form action="#" class="credit-calc__data">
+          <div class="credit-calc__costs">
+            <label for="credit-calc__cost">Стоимость автобомиля</label>
+            <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
+            <div class="credit-calc__value">
+              <span class="credit-calc__cost-min">10 000</span>
+              <span class="credit-calc__cost-max">10 000 000</span>
             </div>
           </div>
+          <div class="credit-calc__days">
+            <label for="credit-calc__day">Срок кредита</label>
+            <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
+            <div class="credit-calc__value">
+              <span class="credit-calc__day-min">1 день</span>
+              <span class="credit-calc__day-max">365 дней</span>
+            </div>
+            <span class="credit-calc__nb">Возможно досрочное погашение без штрафов и комиссий и пролонгация договора
+            </span>
+          </div>
+          <div class="credit-calc__results">
+            <div class="credit-calc__results-middle">
+              <div class="credit-calc__results-monthly-payment">
+                <span class="credit-calc__results-numbers">70 000 руб.</span>
+                <span class="credit-calc__results-description">Ежемесячный платеж</span>
+                <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
+              </div>
+              <div class="credit-calc__results-rate">
+                <span class="credit-calc__results-numbers">5% в месяц</span>
+                <span class="credit-calc__results-description">Ставка по кредиту</span>
+              </div>
+            </div>
 
-          <span class="credit-calc__results-total">Сумма кредита</span>
-          <span class="credit-calc__results-sum">1 000 000 руб.</span>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <section class="advantages">
-    <div class="advantages__wrapper">
-      <h2>Преимущества работы с нами</h2>
-      <ul>
-        <li class="advantages__item advantages__item--guard">Ваш автомобиль остается на охраняемой стоянке</li>
-        <li class="advantages__item advantages__item--percent">Пересчет процентов при досрочном погашении долга</li>
-        <li class="advantages__item advantages__item--guarantor">Не требуются поручители про оформлении займа</li>
-        <li class="advantages__item advantages__item--insurance">Ваш автомобиль застрахован за наш счет на весь срок договора</li>
-        <li class="advantages__item advantages__item--prolongation">Бесплатная пролонгация долгов</li>
-        <li class="advantages__item advantages__item--certificate">Не требуется справки о доходах</li>
-        <li class="advantages__item advantages__item--loan">Быстрое предоставление займа, деньги вы получаете в день обращения</li>
-        <li class="advantages__item advantages__item--
-agreement">Не требуется согласие супруга</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="reviews">
-    <div class="reviews__wrapper">
-      <h2>Отзывы</h2>
-      <div class="reviews__slider slider">
-        <div class="reviews__slide slide">
-          <p>Один раз обращался в этот автоломбард, когда срочно понадобились деньги, обзвонил около 10 подобных ломбардов, чтобы узнать где-какие условия. Во многих мне отвечали, что дадут займ только с постановкой на стоянку, другие, что у них нет такой суммы денег, а мне нужно было 180 тысяч. В одном сказали, что решения нужно ждать сутки, еще в одном вообще откровено нахамили, когда я задал больше 2 вопросов и спросил есть ли у них скрытые комиссии.</p>
-          <img src="img/author.png" alt="Автор">
-          <span class="reviews__author">Игорь Михайлов</span>
-          <time datetime="<2016-10-15>">15.10.2016</time>
-        </div>
+            <span class="credit-calc__results-total">Сумма кредита</span>
+            <span class="credit-calc__results-sum">1 000 000 руб.</span>
+          </div>
+        </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="profitable-terms">
-    <div class="profitable-terms__wrapper">
-      <h2>Выгодные условия автоломбарда</h2>
-      <p>Нижнем Новгороде выдаёт кредит наличными под залог легковых и грузовых автомобилей. Принимаем иностранные и отечественные машины возрастом до 180 и 60 месяцев соответственно.</p>
-      <p>При оформлении ссуды в автомобильном ломбарде не нужны: поручитель, справки о заработной плате, присутствие и согласие супруга. Гарантия платёжеспособности — залоговый автомобиль. Вы получаете от 100 000 до 2 000 000 рублей в течение часа.</p>
-      <div class="profitable-terms__requirements">
-        <h3>Основные требования к заемщику</h3>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2>Преимущества работы с нами</h2>
         <ul>
-          <li>кредит предоставляется под залог вашего автомобиля;</li>
-          <li>кредиты под залог автомобиля предоставляются жителям Нижнего Новгорода и НО;</li>
-          <li>возраст заёмщика от 18 до 65 лет;</li>
-          <li>заёмщик должен являться собственником
-          автомобиля;</li>
-          <li>автомобиль не находится в залоге или угоне;</li>
+          <li class="advantages__item advantages__item--guard">Ваш автомобиль остается на охраняемой стоянке</li>
+          <li class="advantages__item advantages__item--percent">Пересчет процентов при досрочном погашении долга</li>
+          <li class="advantages__item advantages__item--guarantor">Не требуются поручители про оформлении займа</li>
+          <li class="advantages__item advantages__item--insurance">Ваш автомобиль застрахован за наш счет на весь срок договора</li>
+          <li class="advantages__item advantages__item--prolongation">Бесплатная пролонгация долгов</li>
+          <li class="advantages__item advantages__item--certificate">Не требуется справки о доходах</li>
+          <li class="advantages__item advantages__item--loan">Быстрое предоставление займа, деньги вы получаете в день обращения</li>
+          <li class="advantages__item advantages__item--
+  agreement">Не требуется согласие супруга</li>
         </ul>
       </div>
-      <div class="profitable-terms__docs">
-        <h3>Всего 4 документа</h3>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2>Отзывы</h2>
+        <div class="reviews__slider slider">
+          <div class="reviews__slide slide">
+            <p>Один раз обращался в этот автоломбард, когда срочно понадобились деньги, обзвонил около 10 подобных ломбардов, чтобы узнать где-какие условия. Во многих мне отвечали, что дадут займ только с постановкой на стоянку, другие, что у них нет такой суммы денег, а мне нужно было 180 тысяч. В одном сказали, что решения нужно ждать сутки, еще в одном вообще откровено нахамили, когда я задал больше 2 вопросов и спросил есть ли у них скрытые комиссии.</p>
+            <img src="img/author.png" alt="Автор">
+            <span class="reviews__author">Игорь Михайлов</span>
+            <time datetime="<2016-10-15>">15.10.2016</time>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profitable-terms">
+      <div class="profitable-terms__wrapper">
+        <h2>Выгодные условия автоломбарда</h2>
+        <p>Нижнем Новгороде выдаёт кредит наличными под залог легковых и грузовых автомобилей. Принимаем иностранные и отечественные машины возрастом до 180 и 60 месяцев соответственно.</p>
+        <p>При оформлении ссуды в автомобильном ломбарде не нужны: поручитель, справки о заработной плате, присутствие и согласие супруга. Гарантия платёжеспособности — залоговый автомобиль. Вы получаете от 100 000 до 2 000 000 рублей в течение часа.</p>
+        <div class="profitable-terms__requirements">
+          <h3>Основные требования к заемщику</h3>
+          <ul>
+            <li>кредит предоставляется под залог вашего автомобиля;</li>
+            <li>кредиты под залог автомобиля предоставляются жителям Нижнего Новгорода и НО;</li>
+            <li>возраст заёмщика от 18 до 65 лет;</li>
+            <li>заёмщик должен являться собственником
+            автомобиля;</li>
+            <li>автомобиль не находится в залоге или угоне;</li>
+          </ul>
+        </div>
+        <div class="profitable-terms__docs">
+          <h3>Всего 4 документа</h3>
+          <ul>
+            <li>паспорт гражданина РФ;</li>
+            <li>паспорт технического средства (ПТС);</li>
+            <li>свидетельство о регистрации транспортного
+            средства (СТС);</li>
+            <li>СНИЛС (зеленое пенсионное удостоверение).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="steps__wrapper">
+        <h2>Как получить деньги за 5 шагов?</h2>
         <ul>
-          <li>паспорт гражданина РФ;</li>
-          <li>паспорт технического средства (ПТС);</li>
-          <li>свидетельство о регистрации транспортного
-          средства (СТС);</li>
-          <li>СНИЛС (зеленое пенсионное удостоверение).</li>
+          <li>Вы оставляете заявку по телефону или на сайте</li>
+          <li>С вами связывается специалист</li>
+          <li>Вы приезжаете к нам и мы осматриваем автомобиль</li>
+          <li>Оформляете доверенность и договор займа</li>
+          <li>Авто сдается под охрану, и вы получаете деньги</li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="steps">
-    <div class="steps__wrapper">
-      <h2>Как получить деньги за 5 шагов?</h2>
-      <ul>
-        <li>Вы оставляете заявку по телефону или на сайте</li>
-        <li>С вами связывается специалист</li>
-        <li>Вы приезжаете к нам и мы осматриваем автомобиль</li>
-        <li>Оформляете доверенность и договор займа</li>
-        <li>Авто сдается под охрану, и вы получаете деньги</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="order">
-    <div class="order__wrapper">
-      <div class="order__profit"></div>
-      <div class="order__now">
-        <h2>Оставьте заявку на получение займа прямо сейчас</h2>
-        <p>Что бы оформить заявку, позвоните в любое удобное для вас время или заполните анкету онлайн</p>
-        <a href="#" class="order__questionnaire">Заполнить анкету</a>
-        <a href="#" class="order__call">Обратный звонок</a>
-        <a href="tel:+78312199517" class="order__tel">+7 (831) 219-95-17</a>
-        <span>Заявки принимаются круглосуточно</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq">
-    <div class="faq__wrapper">
-      <h2>Как быстро я получу деньги?</h2>
-      <p>Вы можете получить займ прямо в день обращения. Заявки принимаем 24 часа в сутки. Оставьте заявку в удобное для вас время, с вами свяжется наш специалист. Мы оцениваем ва автомобиль и уже через 30 минут вы можете получить ваши деньги. Вам остается приехать к нам в офис, чтобы оформить все документы.</p>
-      <a class="questions-answers" href="#">Вопросы и ответы по услугам ломбарда</a>
-      <div class="faq__questions">
-        <div>
-          <b>Где будет находиться мой автомобиль?</b>
-          <p>Автомобиль будет находиться на круглосуточно охраняемой стоянке под видеонаблюдением и будет застрахован за счет автоломбарда.</p>
-        </div>
-        <div>
-          <b>Что может являться предметом залога?</b>
-          <p>Автомобили легковые иностранного производства; автомобили легковые отечественного производства; мототехника, катера, яхты; строительная техника, спецтехника.</p>
+    <section class="order">
+      <div class="order__wrapper">
+        <div class="order__profit"></div>
+        <div class="order__now">
+          <h2>Оставьте заявку на получение займа прямо сейчас</h2>
+          <p>Что бы оформить заявку, позвоните в любое удобное для вас время или заполните анкету онлайн</p>
+          <a href="#" class="order__questionnaire">Заполнить анкету</a>
+          <a href="#" class="order__call">Обратный звонок</a>
+          <a href="tel:+78312199517" class="order__tel">+7 (831) 219-95-17</a>
+          <span>Заявки принимаются круглосуточно</span>
         </div>
       </div>
-      <div class="another-question">
-        <b>Другой вопрос?</b>
-        <span>Посмотрите <a href="#">здесь</a></span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="questionnaire">
-    <div class="questionnaire__wrapper">
-      <div class="questionnaire_header">
-        <h2>Заполните анкету онлайн</h2>
-        <span>Приезжайте за деньгами</span>
-      </div>
-      <form class="questionnaire__form" action="#">
-        <div class="questionnaire__form-last-name">
-          <label for="last-name">Фамилия<span class="questionnaire__red-point">*</span></label>
-          <input id="last-name" type="text" required>
+    <section class="faq">
+      <div class="faq__wrapper">
+        <h2>Как быстро я получу деньги?</h2>
+        <p>Вы можете получить займ прямо в день обращения. Заявки принимаем 24 часа в сутки. Оставьте заявку в удобное для вас время, с вами свяжется наш специалист. Мы оцениваем ва автомобиль и уже через 30 минут вы можете получить ваши деньги. Вам остается приехать к нам в офис, чтобы оформить все документы.</p>
+        <a class="questions-answers" href="#">Вопросы и ответы по услугам ломбарда</a>
+        <div class="faq__questions">
+          <div>
+            <b>Где будет находиться мой автомобиль?</b>
+            <p>Автомобиль будет находиться на круглосуточно охраняемой стоянке под видеонаблюдением и будет застрахован за счет автоломбарда.</p>
+          </div>
+          <div>
+            <b>Что может являться предметом залога?</b>
+            <p>Автомобили легковые иностранного производства; автомобили легковые отечественного производства; мототехника, катера, яхты; строительная техника, спецтехника.</p>
+          </div>
         </div>
-        <div class="questionnaire__form-first-name">
-          <label for="first-name">Имя<span class="questionnaire__red-point">*</span></label>
-          <input id="first-name" type="text" required>
-        </div>
-        <div class="questionnaire__form-middle-name">
-          <label for="middle-name">Отчество<span class="questionnaire__red-point">*</span></label>
-          <input id="middle-name" type="text" required>
-        </div>
-        <div class="questionnaire__form-mobile-phone">
-          <label for="mobile-phone">Мобильный телефон<span class="questionnaire__red-point">*</span></label>
-          <input id="mobile-phone" type="tel" required>
-        </div>
-        <div class="questionnaire__form-phone">
-          <label for="phone">Домашний телефон</label>
-          <input id="phone" type="tel">
-        </div>
-        <div class="questionnaire__form-email">
-          <label for="email">E-mail</label>
-          <input id="email" type="email">
-        </div>
-        <span class="questionnaire__nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
-        <button type="submit">Далее</button>
-      </form>
-      <div class="questionnaire__prompts">
-        <div class="questionnaire__prompt">
-          <span class="questionnaire__prompt_1">Заполните анкету онлайн &ndash; вам не нужно посещать офис</span>
-        </div>
-        <div class="questionnaire__prompt">
-          <span class="questionnaire__prompt_2">Узнайте решение через 30 минут после отправки анкеты</span>
-        </div>
-        <div class="questionnaire__prompt">
-          <span class="questionnaire__prompt_2">Приезжайте сразу за деньгами в случае одобрения</span>
+        <div class="another-question">
+          <b>Другой вопрос?</b>
+          <span>Посмотрите <a href="#">здесь</a></span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contacts">
-    <div class="contacts__wrapper">
-      <h2>Об автоломбарде в Нижнем Новгороде</h2>
-      <p>При оформлении ссуды в автомобильном ломбарде не нужны: поручитель, справки о заработной плате, присутствие и согласие супруга.</p>
-      <span class="contacts__message">Мы будем рады видеть вас у нас в гостях!</span>
-      <b>Появились  вопросы?</b>
-      <a href="tel:+783132199517">+7 (8313) 219-95-17</a>
-      <span class="contacts__name">Алексей Анатольевич</span>
-      <span class="contacts__position">Менеджер</span>
-      <b>Или напишите нам на почту:</b>
-      <a href="mailto:lombardnn.avto@yandedx.ru">lombardnn.avto@yandedx.ru</a>
-      <picture class="contacts__map">
-        <source media="(min-width: 1150px)" width="519" height="485" srcset="img/map-desktop.jpg">
-        <img src="img/map-mob.jpg" width="319" height="240" alt="карта">
-      </picture>
-    </div>
-  </section>
+    <section class="questionnaire">
+      <div class="questionnaire__wrapper">
+        <div class="questionnaire_header">
+          <h2>Заполните анкету онлайн</h2>
+          <span>Приезжайте за деньгами</span>
+        </div>
+        <form class="questionnaire__form" action="#">
+          <div class="questionnaire__form-last-name">
+            <label for="last-name">Фамилия<span class="questionnaire__red-point">*</span></label>
+            <input id="last-name" type="text" required>
+          </div>
+          <div class="questionnaire__form-first-name">
+            <label for="first-name">Имя<span class="questionnaire__red-point">*</span></label>
+            <input id="first-name" type="text" required>
+          </div>
+          <div class="questionnaire__form-middle-name">
+            <label for="middle-name">Отчество<span class="questionnaire__red-point">*</span></label>
+            <input id="middle-name" type="text" required>
+          </div>
+          <div class="questionnaire__form-mobile-phone">
+            <label for="mobile-phone">Мобильный телефон<span class="questionnaire__red-point">*</span></label>
+            <input id="mobile-phone" type="tel" required>
+          </div>
+          <div class="questionnaire__form-phone">
+            <label for="phone">Домашний телефон</label>
+            <input id="phone" type="tel">
+          </div>
+          <div class="questionnaire__form-email">
+            <label for="email">E-mail</label>
+            <input id="email" type="email">
+          </div>
+          <span class="questionnaire__nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
+          <button type="submit">Далее</button>
+        </form>
+        <div class="questionnaire__prompts">
+          <div class="questionnaire__prompt">
+            <span class="questionnaire__prompt_1">Заполните анкету онлайн &ndash; вам не нужно посещать офис</span>
+          </div>
+          <div class="questionnaire__prompt">
+            <span class="questionnaire__prompt_2">Узнайте решение через 30 минут после отправки анкеты</span>
+          </div>
+          <div class="questionnaire__prompt">
+            <span class="questionnaire__prompt_2">Приезжайте сразу за деньгами в случае одобрения</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2>Об автоломбарде в Нижнем Новгороде</h2>
+        <p>При оформлении ссуды в автомобильном ломбарде не нужны: поручитель, справки о заработной плате, присутствие и согласие супруга.</p>
+        <span class="contacts__message">Мы будем рады видеть вас у нас в гостях!</span>
+        <b>Появились  вопросы?</b>
+        <a class="contacts__phone" href="tel:+783132199517">+7 (8313) 219-95-17</a>
+        <span class="contacts__name">Алексей Анатольевич</span>
+        <span class="contacts__position">Менеджер</span>
+        <div class="contacts__write-us">
+          <b>Или напишите нам на почту:</b>
+          <a class="contacts__e-mail"href="mailto:lombardnn.avto@yandedx.ru">lombardnn.avto@yandedx.ru</a>
+        </div>
+        <picture class="contacts__map">
+          <source media="(min-width: 1150px)" width="519" height="485" srcset="img/map-desktop.jpg">
+          <img src="img/map-mob.jpg" width="319" height="240" alt="карта">
+        </picture>
+      </div>
+    </section>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -303,6 +307,6 @@ agreement">Не требуется согласие супруга</li>
       </div>
     </div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

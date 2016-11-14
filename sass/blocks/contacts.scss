@@ -1,0 +1,71 @@
+.contacts__wrapper {
+  @include container;
+
+  h2 {
+    font-size: 21px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    @include side-margin;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 18px;
+    @include side-margin;
+  }
+  b {
+    font-size: 15px;
+    line-height: 21px;
+    @include side-margin;
+    display: block;
+    padding-bottom: 20px;
+  }
+  a {
+    @include side-margin;
+    display: block;
+    font-size: 15px;
+    line-height: 31px;
+  }
+}
+.contacts__message {
+  display: block;
+  font-size: 15px;
+  line-height: 21px;
+  @include side-margin;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.contacts__phone {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+.contacts__name {
+  font-size: 15px;
+  line-height: 31px;
+  @include side-margin;
+  display: block;
+}
+.contacts__position {
+  color: #7b7b7b;
+  font-size: 13px;
+  line-height: 21px;
+  @include side-margin;
+}
+.contacts__write-us {
+  padding-top: 15px;
+  margin-top: 10px;
+  border-top: 1px solid #dcdcdc;
+  @include side-margin;
+  margin-bottom: 40px;
+    b {
+      margin: 0;
+    }
+    a {
+      margin: 0;
+      color: #1565c0;
+    }
+}

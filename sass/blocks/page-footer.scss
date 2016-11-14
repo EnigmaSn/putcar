@@ -1,3 +1,57 @@
 .page-footer {
-  background: red;
+  background-color: #29292a;
+  min-width: 489px;
+}
+.page-footer__wrapper {
+  @include container;
+  background-image: url("../img/logo-orange.png");
+  background-repeat: no-repeat;
+  background-position: 15px 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer__logo {
+  background-image: url("../img/logo-orange.png");
+  background-repeat: no-repeat;
+  background-position: 15px 40px;
+  padding-top: 80px;
+
+  a {
+    margin-left: 55px;
+    color: $white;
+    text-decoration: none;
+  }
+}
+.page-footer__menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 50px;
+  }
+  li {
+    list-style: none;
+    margin-top: 25px;
+    max-width: 230px;
+  }
+  a {
+    color: #7b7b7b;
+    text-decoration: none;
+    margin-left: 55px;
+    display: block;
+    font-size: 15px;
+  }
+}
+.page-footer__about {
+  color: #484848;
+  font-size: 13px;
+  margin-left: 55px;
+    span {
+      display: block;
+      margin-bottom: 10px;
+    }
+    a {
+      color: #484848;
+      text-decoration: underline;
+    }
 }
