@@ -20,6 +20,12 @@ menu_button.addEventListener("click", function(event) {
   }
 });
 
+var menu_close = document.querySelector(".page-header__menu-close");
+    menu_close.addEventListener("click", function(event) {
+        event.preventDefault();
+        menu.classList.remove("page-header__menu--open-show");
+    });
+
 // фон шапки
 menu.addEventListener("click", function(event) {
   if (header.classList.contains("page-header__wrapper-show-menu")) {
