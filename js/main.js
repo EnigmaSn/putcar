@@ -12,7 +12,7 @@ menu_button.addEventListener("click", function(event) {
       // вывод в консоль
       console.log("клик таки");
       // без точки, Карл, ибо этот метод работает только с классами
-      menu.classList.remove("page-header__menu--open-show");
+      // menu.classList.remove("page-header__menu--open-show");
   }
   else {
       event.preventDefault();
@@ -20,18 +20,24 @@ menu_button.addEventListener("click", function(event) {
   }
 });
 
+// фон шапки
+menu.addEventListener("click", function(event) {
+  header.classList.add("page-header__wrapper-show-menu");
+});
+
+
 var menu_close = document.querySelector(".page-header__menu-close");
     menu_close.addEventListener("click", function(event) {
         event.preventDefault();
         menu.classList.remove("page-header__menu--open-show");
     });
 
-// фон шапки
-menu.addEventListener("click", function(event) {
-  if (header.classList.contains("page-header__wrapper-show-menu")) {
-      header.classList.remove("page-header__wrapper-show-menu");
-  }
-  else {
-      header.classList.add("page-header__wrapper-show-menu");
-  }
-});
+
+// menu.addEventListener("click", function(event) {
+//   if (header.classList.contains("page-header__wrapper-show-menu")) {
+//       header.classList.remove("page-header__wrapper-show-menu");
+//   }
+//   else {
+//       header.classList.add("page-header__wrapper-show-menu");
+//   }
+// });
