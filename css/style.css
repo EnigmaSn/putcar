@@ -85,7 +85,8 @@ body {
     font-size: 0;
     border: 0;
     cursor: pointer;
-    background-color: transparent; }
+    background-color: transparent;
+    z-index: 10; }
   .page-header__menu--open button:before,
   .page-header__menu--open button:after {
     content: "";

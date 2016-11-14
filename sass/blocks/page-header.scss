@@ -75,6 +75,7 @@
       border: 0;
       cursor: pointer;
       background-color: transparent;
+      z-index: 10;
     }
     button:before,
     button:after {
