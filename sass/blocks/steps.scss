@@ -1,6 +1,7 @@
 .steps__wrapper {
   @include container;
   padding-bottom: 40px;
+  position: relative;
 
     h2 {
       font-size: 21px;
@@ -16,14 +17,89 @@
       margin-left: 20px;
       margin-right: 20px;
     }
+
     li {
       list-style: none;
       max-width: 100px;
       padding-top: 20px;
       font-size: 13px;
       line-height: 18px;
+      position: relative;
     }
     li:nth-child(2n) {
       align-self: flex-end;
     }
+}
+
+.steps__line {
+  height: 360px;
+  width: 1px;
+  border-left: 1px dotted $orange;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+}
+
+.steps__num-right:after {
+  content: "";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid $orange;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  left: 122px;
+  top: 50%;
+}
+
+.steps__num-left:after {
+  content: "";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid $orange;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  right: 122px;
+  top: 50%;
+}
+.steps__num-1:after {
+  content: "1";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+.steps__num-2:after {
+  content: "2";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+.steps__num-3:after {
+  content: "3";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+.steps__num-4:after {
+  content: "4";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+.steps__num-5:after {
+  content: "5";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
 }
