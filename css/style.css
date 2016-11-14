@@ -616,7 +616,18 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 13px;
-    line-height: 31px; }
+    line-height: 31px;
+    position: relative; }
+  .profitable-terms__requirements li:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fb9f18;
+    border-radius: 50%;
+    left: 10px;
+    top: 12px; }
 
 .profitable-terms__docs {
   margin-left: 10px;
@@ -637,7 +648,18 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 13px;
-    line-height: 31px; }
+    line-height: 31px;
+    position: relative; }
+  .profitable-terms__docs li:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fb9f18;
+    border-radius: 50%;
+    left: 10px;
+    top: 12px; }
 
 .steps__wrapper {
   width: 320px;
