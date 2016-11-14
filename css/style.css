@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "opensans", "Arial", "Serif";
   color: #000000;
@@ -294,8 +295,6 @@ body {
     display: block;
     font-size: 15px;
     padding-bottom: 20px; }
-  .credit-calc__wrapper input {
-    width: 290px; }
   .credit-calc__wrapper span {
     font-size: 16px;
     line-height: 24px;
@@ -311,6 +310,37 @@ body {
       margin-left: 50px;
       margin-right: 50px; } }
 
+.credit-calc__cost-range-controls {
+  position: relative;
+  margin-bottom: 32px; }
+
+/* основная шкала */
+.credit-calc__cost-range-controls .credit-calc__cost-scale {
+  height: 2px;
+  background: #d0d0d0; }
+
+/* дополнительная (внутри) */
+.credit-calc__cost-range-controls .credit-calc__cost-bar {
+  width: 40%;
+  height: 2px;
+  background: #fb9f18; }
+
+.credit-calc__cost-range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fb9f18;
+  border-radius: 50%;
+  background: #fb9f18; }
+
+.credit-calc__cost-range-toggle:hover {
+  background: #ffffff; }
+
+.credit-calc__cost-range-toggle {
+  left: 40%; }
+
 .credit-calc__days {
   padding-top: 35px;
   margin-left: 15px;
@@ -320,6 +350,43 @@ body {
     .credit-calc__days {
       margin-left: 50px;
       margin-right: 50px; } }
+
+.credit-calc__days-range-controls {
+  position: relative;
+  margin-bottom: 32px;
+  margin-left: 15px;
+  margin-right: 15px; }
+  @media (min-width: 1150px) {
+    .credit-calc__days-range-controls {
+      margin-left: 50px;
+      margin-right: 50px; } }
+
+/* основная шкала */
+.credit-calc__days-range-controls .credit-calc__cost-scale {
+  height: 2px;
+  background-color: #d0d0d0; }
+
+/* дополнительная (внутри) */
+.credit-calc__days-range-controls .credit-calc__cost-bar {
+  width: 40%;
+  height: 2px;
+  background: #fb9f18; }
+
+.credit-calc__days-range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fb9f18;
+  border-radius: 50%;
+  background: #fb9f18; }
+
+.credit-calc__days-range-toggle:hover {
+  background: #ffffff; }
+
+.credit-calc__days-range-toggle {
+  left: 80%; }
 
 .credit-calc__value {
   display: flex;
@@ -793,8 +860,7 @@ body {
     padding-bottom: 35px; }
   .order__now a {
     text-decoration: none;
-    display: block;
-    color: #000000; }
+    display: block; }
   .order__now span {
     color: #888888;
     font-size: 13px;
@@ -823,7 +889,8 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  color: #000000; }
 
 .faq__wrapper {
   width: 320px;
