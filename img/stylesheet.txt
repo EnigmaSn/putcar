@@ -52,38 +52,80 @@
     background-position: -393px -10px;
 }
 
+.sprite-arrow-dowh {
+    width: 14px;
+    height: 8px;
+    background-position: -449px -10px;
+}
+
+.sprite-arrow-dowh-hover {
+    width: 14px;
+    height: 8px;
+    background-position: -483px -10px;
+}
+
+.sprite-arrow-left {
+    width: 7px;
+    height: 10px;
+    background-position: -517px -10px;
+}
+
+.sprite-arrow-left-hover {
+    width: 7px;
+    height: 10px;
+    background-position: -544px -10px;
+}
+
+.sprite-arrow-right {
+    width: 7px;
+    height: 10px;
+    background-position: -571px -10px;
+}
+
+.sprite-arrow-right-hover {
+    width: 7px;
+    height: 10px;
+    background-position: -598px -10px;
+}
+
+.sprite-calendar {
+    width: 26px;
+    height: 24px;
+    background-position: -625px -10px;
+}
+
 .sprite-esc {
     width: 14px;
     height: 14px;
-    background-position: -449px -10px;
+    background-position: -671px -10px;
 }
 
 .sprite-hamburger {
     width: 18px;
     height: 14px;
-    background-position: -483px -10px;
+    background-position: -705px -10px;
 }
 
 .sprite-phone {
     width: 18px;
     height: 18px;
-    background-position: -521px -10px;
+    background-position: -743px -10px;
 }
 
 .sprite-prompt_1 {
     width: 28px;
     height: 27px;
-    background-position: -559px -10px;
+    background-position: -781px -10px;
 }
 
 .sprite-prompt_2 {
     width: 24px;
     height: 28px;
-    background-position: -607px -10px;
+    background-position: -829px -10px;
 }
 
 .sprite-prompt_3 {
     width: 19px;
     height: 28px;
-    background-position: -651px -10px;
+    background-position: -873px -10px;
 }

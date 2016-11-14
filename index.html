@@ -236,32 +236,104 @@
           <span>Приезжайте за деньгами</span>
         </div>
         <form class="questionnaire__form" action="#">
-          <div class="questionnaire__form-last-name">
-            <label for="last-name">Фамилия<span class="questionnaire__red-point">*</span></label>
-            <input id="last-name" type="text" required>
+          <div class="questionnaire__form-personal-data">
+            <div class="questionnaire__form-last-name">
+              <label for="last-name">Фамилия<span class="questionnaire__red-point">*</span></label>
+              <input id="last-name" type="text" required>
+            </div>
+            <div class="questionnaire__form-first-name">
+              <label for="first-name">Имя<span class="questionnaire__red-point">*</span></label>
+              <input id="first-name" type="text" required>
+            </div>
+            <div class="questionnaire__form-middle-name">
+              <label for="middle-name">Отчество<span class="questionnaire__red-point">*</span></label>
+              <input id="middle-name" type="text" required>
+            </div>
+            <div class="questionnaire__form-mobile-phone">
+              <label for="mobile-phone">Мобильный телефон<span class="questionnaire__red-point">*</span></label>
+              <input id="mobile-phone" type="tel" required>
+            </div>
+            <div class="questionnaire__form-phone">
+              <label for="phone">Домашний телефон</label>
+              <input id="phone" type="tel">
+            </div>
+            <div class="questionnaire__form-email">
+              <label for="email">E-mail</label>
+              <input id="email" type="email">
+            </div>
+            <span class="questionnaire__form-nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
+            <a class="questionnaire__form-btn-next" type="submit">Далее</a>
           </div>
-          <div class="questionnaire__form-first-name">
-            <label for="first-name">Имя<span class="questionnaire__red-point">*</span></label>
-            <input id="first-name" type="text" required>
+
+          <div class="questionnaire__form-passport-data">
+            <div class="questionnaire__form-check-place">
+              <label for="check-place">Место регистрации<span class="questionnaire__red-point">*</span></label>
+              <input id="check-place" type="text" required>
+            </div>
+            <div class="questionnaire__form-living-place">
+              <label for="living-place">Адрес проживания<span class="questionnaire__red-point">*</span></label>
+              <input id="living-place" type="text" required>
+            </div>
+            <div class="questionnaire__form-birthday">
+              <label for="birthday">Дата рождения<span class="questionnaire__red-point">*</span></label>
+              <input id="birthday" type="data" required>
+            </div>
+            <span class="questionnaire__form-nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
+            <a class="questionnaire__form-btn-prev" type="submit">Назад</a>
+            <a class="questionnaire__form-btn-next" type="submit">Далее</a>
           </div>
-          <div class="questionnaire__form-middle-name">
-            <label for="middle-name">Отчество<span class="questionnaire__red-point">*</span></label>
-            <input id="middle-name" type="text" required>
+
+          <div class="questionnaire__form-auto-data">
+            <div class="questionnaire__form-brand">
+              <label for="brand">Марка автомобиля<span class="questionnaire__red-point">*</span></label>
+              <select id="brand" name="Марка">
+                <option>Lada</option>
+                <option>Lamborghini</option>
+              </select>
+            </div>
+            <div class="questionnaire__form-model">
+              <label for="model">Модель автомобиля<span class="questionnaire__red-point">*</span></label>
+              <select id="model" name="Марка">
+                <option>Granta</option>
+                <option>Седан-баклажан</option>
+              </select>
+            </div>
+            <div class="questionnaire__form-year">
+              <label for="year">Год выпуска<span class="questionnaire__red-point">*</span></label>
+              <select id="year" name="Марка">
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+              </select>
+            </div>
+            <div class="questionnaire__form-vin">
+              <label for="vin">VIN номер<span class="questionnaire__red-point">*</span></label>
+              <input id="vin" type="text" required>
+            </div>
+            <div class="questionnaire__form-gov-nam">
+              <label for="gov-nam">Гос. номер<span class="questionnaire__red-point">*</span></label>
+              <input id="gov-nam" type="text" required>
+            </div>
+            <span class="questionnaire__form-nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
+            <a class="questionnaire__form-btn-prev" type="submit">Назад</a>
+            <button class="questionnaire__form-btn-next" type="submit">Отправить</button>
+            <div class="questionnaire__form-checkbox">
+              <input id="news" type="checkbox">
+              <label for="news">Я хочу получать информацию об акция и спецпредложенияхnews</label>
+
+              <input id="agreement-1" type="checkbox" checked required>
+              <label for="agreement-1">Я даю свое согласи на хранение, обработку и использование моих пресональных данных</label>
+
+              <input id="agreement-2" type="checkbox" checked required>
+              <label for="agreement-2">Я подтверждаю свое согласие на передачу информации в электронной фоме (в том числе персональных данных) по откртым каналам связи</label>
+
+            </div>
           </div>
-          <div class="questionnaire__form-mobile-phone">
-            <label for="mobile-phone">Мобильный телефон<span class="questionnaire__red-point">*</span></label>
-            <input id="mobile-phone" type="tel" required>
-          </div>
-          <div class="questionnaire__form-phone">
-            <label for="phone">Домашний телефон</label>
-            <input id="phone" type="tel">
-          </div>
-          <div class="questionnaire__form-email">
-            <label for="email">E-mail</label>
-            <input id="email" type="email">
-          </div>
-          <span class="questionnaire__nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
-          <button type="submit">Далее</button>
         </form>
         <div class="questionnaire__prompts">
           <div class="questionnaire__prompt">
@@ -271,7 +343,7 @@
             <span class="questionnaire__prompt_2">Узнайте решение через 30 минут после отправки анкеты</span>
           </div>
           <div class="questionnaire__prompt">
-            <span class="questionnaire__prompt_2">Приезжайте сразу за деньгами в случае одобрения</span>
+            <span class="questionnaire__prompt_3">Приезжайте сразу за деньгами в случае одобрения</span>
           </div>
         </div>
       </div>
