@@ -26,6 +26,7 @@
       line-height: 21px;
       font-weight: bold;
       padding-left: 10px;
+      padding-top: 15px;
     }
     ul {
       margin: 0;
@@ -97,5 +98,11 @@
       h2 {
         font-size: 24px;
       }
+  }
+  .profitable-terms__requirements {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    width: 501px;
   }
 }

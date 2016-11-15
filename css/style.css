@@ -388,7 +388,7 @@ body {
     border-radius: 50%;
     background: #fb9f18;
     cursor: pointer;
-    margin-top: -14px;
+    margin-top: -7px;
     /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
   .credit-calc__wrapper input[type=range]::-moz-range-thumb {
     border: 1px solid #fb9f18;
@@ -959,7 +959,8 @@ body {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
-    padding-left: 10px; }
+    padding-left: 10px;
+    padding-top: 15px; }
   .profitable-terms__requirements ul {
     margin: 0;
     padding: 0; }
@@ -1017,7 +1018,12 @@ body {
 
 @media (min-width: 1150px) {
   .profitable-terms__wrapper h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .profitable-terms__requirements {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    width: 501px; } }
 
 .steps__wrapper {
   width: 320px;
