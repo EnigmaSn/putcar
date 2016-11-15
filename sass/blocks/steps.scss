@@ -2,6 +2,7 @@
   @include container;
   padding-bottom: 40px;
   position: relative;
+  background-color: $white;
 
     h2 {
       font-size: 21px;
@@ -102,4 +103,33 @@
   font-size: 21px;
   padding-left: 12px;
   padding-top: 8px;
+}
+
+@media #{$desktop-widths} {
+  .steps__wrapper {
+    min-height: 305px;
+    max-height: 305px;
+      ul {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      li {
+        max-width: 150px;
+      }
+      li:nth-child(2n) {
+        margin-top: 130px;
+      }
+  }
+  .steps__line {
+    height: 1px;
+    width: 1010px;
+    border-left: none;
+    border-top: 1px dotted $orange;
+    left: 60px;
+    top: 155px;
+  }
+  .steps__num-right:after {
+    left: 0px;
+    top: 95px;
+  }
 }

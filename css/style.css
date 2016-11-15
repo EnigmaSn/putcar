@@ -1040,7 +1040,8 @@ body {
   width: 320px;
   margin: 0 auto;
   padding-bottom: 40px;
-  position: relative; }
+  position: relative;
+  background-color: #ffffff; }
   @media (min-width: 1150px) {
     .steps__wrapper {
       width: 1150px; } }
@@ -1135,6 +1136,28 @@ body {
   font-size: 21px;
   padding-left: 12px;
   padding-top: 8px; }
+
+@media (min-width: 1150px) {
+  .steps__wrapper {
+    min-height: 305px;
+    max-height: 305px; }
+    .steps__wrapper ul {
+      flex-direction: row;
+      justify-content: space-around; }
+    .steps__wrapper li {
+      max-width: 150px; }
+    .steps__wrapper li:nth-child(2n) {
+      margin-top: 130px; }
+  .steps__line {
+    height: 1px;
+    width: 1010px;
+    border-left: none;
+    border-top: 1px dotted #fb9f18;
+    left: 60px;
+    top: 155px; }
+  .steps__num-right:after {
+    left: 0px;
+    top: 95px; } }
 
 .order__wrapper {
   width: 320px;
