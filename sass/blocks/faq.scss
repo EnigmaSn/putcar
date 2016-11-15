@@ -1,6 +1,7 @@
 .faq__wrapper {
   @include container;
   padding-bottom: 40px;
+  background-color: $white;
     h2 {
       font-size: 21px;
       line-height: 30px;
@@ -110,4 +111,33 @@
     a {
       color: #1565c0;
     }
+}
+
+@media #{$desktop-widths} {
+  .faq__wrapper {
+    padding-top: 40px;
+    position: relative;
+      p {
+        max-width: 800px;
+      }
+      .questions-answers {
+        max-width: 375px;
+        @include side-margin;
+      }
+      .questions-answers:after {
+        top: -3px;
+      }
+      .questions-answers:before {
+        top: 10px;
+      }
+  }
+  .faq__questions {
+    max-width: 640px;
+    position: relative;
+  }
+  .another-question {
+    position: absolute;
+    right: 30px;
+    bottom: 140px;
+  }
 }

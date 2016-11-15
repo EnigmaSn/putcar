@@ -130,6 +130,9 @@
     max-height: 305px;
     padding-top: 30px;
     margin-bottom: 30px;
+      h2 {
+        @include side-margin;
+      }
       ul {
         flex-direction: row;
         justify-content: space-around;
