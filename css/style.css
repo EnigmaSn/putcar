@@ -954,7 +954,8 @@ body {
 .profitable-terms__requirements {
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-bottom: 20px; }
   .profitable-terms__requirements h3 {
     font-size: 16px;
     line-height: 21px;
@@ -987,12 +988,14 @@ body {
 .profitable-terms__docs {
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-bottom: 20px; }
   .profitable-terms__docs h3 {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
-    padding-left: 10px; }
+    padding-left: 10px;
+    padding-top: 15px; }
   .profitable-terms__docs ul {
     margin: 0;
     padding: 0; }
@@ -1019,7 +1022,15 @@ body {
 @media (min-width: 1150px) {
   .profitable-terms__wrapper h2 {
     font-size: 24px; }
+  .profitable-terms__requirements-all {
+    display: flex;
+    justify-content: space-between; }
   .profitable-terms__requirements {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    width: 501px; }
+  .profitable-terms__docs {
     margin-left: 0;
     margin-right: 0;
     padding-left: 40px;
