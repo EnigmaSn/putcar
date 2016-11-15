@@ -1639,13 +1639,17 @@ body {
     .questionnaire__form .questionnaire__form-inputs div {
       margin-right: 30px; }
   .questionnaire__form-personal-data {
-    position: relative; }
+    position: relative;
+    min-height: 380px; }
     .questionnaire__form-personal-data .questionnaire__form-nb {
       position: absolute;
       top: 10px;
       right: 60px;
-      max-width: 150px;
-      display: block; } }
+      max-width: 150px; }
+    .questionnaire__form-personal-data .questionnaire__form-btn-next {
+      position: absolute;
+      top: 300px;
+      right: 350px; } }
 
 .contacts__wrapper {
   width: 320px;
