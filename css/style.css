@@ -1539,16 +1539,21 @@ body {
       line-height: 30px; }
     .questionnaire__form div input {
       height: 40px; }
+    .questionnaire__form div select {
+      height: 40px; }
   .questionnaire__form button {
-    background-color: #fb9f18;
-    padding: 15px;
+    min-width: 210px;
+    max-width: 210px;
     border-radius: 50px;
+    background-color: #fb9f18;
+    border: 1px solid #ffffff;
     color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    min-width: 187px;
-    max-width: 187px;
-    align-self: center;
-    margin-bottom: 40px; }
+    font-size: 13px;
+    line-height: 21px; }
 
 .questionnaire__form-btn-next {
   min-width: 187px;
@@ -1629,13 +1634,22 @@ body {
   position: relative; }
 
 @media (min-width: 1150px) {
-  .questionnaire__form div input {
-    width: 330px; }
+  .questionnaire__form div {
+    position: relative; }
+    .questionnaire__form div input {
+      width: 330px; }
+    .questionnaire__form div select {
+      width: 330px; }
+    .questionnaire__form div button {
+      position: absolute;
+      top: 291px;
+      right: 335px; }
   .questionnaire__form .questionnaire__form-inputs {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 760px; }
+    max-width: 760px;
+    max-height: 230px; }
     .questionnaire__form .questionnaire__form-inputs div {
       margin-right: 30px; }
   .questionnaire__form-personal-data {
@@ -1649,7 +1663,27 @@ body {
     .questionnaire__form-personal-data .questionnaire__form-btn-next {
       position: absolute;
       top: 300px;
-      right: 350px; } }
+      right: 350px; }
+  .questionnaire__form-passport-data {
+    position: relative;
+    min-height: 380px; }
+    .questionnaire__form-passport-data .questionnaire__form-inputs {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-height: 150px; }
+    .questionnaire__form-passport-data .questionnaire__form-nb {
+      position: absolute;
+      top: 10px;
+      right: 60px;
+      max-width: 150px; }
+    .questionnaire__form-passport-data .questionnaire__form-btn-next {
+      position: absolute;
+      top: 300px;
+      right: 350px; }
+    .questionnaire__form-passport-data .questionnaire__form-btn-prev {
+      position: absolute;
+      top: 300px;
+      left: 0px; } }
 
 .contacts__wrapper {
   width: 320px;
