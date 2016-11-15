@@ -1,5 +1,6 @@
 .questionnaire__wrapper {
   @include container;
+  background-color: $white;
 }
 .questionnaire_header {
   background-color: $rgbl;
@@ -14,12 +15,12 @@
       padding: 0;
       padding-top: 40px;
       margin-bottom: -25px;
-      margin-left: 15px;
+      @include side-margin;
     }
     span {
       font-size: 15px;
       line-height: 54px;
-      margin-left: 15px;
+      @include side-margin;
     }
 }
 
@@ -126,4 +127,23 @@
   margin-top: 20px;
   margin-bottom: 30px;
   position: relative;
+}
+@media #{$desktop-widths} {
+  .questionnaire__form {
+
+    div {
+        input {
+          width: 330px;
+        }
+    }
+  .questionnaire__form-inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 760px;
+      div {
+        margin-right: 30px;
+      }
+  }
+  }
 }
