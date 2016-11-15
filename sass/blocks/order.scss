@@ -1,24 +1,29 @@
 .order__wrapper {
   @include container;
-  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
 }
 .order__profit {
   background-color: $rgbl;
-  background-image: url(../img/car-time-mob.png);
+  background-image: url("../img/car-time-mob.png");
   background-repeat: no-repeat;
   background-position: 15px 50px;
   min-height: 326px;
 }
 
 .order__now {
-  @include side-margin;
+  background-color: $white;
+  padding-bottom: 70px;
+
   h2 {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    @include side-margin;
   }
 
   p {
+    @include side-margin;
     font-size: 15px;
     line-height: 21px;
     padding-bottom: 35px;
@@ -26,9 +31,11 @@
   a {
     text-decoration: none;
     display: block;
+    @include side-margin;
   }
   span {
     color: #888888;
+    @include side-margin;
     font-size: 13px;
     line-height: 24px;
     margin-left: 25px;
@@ -41,6 +48,9 @@
   padding: 10px;
   text-align: center;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 21px;
 }
 
 .order__call {
@@ -52,6 +62,9 @@
   padding: 10px;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 21px;
 }
 .order__tel {
   font-size: 24px;
@@ -59,4 +72,58 @@
   font-weight: bold;
   text-align: center;
   color: $black;
+}
+
+@media #{$desktop-widths} {
+  .order__wrapper {
+    flex-direction: row-reverse;
+  }
+  .order__profit {
+    position: relative;
+    min-width: 518px;
+    min-height: 440px;
+    background-image: url(../img/time2.png);
+    background-position: -80px 30px;
+    background-size: 110%;
+  }
+  .order__profit:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 160px;
+    width: 376px;
+    background-image: url("../img/car.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 270px;;
+    left: -45px;
+  }
+  .order__now {
+    width: 100%;
+    padding-bottom: 40px;
+    h2 {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 280px;
+      padding-top: 40px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 21px;
+      max-width: 380px;
+    }
+    .order__tel {
+      text-align: left;
+    }
+  }
+  .order__btns {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .order__questionnaire {
+    max-height: 36px;
+    padding: 0;
+    padding-top: 10px;
+    min-width: 175px;
+  }
 }

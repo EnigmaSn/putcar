@@ -30,6 +30,10 @@
     li:nth-child(2n) {
       align-self: flex-end;
     }
+    .steps__num-5 {
+      position: relative;
+    }
+
 }
 
 .steps__line {
@@ -40,7 +44,22 @@
   left: 50%;
   top: 140px;
 }
-
+.steps__num-5:after {
+  content: "";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid $orange;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  left: 122px;
+  top: 50%;
+}
 .steps__num-right:after {
   content: "";
   font-size: 21px;
@@ -110,6 +129,7 @@
     min-height: 305px;
     max-height: 305px;
     padding-top: 30px;
+    margin-bottom: 30px;
       ul {
         flex-direction: row;
         justify-content: space-around;
@@ -138,8 +158,8 @@
     left: 0px;
     top: -35px;
   }
-  // .steps__num-right:last-child:after {
-  //   right: 20px;
-  //   top: 95px;
-  // }
+  .steps__num-5:after {
+    left: 90px;
+    top: 95px;
+  }
 }

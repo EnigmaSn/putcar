@@ -1024,7 +1024,8 @@ body {
     font-size: 24px; }
   .profitable-terms__requirements-all {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 30px; }
   .profitable-terms__requirements {
     margin-left: 0;
     margin-right: 0;
@@ -1066,6 +1067,8 @@ body {
     position: relative; }
   .steps__wrapper li:nth-child(2n) {
     align-self: flex-end; }
+  .steps__wrapper .steps__num-5 {
+    position: relative; }
 
 .steps__line {
   height: 400px;
@@ -1074,6 +1077,22 @@ body {
   position: absolute;
   left: 50%;
   top: 140px; }
+
+.steps__num-5:after {
+  content: "";
+  font-size: 21px;
+  padding-left: 12px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fb9f18;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 122px;
+  top: 50%; }
 
 .steps__num-right:after {
   content: "";
@@ -1141,7 +1160,8 @@ body {
   .steps__wrapper {
     min-height: 305px;
     max-height: 305px;
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin-bottom: 30px; }
     .steps__wrapper ul {
       flex-direction: row;
       justify-content: space-around; }
@@ -1162,46 +1182,70 @@ body {
     top: 95px; }
   .steps__num-left:after {
     left: 0px;
-    top: -35px; } }
+    top: -35px; }
+  .steps__num-5:after {
+    left: 90px;
+    top: 95px; } }
 
 .order__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 80px; }
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 1150px) {
     .order__wrapper {
       width: 1150px; } }
 
 .order__profit {
   background-color: #00919b;
-  background-image: url(../img/car-time-mob.png);
+  background-image: url("../img/car-time-mob.png");
   background-repeat: no-repeat;
   background-position: 15px 50px;
   min-height: 326px; }
 
 .order__now {
-  margin-left: 15px;
-  margin-right: 15px; }
-  @media (min-width: 1150px) {
-    .order__now {
-      margin-left: 50px;
-      margin-right: 50px; } }
+  background-color: #ffffff;
+  padding-bottom: 70px; }
   .order__now h2 {
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px; }
+    @media (min-width: 1150px) {
+      .order__now h2 {
+        margin-left: 50px;
+        margin-right: 50px; } }
   .order__now p {
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 15px;
     line-height: 21px;
     padding-bottom: 35px; }
+    @media (min-width: 1150px) {
+      .order__now p {
+        margin-left: 50px;
+        margin-right: 50px; } }
   .order__now a {
     text-decoration: none;
-    display: block; }
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px; }
+    @media (min-width: 1150px) {
+      .order__now a {
+        margin-left: 50px;
+        margin-right: 50px; } }
   .order__now span {
     color: #888888;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 13px;
     line-height: 24px;
     margin-left: 25px; }
+    @media (min-width: 1150px) {
+      .order__now span {
+        margin-left: 50px;
+        margin-right: 50px; } }
 
 .order__questionnaire {
   color: #ffffff;
@@ -1209,7 +1253,10 @@ body {
   background-color: #fb9f18;
   padding: 10px;
   text-align: center;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 21px; }
 
 .order__call {
   color: #ffffff;
@@ -1219,7 +1266,10 @@ body {
   color: #fb9f18;
   padding: 10px;
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 21px; }
 
 .order__tel {
   font-size: 24px;
@@ -1227,6 +1277,50 @@ body {
   font-weight: bold;
   text-align: center;
   color: #000000; }
+
+@media (min-width: 1150px) {
+  .order__wrapper {
+    flex-direction: row-reverse; }
+  .order__profit {
+    position: relative;
+    min-width: 518px;
+    min-height: 440px;
+    background-image: url(../img/time2.png);
+    background-position: -80px 30px;
+    background-size: 110%; }
+  .order__profit:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 160px;
+    width: 376px;
+    background-image: url("../img/car.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 270px;
+    left: -45px; }
+  .order__now {
+    width: 100%;
+    padding-bottom: 40px; }
+    .order__now h2 {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 280px;
+      padding-top: 40px; }
+    .order__now p {
+      font-size: 18px;
+      line-height: 21px;
+      max-width: 380px; }
+    .order__now .order__tel {
+      text-align: left; }
+  .order__btns {
+    display: flex;
+    justify-content: flex-start; }
+  .order__questionnaire {
+    max-height: 36px;
+    padding: 0;
+    padding-top: 10px;
+    min-width: 175px; } }
 
 .faq__wrapper {
   width: 320px;
