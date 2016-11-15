@@ -1651,7 +1651,7 @@ body {
     max-width: 760px;
     max-height: 230px; }
     .questionnaire__form .questionnaire__form-inputs div {
-      margin-right: 30px; }
+      margin-right: 45px; }
   .questionnaire__form-personal-data {
     position: relative;
     min-height: 380px; }
@@ -1663,7 +1663,7 @@ body {
     .questionnaire__form-personal-data .questionnaire__form-btn-next {
       position: absolute;
       top: 300px;
-      right: 350px; }
+      right: 335px; }
   .questionnaire__form-passport-data {
     position: relative;
     min-height: 380px; }
@@ -1679,7 +1679,7 @@ body {
     .questionnaire__form-passport-data .questionnaire__form-btn-next {
       position: absolute;
       top: 300px;
-      right: 350px; }
+      right: 335px; }
     .questionnaire__form-passport-data .questionnaire__form-btn-prev {
       position: absolute;
       top: 300px;
