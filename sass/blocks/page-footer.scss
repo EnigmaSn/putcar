@@ -1,6 +1,6 @@
 .page-footer {
   background-color: #29292a;
-  min-width: 489px;
+  min-height: 489px;
 }
 .page-footer__wrapper {
   @include container;
@@ -54,4 +54,53 @@
       color: #484848;
       text-decoration: underline;
     }
+}
+
+@media #{$desktop-widths} {
+  .page-footer {
+    min-height: 265px;
+  }
+  .page-footer__wrapper {
+    position: relative;
+  }
+  .page-footer__logo {
+    a {
+      position: absolute;
+      right: 50px;
+      bottom: -50px;
+    }
+  }
+  .page-footer__menu {
+    position: absolute;
+    top: -30px;
+    left: 450px;
+    li {
+      max-width: none;
+    }
+      ul {
+        max-height: 215px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+      }
+      li:first-child {
+        position: absolute;
+        left: 250px;
+        max-width: none;
+        width: 500px;
+      }
+  }
+  .page-footer__about {
+    span:nth-child(1) {
+      position: absolute;
+      left: 20px;
+      bottom: -120px;
+    }
+    span:nth-child(2) {
+      position: absolute;
+      right: 50px;
+      bottom: -85px;
+    }
+  }
 }

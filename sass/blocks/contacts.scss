@@ -75,8 +75,25 @@
   .contacts__wrapper {
     display: flex;
     flex-direction: row;
+      h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+      p {
+        margin-bottom: 45px;
+      }
+      .contacts__message {
+        font-size: 18px;
+        line-height: 21px;
+      }
   }
   .contacts__info {
-    width: 520px;
+    min-width: 520px;
+    max-width: 520px;
+    position: relative;
+      .contacts__phone {
+        position: absolute;
+        left: 230px;
+      }
   }
 }
