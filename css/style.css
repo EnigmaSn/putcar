@@ -1553,7 +1553,9 @@ body {
     margin-bottom: 40px;
     text-transform: uppercase;
     font-size: 13px;
-    line-height: 21px; }
+    line-height: 21px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .questionnaire__form-btn-next {
   min-width: 187px;
@@ -1568,7 +1570,10 @@ body {
   margin-bottom: 40px;
   text-transform: uppercase;
   font-size: 13px;
-  line-height: 21px; }
+  line-height: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px; }
 
 .questionnaire__form-btn-prev {
   min-width: 187px;
@@ -1583,7 +1588,9 @@ body {
   margin-bottom: 40px;
   text-transform: uppercase;
   font-size: 13px;
-  line-height: 21px; }
+  line-height: 21px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .questionnaire__form-nb {
   margin-top: 20px;
@@ -1627,6 +1634,18 @@ body {
     width: 19px;
     height: 28px;
     background-position: -873px -10px; }
+
+.questionnaire__form-checkbox-item {
+  position: relative; }
+  .questionnaire__form-checkbox-item label {
+    padding-left: 40px;
+    color: #888888;
+    font-size: 13px;
+    line-height: 21px; }
+  .questionnaire__form-checkbox-item input {
+    position: absolute;
+    left: 10px;
+    top: -5px; }
 
 .questionnaire__prompt {
   margin-top: 20px;
@@ -1683,7 +1702,34 @@ body {
     .questionnaire__form-passport-data .questionnaire__form-btn-prev {
       position: absolute;
       top: 300px;
-      left: 0px; } }
+      left: 0px; }
+  .questionnaire__form-auto-data {
+    min-height: 380px; }
+    .questionnaire__form-auto-data .questionnaire__form-nb {
+      position: absolute;
+      top: 10px;
+      right: 60px;
+      max-width: 150px; }
+    .questionnaire__form-auto-data .questionnaire__form-checkbox {
+      display: flex;
+      flex-direction: row; }
+    .questionnaire__form-auto-data .questionnaire__form-checkbox-item {
+      position: relative;
+      max-width: 390px; }
+      .questionnaire__form-auto-data .questionnaire__form-checkbox-item label {
+        padding-left: 50px;
+        margin-bottom: 15px; }
+      .questionnaire__form-auto-data .questionnaire__form-checkbox-item input {
+        position: absolute;
+        left: 20px;
+        top: 8px;
+        width: 15px;
+        height: 15px; }
+  .questionnaire__prompts {
+    flex-direction: row;
+    justify-content: space-between; }
+    .questionnaire__prompts .questionnaire__prompt {
+      max-width: 265px; } }
 
 .contacts__wrapper {
   width: 320px;
