@@ -279,11 +279,11 @@ body {
   .page-footer__logo a {
     position: absolute;
     right: 50px;
-    bottom: -50px; }
+    bottom: -90px; }
   .page-footer__menu {
     position: absolute;
     top: -30px;
-    left: 450px; }
+    left: 380px; }
     .page-footer__menu li {
       max-width: none; }
     .page-footer__menu ul {
@@ -304,7 +304,7 @@ body {
   .page-footer__about span:nth-child(2) {
     position: absolute;
     right: 50px;
-    bottom: -85px; } }
+    bottom: -125px; } }
 
 .profit__wrapper {
   width: 320px;
