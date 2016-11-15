@@ -109,6 +109,7 @@
   .steps__wrapper {
     min-height: 305px;
     max-height: 305px;
+    padding-top: 30px;
       ul {
         flex-direction: row;
         justify-content: space-around;
@@ -117,6 +118,7 @@
         max-width: 150px;
       }
       li:nth-child(2n) {
+        align-self: flex-start;
         margin-top: 130px;
       }
   }
@@ -126,10 +128,18 @@
     border-left: none;
     border-top: 1px dotted $orange;
     left: 60px;
-    top: 155px;
+    top: 205px;
   }
   .steps__num-right:after {
     left: 0px;
     top: 95px;
   }
+  .steps__num-left:after {
+    left: 0px;
+    top: -35px;
+  }
+  // .steps__num-right:last-child:after {
+  //   right: 20px;
+  //   top: 95px;
+  // }
 }

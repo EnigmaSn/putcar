@@ -1140,13 +1140,15 @@ body {
 @media (min-width: 1150px) {
   .steps__wrapper {
     min-height: 305px;
-    max-height: 305px; }
+    max-height: 305px;
+    padding-top: 30px; }
     .steps__wrapper ul {
       flex-direction: row;
       justify-content: space-around; }
     .steps__wrapper li {
       max-width: 150px; }
     .steps__wrapper li:nth-child(2n) {
+      align-self: flex-start;
       margin-top: 130px; }
   .steps__line {
     height: 1px;
@@ -1154,10 +1156,13 @@ body {
     border-left: none;
     border-top: 1px dotted #fb9f18;
     left: 60px;
-    top: 155px; }
+    top: 205px; }
   .steps__num-right:after {
     left: 0px;
-    top: 95px; } }
+    top: 95px; }
+  .steps__num-left:after {
+    left: 0px;
+    top: -35px; } }
 
 .order__wrapper {
   width: 320px;
