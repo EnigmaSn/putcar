@@ -51,6 +51,34 @@
     }
 }
 
+.questionnaire__form-btn-next {
+  background-color: $orange;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 50px;
+  color: $white;
+  text-transform: uppercase;
+  min-width: 187px;
+  max-width: 187px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+.questionnaire__form-btn-prev {
+  background-color: $white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 1px solid $orange;
+  border-radius: 50px;
+  color: $orange;
+  text-transform: uppercase;
+  min-width: 187px;
+  max-width: 187px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
 .questionnaire__form-nb {
   margin-top: 20px;
   margin-bottom: 40px;

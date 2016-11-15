@@ -20,8 +20,8 @@
   min-width: 176px;
   min-height: 45px;
   // background-image: url("../img/logo-black.png");
-  background-repeat: no-repeat;
-  background-position: 30px 15px;
+  // background-repeat: no-repeat;
+  // background-position: 30px 15px;
 }
 
 .page-header__menu {
@@ -148,7 +148,9 @@
   color: $black;
   font-weight: bold;
   padding-left: 70px;
-
+}
+.page-header__call-back {
+  display: none;
 }
 .page-header__phone-but {
   background-color: $orange;
@@ -166,5 +168,64 @@
   margin-left: 70px;
 }
 @media #{$desktop-widths} {
-
+  .page-header {
+    min-height: 120px;
+  }
+  .page-header__wrapper {
+    background-position: 30px 30px;
+    position: relative;
+  }
+  .page-header__logo {
+    min-height: 60px;
+  }
+  .page-header__menu--close {
+    display: none;
+  }
+  .page-header__menu--open {
+    display: flex;
+    position: relative;
+      p {
+        display: none;
+      }
+      .page-header__menu-close {
+        display: none;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        flex-direction: row;
+        margin-top: -30px;
+          a {
+             margin-left: 30px;
+          }
+      }
+      .page-header__phone-number {
+        margin-top: -75px;
+        margin-left: 60px;
+      }
+      .page-header__phone-but  {
+        display: none;
+      }
+  }
+  .page-header__call-back {
+    display: flex;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    background-color: $orange;
+    color: $white;
+    font-size: 13px;
+    max-width: 175px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
