@@ -1489,7 +1489,8 @@ body {
 .questionnaire__wrapper {
   width: 320px;
   margin: 0 auto;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-bottom: 30px; }
   @media (min-width: 1150px) {
     .questionnaire__wrapper {
       width: 1150px; } }
@@ -1733,7 +1734,8 @@ body {
 
 .contacts__wrapper {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #ffffff; }
   @media (min-width: 1150px) {
     .contacts__wrapper {
       width: 1150px; } }
@@ -1838,3 +1840,10 @@ body {
   .contacts__write-us a {
     margin: 0;
     color: #1565c0; }
+
+@media (min-width: 1150px) {
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: row; }
+  .contacts__info {
+    width: 520px; } }

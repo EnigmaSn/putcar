@@ -1,5 +1,6 @@
 .contacts__wrapper {
   @include container;
+  background-color: $white;
 
   h2 {
     font-size: 21px;
@@ -68,4 +69,14 @@
       margin: 0;
       color: #1565c0;
     }
+}
+
+@media #{$desktop-widths} {
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .contacts__info {
+    width: 520px;
+  }
 }

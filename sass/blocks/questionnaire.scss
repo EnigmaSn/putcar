@@ -1,6 +1,7 @@
 .questionnaire__wrapper {
   @include container;
   background-color: $white;
+  margin-bottom: 30px;
 }
 .questionnaire_header {
   background-color: $rgbl;
