@@ -1,5 +1,6 @@
 .credit-calc__wrapper {
   @include container;
+  background-color: $white;
 
   h2 {
     font-size: 21px;
@@ -189,7 +190,7 @@
       font-size: 13px;
       line-height: 21px;
       margin-top: 30px;
-      margin-bottom: 30px;
+      // padding-bottom: 30px;
     }
 }
 
@@ -261,9 +262,14 @@
 
       .credit-calc__results-numbers {
         color: $white;
+        font-size: 24px;
+        line-height: 21px;
+        font-weight: bold;
       }
       .credit-calc__results-description {
         color: $white;
+        font-size: 13px;
+        line-height: 21px;
       }
       .credit-calc__results-about {
         color: rgba(255,255,255,0.5);
@@ -280,9 +286,14 @@
     max-width: 45%;
     .credit-calc__results-numbers {
       color: $white;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 21px;
     }
     .credit-calc__results-description {
       color: $white;
+      font-size: 13px;
+      line-height: 21px;
     }
     .credit-calc__results-about {
       color: rgba(255,255,255,0.5);
@@ -324,19 +335,25 @@
     margin-top: 30px;
   }
   .credit-calc__inputs {
-    width: 35%
+    width: 35%;
+    padding-bottom: 30px;
   }
   .credit-calc__results {
     width: 65%;
     margin-top: 0;
-  }
-  .credit-calc__results {
     background-image: url("../img/car1.png");
     background-position: 140px 200px;
+
+      .credit-calc__results-middle {
+        padding-top: 40px;
+        padding-left: 30px;
+      }
   }
   .credit-calc__results-total-sum {
-    margin-left: 27%;
-    margin-top: 95px;
+    // margin-left: 27%;
+    padding-top: 30px;
+      .credit-calc__results-sum {
+        width: auto;
+      }
   }
-
 }

@@ -1,5 +1,5 @@
 .page-header {
-  min-height: 63px;
+  // min-height: 63px;
 }
 .page-header__wrapper {
   @include container;
@@ -7,6 +7,7 @@
   background-image: url("../img/logo-black.png");
   background-repeat: no-repeat;
   background-position: 30px 15px;
+  min-height: 63px;
 }
 .page-header__wrapper-show-menu {
   background-color: $rgbl;
@@ -168,12 +169,10 @@
   margin-left: 70px;
 }
 @media #{$desktop-widths} {
-  .page-header {
-    min-height: 120px;
-  }
   .page-header__wrapper {
     background-position: 30px 30px;
     position: relative;
+    min-height: 120px;
   }
   .page-header__logo {
     min-height: 60px;

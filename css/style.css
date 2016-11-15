@@ -4,7 +4,8 @@ body {
   color: #000000;
   width: 100%;
   margin: 0;
-  color: #2d2d2d; }
+  color: #2d2d2d;
+  background-color: #f5f5f5; }
 
 @font-face {
   font-family: "opensans";
@@ -14,16 +15,14 @@ body {
   font-family: "opensansbold";
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
 
-.page-header {
-  min-height: 63px; }
-
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
   background-image: url("../img/logo-black.png");
   background-repeat: no-repeat;
-  background-position: 30px 15px; }
+  background-position: 30px 15px;
+  min-height: 63px; }
   @media (min-width: 1150px) {
     .page-header__wrapper {
       width: 1150px; } }
@@ -171,11 +170,10 @@ body {
   margin-left: 70px; }
 
 @media (min-width: 1150px) {
-  .page-header {
-    min-height: 120px; }
   .page-header__wrapper {
     background-position: 30px 30px;
-    position: relative; }
+    position: relative;
+    min-height: 120px; }
   .page-header__logo {
     min-height: 60px; }
   .page-header__menu--close {
@@ -338,6 +336,7 @@ body {
 .credit-calc__wrapper {
   width: 320px;
   margin: 0 auto;
+  background-color: #ffffff;
   /* All the same stuff for Firefox */
   /* All the same stuff for IE */ }
   @media (min-width: 1150px) {
@@ -496,8 +495,7 @@ body {
     color: #888888;
     font-size: 13px;
     line-height: 21px;
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 30px; }
 
 .credit-calc__days-range-controls {
   position: relative;
@@ -561,9 +559,14 @@ body {
     max-width: 45%;
     margin-left: 30px; }
     .credit-calc__results .credit-calc__results-monthly-payment .credit-calc__results-numbers {
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 21px;
+      font-weight: bold; }
     .credit-calc__results .credit-calc__results-monthly-payment .credit-calc__results-description {
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 13px;
+      line-height: 21px; }
     .credit-calc__results .credit-calc__results-monthly-payment .credit-calc__results-about {
       color: rgba(255, 255, 255, 0.5); }
   .credit-calc__results .credit-calc__results-about {
@@ -575,9 +578,14 @@ body {
     min-width: 45%;
     max-width: 45%; }
     .credit-calc__results .credit-calc__results-rate .credit-calc__results-numbers {
-      color: #ffffff; }
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 21px; }
     .credit-calc__results .credit-calc__results-rate .credit-calc__results-description {
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 13px;
+      line-height: 21px; }
     .credit-calc__results .credit-calc__results-rate .credit-calc__results-about {
       color: rgba(255, 255, 255, 0.5); }
   .credit-calc__results .credit-calc__results-total-sum {
@@ -608,16 +616,20 @@ body {
     margin-bottom: 30px;
     margin-top: 30px; }
   .credit-calc__inputs {
-    width: 35%; }
+    width: 35%;
+    padding-bottom: 30px; }
   .credit-calc__results {
     width: 65%;
-    margin-top: 0; }
-  .credit-calc__results {
+    margin-top: 0;
     background-image: url("../img/car1.png");
     background-position: 140px 200px; }
+    .credit-calc__results .credit-calc__results-middle {
+      padding-top: 40px;
+      padding-left: 30px; }
   .credit-calc__results-total-sum {
-    margin-left: 27%;
-    margin-top: 95px; } }
+    padding-top: 30px; }
+    .credit-calc__results-total-sum .credit-calc__results-sum {
+      width: auto; } }
 
 .advantages h2 {
   font-size: 21px;
@@ -772,10 +784,80 @@ body {
 
 .advantages__wrapper {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #ffffff; }
   @media (min-width: 1150px) {
     .advantages__wrapper {
       width: 1150px; } }
+
+@media (min-width: 1150px) {
+  .advantages__wrapper {
+    padding-bottom: 40px; }
+    .advantages__wrapper h2 {
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px; } }
+    @media (min-width: 1150px) and (min-width: 1150px) {
+      .advantages__wrapper h2 {
+        padding-left: 50px;
+        padding-right: 50px; } }
+
+@media (min-width: 1150px) {
+    .advantages__wrapper ul {
+      padding-left: 15px;
+      padding-right: 15px; } }
+    @media (min-width: 1150px) and (min-width: 1150px) {
+      .advantages__wrapper ul {
+        padding-left: 50px;
+        padding-right: 50px; } }
+
+@media (min-width: 1150px) {
+    .advantages__wrapper ul:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 1000px;
+      background-color: #e8e8e8;
+      position: absolute;
+      left: 60px;
+      top: 56%; }
+    .advantages__wrapper li {
+      max-width: 180px;
+      padding-right: 30px;
+      padding-left: 30px; }
+    .advantages__wrapper .advantages__item-line:after {
+      height: 0;
+      width: 0; }
+    .advantages__wrapper .advantages__item-second-line:after {
+      content: "";
+      display: block;
+      height: 350px;
+      width: 1px;
+      background-color: #e8e8e8;
+      position: absolute;
+      left: 180px;
+      bottom: 0px;
+      box-sizing: border-box; }
+    .advantages__wrapper .advantages__item-fird-line:after {
+      content: "";
+      display: block;
+      height: 350px;
+      width: 2px;
+      background-color: #e8e8e8;
+      position: absolute;
+      left: 250px;
+      bottom: 0px;
+      box-sizing: border-box; }
+    .advantages__wrapper .advantages__item-fourth-line:after {
+      content: "";
+      display: block;
+      height: 350px;
+      width: 2px;
+      background-color: #e8e8e8;
+      position: absolute;
+      left: 250px;
+      bottom: 0px;
+      box-sizing: border-box; } }
 
 .reviews__wrapper {
   width: 320px;
