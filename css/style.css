@@ -975,6 +975,69 @@ body {
         margin-left: 50px;
         margin-right: 50px; } }
 
+.reviews__slider {
+  position: relative;
+  max-height: 400px;
+  min-height: 400px; }
+
+.reviews__slider .slick-prev {
+  position: absolute;
+  left: 70px;
+  bottom: 100px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  width: 7px;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid #fb9f18;
+  border-radius: 50%;
+  background-image: url("../img/spritesheet.png");
+  background-position: -511px -5px;
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+
+.reviews__slider .slick-next {
+  position: absolute;
+  right: 70px;
+  bottom: 100px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  width: 7px;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid #fb9f18;
+  border-radius: 50%;
+  background-image: url("../img/spritesheet.png");
+  background-position: -564px -5px;
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+
+.reviews__slider .slick-dots {
+  display: inline;
+  position: absolute;
+  bottom: -10px;
+  left: 90px; }
+  .reviews__slider .slick-dots li {
+    display: inline; }
+    .reviews__slider .slick-dots li button {
+      font-size: 0;
+      border: 0;
+      cursor: pointer;
+      max-width: 1px !important;
+      height: 3px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      margin-left: 5px;
+      outline: none; }
+    .reviews__slider .slick-dots li button:focus,
+    .reviews__slider .slick-dots li button:hover {
+      background-color: #00919b;
+      outline: none; }
+
 .reviews__slide p {
   font-size: 13px;
   line-height: 18px;
@@ -989,24 +1052,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.reviews__slide .reviews__slider {
-  position: relative; }
-
-.reviews__slide .reviews__slider .slick-prev {
-  position: absolute;
-  left: 70px;
-  top: 120px; }
-
-.reviews__slide .reviews__slider .slick-next {
-  position: absolute;
-  right: 70px;
-  top: 120px;
-  position: absolute;
-  font-size: 0;
-  border: 0;
-  cursor: pointer;
-  background-color: transparent; }
 
 .reviews__slide img {
   display: block;
@@ -1685,6 +1730,10 @@ body {
       outline-color: #fb9f18; }
     .questionnaire__form div select {
       height: 40px; }
+  .questionnaire__form > div {
+    display: none; }
+  .questionnaire__form > div.active {
+    display: block; }
   .questionnaire__form button {
     min-width: 210px;
     max-width: 210px;

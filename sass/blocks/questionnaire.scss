@@ -49,6 +49,12 @@
           height: 40px;
         }
     }
+    >div {
+      display: none;
+    }
+    >div.active {
+      display: block;
+    }
     button {
       // background-color: $orange;
       // padding: 15px;

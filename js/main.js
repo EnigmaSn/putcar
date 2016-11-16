@@ -42,7 +42,7 @@ var menu_close = $(".page-header__menu-close");
 
 // Слайдер
 $('.reviews__slider').slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
@@ -50,11 +50,8 @@ $('.reviews__slider').slick({
   arrows: true
 });
 
-$('.questionnaire__form').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  arrows: false
+$('.questionnaire__form-btn-next').click(function(event) {
+  $(this).parent().removeClass("active").next().addClass("active");
+  return false;
+
 });
