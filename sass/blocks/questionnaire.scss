@@ -3,9 +3,12 @@
   background-color: $white;
   margin-bottom: 30px;
 }
-.questionnaire_header {
+.questionnaire__header {
   background-color: $rgbl;
   color: $white;
+    .questionnaire__menu {
+      display: none;
+    }
     h2 {
       font-size: 21px;
       line-height: 54px;
@@ -208,6 +211,27 @@
   position: relative;
 }
 @media #{$desktop-widths} {
+  .questionnaire__header {
+    .questionnaire__menu {
+      @include side-margin;
+      border-bottom: 3px solid $orange;
+      display: flex;
+      justify-content: space-around;;
+        a {
+          text-transform: uppercase;
+          color: rgba(255,255,255,0.5);
+          text-decoration: none;
+          font-size: 13px;
+          line-height: 21px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+        a:focus,
+        a:hover {
+          color: rgba(255,255,255,1);
+        }
+    }
+  }
   .questionnaire__form {
 
     div {
@@ -273,12 +297,12 @@
       }
       .questionnaire__form-btn-prev {
         position: absolute;
-        top: 300px;
+        top: 270px;
         left: 0px;
       }
   }
   .questionnaire__form-auto-data {
-    min-height: 380px;
+    min-height: 460px;
       .questionnaire__form-nb {
         position: absolute;
         top: 10px;
@@ -287,24 +311,53 @@
       }
       .questionnaire__form-checkbox {
         display: flex;
-        flex-direction: row;
-        // max-height: 130px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 150px;
+        position: relative;
       }
       .questionnaire__form-checkbox-item {
         position: relative;
-        max-width: 390px;
+        max-width: 335px;
           label {
-            padding-left: 50px;
+            padding-left: 25px;
             margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 21px;
           }
           input {
             position: absolute;
-            left: 20px;
-            top: 8px;
+            left: 0px;
+            top: 5px;
             width: 15px;
             height: 15px;
           }
       }
+      .questionnaire__form-checkbox-item:first-child {
+        position: absolute;
+        top: 15px;
+      }
+      .questionnaire__form-checkbox-item:nth-child(2) {
+        position: absolute;
+        top: -40px;
+        left: 380px;
+      }
+      .questionnaire__form-checkbox-item:nth-child(3) {
+        position: absolute;
+        top: 30px;
+        left: 380px;
+      }
+      .questionnaire__form-btn-next {
+        position: absolute;
+        top: 400px;
+        right: 335px;
+      }
+      .questionnaire__form-btn-prev {
+        position: absolute;
+        top: 370px;
+        left: 0px;
+      }
+
   }
   .questionnaire__prompts {
     flex-direction: row;

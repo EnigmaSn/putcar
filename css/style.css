@@ -1530,10 +1530,12 @@ body {
     .questionnaire__wrapper {
       width: 1150px; } }
 
-.questionnaire_header {
+.questionnaire__header {
   background-color: #00919b;
   color: #ffffff; }
-  .questionnaire_header h2 {
+  .questionnaire__header .questionnaire__menu {
+    display: none; }
+  .questionnaire__header h2 {
     font-size: 21px;
     line-height: 54px;
     text-transform: uppercase;
@@ -1545,16 +1547,16 @@ body {
     margin-left: 15px;
     margin-right: 15px; }
     @media (min-width: 1150px) {
-      .questionnaire_header h2 {
+      .questionnaire__header h2 {
         margin-left: 50px;
         margin-right: 50px; } }
-  .questionnaire_header span {
+  .questionnaire__header span {
     font-size: 15px;
     line-height: 54px;
     margin-left: 15px;
     margin-right: 15px; }
     @media (min-width: 1150px) {
-      .questionnaire_header span {
+      .questionnaire__header span {
         margin-left: 50px;
         margin-right: 50px; } }
 
@@ -1689,6 +1691,29 @@ body {
   position: relative; }
 
 @media (min-width: 1150px) {
+  .questionnaire__header .questionnaire__menu {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 3px solid #fb9f18;
+    display: flex;
+    justify-content: space-around; } }
+  @media (min-width: 1150px) and (min-width: 1150px) {
+    .questionnaire__header .questionnaire__menu {
+      margin-left: 50px;
+      margin-right: 50px; } }
+
+@media (min-width: 1150px) {
+    .questionnaire__header .questionnaire__menu a {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: bold;
+      padding-bottom: 10px; }
+    .questionnaire__header .questionnaire__menu a:focus,
+    .questionnaire__header .questionnaire__menu a:hover {
+      color: white; }
   .questionnaire__form div {
     position: relative; }
     .questionnaire__form div input {
@@ -1737,10 +1762,10 @@ body {
       right: 335px; }
     .questionnaire__form-passport-data .questionnaire__form-btn-prev {
       position: absolute;
-      top: 300px;
+      top: 270px;
       left: 0px; }
   .questionnaire__form-auto-data {
-    min-height: 380px; }
+    min-height: 460px; }
     .questionnaire__form-auto-data .questionnaire__form-nb {
       position: absolute;
       top: 10px;
@@ -1748,19 +1773,43 @@ body {
       max-width: 150px; }
     .questionnaire__form-auto-data .questionnaire__form-checkbox {
       display: flex;
-      flex-direction: row; }
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 150px;
+      position: relative; }
     .questionnaire__form-auto-data .questionnaire__form-checkbox-item {
       position: relative;
-      max-width: 390px; }
+      max-width: 335px; }
       .questionnaire__form-auto-data .questionnaire__form-checkbox-item label {
-        padding-left: 50px;
-        margin-bottom: 15px; }
+        padding-left: 25px;
+        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 21px; }
       .questionnaire__form-auto-data .questionnaire__form-checkbox-item input {
         position: absolute;
-        left: 20px;
-        top: 8px;
+        left: 0px;
+        top: 5px;
         width: 15px;
         height: 15px; }
+    .questionnaire__form-auto-data .questionnaire__form-checkbox-item:first-child {
+      position: absolute;
+      top: 15px; }
+    .questionnaire__form-auto-data .questionnaire__form-checkbox-item:nth-child(2) {
+      position: absolute;
+      top: -40px;
+      left: 380px; }
+    .questionnaire__form-auto-data .questionnaire__form-checkbox-item:nth-child(3) {
+      position: absolute;
+      top: 30px;
+      left: 380px; }
+    .questionnaire__form-auto-data .questionnaire__form-btn-next {
+      position: absolute;
+      top: 400px;
+      right: 335px; }
+    .questionnaire__form-auto-data .questionnaire__form-btn-prev {
+      position: absolute;
+      top: 370px;
+      left: 0px; }
   .questionnaire__prompts {
     flex-direction: row;
     justify-content: space-between; }
