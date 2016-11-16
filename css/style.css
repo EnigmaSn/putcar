@@ -1980,7 +1980,8 @@ body {
 @media (min-width: 1150px) {
   .contacts__wrapper {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
     .contacts__wrapper h2 {
       margin-top: 40px;
       margin-bottom: 30px; }
@@ -1988,11 +1989,17 @@ body {
       margin-bottom: 45px; }
     .contacts__wrapper .contacts__message {
       font-size: 18px;
-      line-height: 21px; }
+      line-height: 21px;
+      min-width: 100%; }
+    .contacts__wrapper .contacts__write-us {
+      min-width: 100%; }
   .contacts__info {
     min-width: 520px;
     max-width: 520px;
     position: relative; }
     .contacts__info .contacts__phone {
       position: absolute;
-      left: 230px; } }
+      left: 280px; }
+  .contacts__map img {
+    width: 100%;
+    height: 100%; } }
