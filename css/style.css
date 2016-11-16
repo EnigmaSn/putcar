@@ -1535,6 +1535,8 @@ body {
     line-height: 21px; }
   .another-question a {
     color: #1565c0; }
+  .another-question a:hover {
+    color: #00919b; }
 
 @media (min-width: 1150px) {
   .faq__wrapper {
@@ -1968,6 +1970,12 @@ body {
   .contacts__write-us a {
     margin: 0;
     color: #1565c0; }
+
+.contacts__e-mail {
+  color: #1565c0; }
+
+.contacts__e-mail:hover {
+  color: #00919b; }
 
 @media (min-width: 1150px) {
   .contacts__wrapper {

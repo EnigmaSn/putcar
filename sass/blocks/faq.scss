@@ -111,6 +111,9 @@
     a {
       color: #1565c0;
     }
+    a:hover {
+      color: $rgbl;
+    }
 }
 
 @media #{$desktop-widths} {

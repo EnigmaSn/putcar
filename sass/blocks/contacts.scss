@@ -70,6 +70,12 @@
       color: #1565c0;
     }
 }
+.contacts__e-mail {
+  color: #1565c0;
+}
+.contacts__e-mail:hover {
+  color: $rgbl;
+}
 
 @media #{$desktop-widths} {
   .contacts__wrapper {
