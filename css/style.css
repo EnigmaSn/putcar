@@ -72,6 +72,8 @@ body {
       text-decoration: none;
       color: #fb9f18;
       padding-bottom: 30px; }
+    .page-header__menu--open li a:hover {
+      color: #00919b; }
     .page-header__menu--open li a:last-child {
       padding-bottom: 0; }
   .page-header__menu--open button {
@@ -925,10 +927,47 @@ body {
       margin-left: 50px;
       margin-right: 50px; } }
 
-.reviews__slide .author-info {
+.reviews__slide .author__info {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+
+.reviews__slide .reviews__slide-prev {
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid #fb9f18;
+  border-radius: 50%;
+  left: 70px;
+  top: 30px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -511px -5px;
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+
+.reviews__slide .reviews__slide-prev:hover {
+  border: 1px solid #00919b;
+  background-position: -538px -5px; }
+
+.reviews__slide .reviews__slide-next {
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid #fb9f18;
+  border-radius: 50%;
+  right: 70px;
+  top: 30px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -564px -5px;
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+
+.reviews__slide .reviews__slide-next:hover {
+  border: 1px solid #00919b;
+  background-position: -591px -5px; }
 
 .reviews__slide img {
   display: block;
@@ -954,8 +993,12 @@ body {
       width: 664px;
       font-size: 15px;
       line-height: 21px; }
-    .reviews__slide .author-info {
-      margin-left: 150px; } }
+    .reviews__slide .author__info {
+      margin-left: 150px; }
+    .reviews__slide .reviews__slide-prev {
+      left: -30px; }
+    .reviews__slide .reviews__slide-next {
+      right: -30px; } }
 
 .profitable-terms__wrapper {
   width: 320px;
@@ -1734,7 +1777,8 @@ body {
       margin-right: 45px; }
   .questionnaire__form-personal-data {
     position: relative;
-    min-height: 380px; }
+    min-height: 380px;
+    padding-top: 30px; }
     .questionnaire__form-personal-data .questionnaire__form-nb {
       position: absolute;
       top: 10px;
@@ -1742,7 +1786,7 @@ body {
       max-width: 150px; }
     .questionnaire__form-personal-data .questionnaire__form-btn-next {
       position: absolute;
-      top: 300px;
+      top: 330px;
       right: 335px; }
   .questionnaire__form-passport-data {
     position: relative;

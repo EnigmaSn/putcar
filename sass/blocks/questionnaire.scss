@@ -262,6 +262,7 @@
   .questionnaire__form-personal-data {
     position: relative;
     min-height: 380px;
+    padding-top: 30px;
 
       .questionnaire__form-nb {
         position: absolute;
@@ -271,7 +272,7 @@
       }
       .questionnaire__form-btn-next {
         position: absolute;
-        top: 300px;
+        top: 330px;
         right: 335px;
       }
   }
