@@ -40,6 +40,7 @@
   .reviews__slide-prev:hover {
     border: 1px solid $rgbl;
     background-position: -538px -5px;
+    transition: border 0.2s ease-in-out 0s;
   }
 
   .reviews__slide-next {
@@ -59,6 +60,7 @@
   .reviews__slide-next:hover {
     border: 1px solid $rgbl;
     background-position: -591px -5px;
+    transition: border 0.2s ease-in-out 0s;
   }
   img {
     display: block;

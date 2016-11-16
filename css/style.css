@@ -73,7 +73,8 @@ body {
       color: #fb9f18;
       padding-bottom: 30px; }
     .page-header__menu--open li a:hover {
-      color: #00919b; }
+      color: #00919b;
+      transition: color 0.2s ease-in-out 0s; }
     .page-header__menu--open li a:last-child {
       padding-bottom: 0; }
   .page-header__menu--open button {
@@ -112,7 +113,8 @@ body {
   height: 36px;
   border: 1px solid #fdd9a3;
   top: -35px;
-  right: 60px; }
+  right: 60px;
+  transition: color 0.2s ease-in-out 0s; }
 
 .page-header__menu-tel:after {
   content: "";
@@ -153,8 +155,17 @@ body {
   font-weight: bold;
   padding-left: 70px; }
 
+.page-header__phone-number:hover {
+  color: #888888;
+  transition: all 0.2s ease-in-out 0s; }
+
 .page-header__call-back {
-  display: none; }
+  display: none;
+  text-transform: uppercase; }
+
+.page-header__call-back:hover {
+  background-color: #00919b;
+  transition: all 0.2s ease-in-out 0s; }
 
 .page-header__phone-but {
   background-color: #fb9f18;
@@ -170,6 +181,10 @@ body {
   margin-top: 18px;
   margin-bottom: 40px;
   margin-left: 70px; }
+
+.page-header__phone-but:hover {
+  background-color: #00919b;
+  transition: all 0.2s ease-in-out 0s; }
 
 @media (min-width: 1150px) {
   .page-header__wrapper {
@@ -949,7 +964,8 @@ body {
 
 .reviews__slide .reviews__slide-prev:hover {
   border: 1px solid #00919b;
-  background-position: -538px -5px; }
+  background-position: -538px -5px;
+  transition: border 0.2s ease-in-out 0s; }
 
 .reviews__slide .reviews__slide-next {
   position: absolute;
@@ -967,7 +983,8 @@ body {
 
 .reviews__slide .reviews__slide-next:hover {
   border: 1px solid #00919b;
-  background-position: -591px -5px; }
+  background-position: -591px -5px;
+  transition: border 0.2s ease-in-out 0s; }
 
 .reviews__slide img {
   display: block;
@@ -1345,6 +1362,10 @@ body {
   font-size: 13px;
   line-height: 21px; }
 
+.order__questionnaire:hover {
+  background-color: #00919b;
+  transition: all 0.2s ease-in-out 0s; }
+
 .order__call {
   color: #ffffff;
   border-radius: 50px;
@@ -1358,12 +1379,21 @@ body {
   font-size: 13px;
   line-height: 21px; }
 
+.order__call:hover {
+  color: #00919b;
+  border: 1px solid #00919b;
+  transition: all 0.2s ease-in-out 0s; }
+
 .order__tel {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
   color: #000000; }
+
+.order__tel:hover {
+  color: #888888;
+  transition: all 0.2s ease-in-out 0s; }
 
 @media (min-width: 1150px) {
   .order__wrapper {
@@ -1451,6 +1481,11 @@ body {
   margin-left: 15px;
   position: relative; }
 
+.questions-answers:hover {
+  color: #00919b;
+  border-bottom: 1px dotted #00919b;
+  transition: all 0.2s ease-in-out 0s; }
+
 .questions-answers:after {
   position: absolute;
   content: "";
@@ -1477,7 +1512,8 @@ body {
   box-sizing: border-box; }
 
 .questions-answers:hover:after {
-  border: 1px solid #00919b; }
+  border: 1px solid #00919b;
+  transition: all 0.2s ease-in-out 0s; }
 
 .questions-answers:hover:before {
   background-position: -483px -10px; }
@@ -1536,7 +1572,8 @@ body {
   .another-question a {
     color: #1565c0; }
   .another-question a:hover {
-    color: #00919b; }
+    color: #00919b;
+    transition: all 0.2s ease-in-out 0s; }
 
 @media (min-width: 1150px) {
   .faq__wrapper {
@@ -1758,7 +1795,8 @@ body {
       padding-bottom: 10px; }
     .questionnaire__header .questionnaire__menu a:focus,
     .questionnaire__header .questionnaire__menu a:hover {
-      color: white; }
+      color: white;
+      transition: all 0.2s ease-in-out 0s; }
   .questionnaire__form div {
     position: relative; }
     .questionnaire__form div input {
@@ -1777,6 +1815,13 @@ body {
     max-height: 230px; }
     .questionnaire__form .questionnaire__form-inputs div {
       margin-right: 45px; }
+  .questionnaire__form-btn-next:hover {
+    background-color: #00919b;
+    transition: all 0.2s ease-in-out 0s; }
+  .questionnaire__form-btn-prev:hover {
+    border-color: #00919b;
+    color: #00919b;
+    transition: all 0.2s ease-in-out 0s; }
   .questionnaire__form-personal-data {
     position: relative;
     min-height: 380px;

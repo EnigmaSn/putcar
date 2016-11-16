@@ -64,6 +64,7 @@
         }
         a:hover {
           color: $rgbl;
+          transition: color 0.2s ease-in-out 0s;
         }
         a:last-child {
           padding-bottom: 0;
@@ -111,6 +112,8 @@
   border: 1px solid #fdd9a3;
   top: -35px;
   right: 60px;
+
+  transition: color 0.2s ease-in-out 0s;
 }
 .page-header__menu-tel:after {
   content: "";
@@ -153,8 +156,17 @@
   font-weight: bold;
   padding-left: 70px;
 }
+.page-header__phone-number:hover {
+  color: $gray;
+  transition: all 0.2s ease-in-out 0s;
+}
 .page-header__call-back {
   display: none;
+  text-transform: uppercase;
+}
+.page-header__call-back:hover {
+  background-color: $rgbl;
+  transition: all 0.2s ease-in-out 0s;
 }
 .page-header__phone-but {
   background-color: $orange;
@@ -171,6 +183,11 @@
   margin-bottom: 40px;
   margin-left: 70px;
 }
+.page-header__phone-but:hover {
+  background-color: $rgbl;
+  transition: all 0.2s ease-in-out 0s;
+}
+
 @media #{$desktop-widths} {
   .page-header__wrapper {
     background-position: 30px 30px;

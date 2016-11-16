@@ -28,6 +28,11 @@
   position: relative;
   // @include side-margin;
 }
+.questions-answers:hover {
+  color: $rgbl;
+  border-bottom: 1px dotted $rgbl;
+  transition: all 0.2s ease-in-out 0s;
+}
 .questions-answers:after {
   position: absolute;
   content: "";
@@ -55,6 +60,7 @@
 }
 .questions-answers:hover:after {
   border: 1px solid $rgbl;
+  transition: all 0.2s ease-in-out 0s;
 }
 .questions-answers:hover:before {
   background-position: -483px -10px;
@@ -113,6 +119,7 @@
     }
     a:hover {
       color: $rgbl;
+      transition: all 0.2s ease-in-out 0s;
     }
 }
 

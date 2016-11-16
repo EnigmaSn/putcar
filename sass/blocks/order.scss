@@ -52,6 +52,9 @@
   font-size: 13px;
   line-height: 21px;
 }
+.order__questionnaire:hover {
+  background-color: $rgbl;
+  transition: all 0.2s ease-in-out 0s;}
 
 .order__call {
   color: $white;
@@ -66,12 +69,21 @@
   font-size: 13px;
   line-height: 21px;
 }
+.order__call:hover {
+  color: $rgbl;
+  border: 1px solid $rgbl;
+  transition: all 0.2s ease-in-out 0s;
+}
 .order__tel {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
   color: $black;
+}
+.order__tel:hover {
+  color: $gray;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 @media #{$desktop-widths} {
