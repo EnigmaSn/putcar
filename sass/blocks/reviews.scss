@@ -158,26 +158,56 @@
 
 @media #{$desktop-widths} {
   .reviews__wrapper {
+    max-height: 300px;
 
       h2 {
         font-size: 24px;
       }
   }
+  .reviews__slider {
+    position: relative;
+  }
   .reviews__slide {
     display: flex;
+    flex-direction: row;
+    position: relative;
     p {
-      width: 664px;
+      max-width: 664px;
       font-size: 15px;
       line-height: 21px;
     }
     .author__info {
-      margin-left: 150px;
+      position: absolute;
+      right: 100px;
+      bottom: 15px;
     }
-    .reviews__slide-prev {
-      left: -30px;
-    }
-    .reviews__slide-next {
-      right: -30px;
-    }
+    // .reviews__slide-prev {
+    //   left: -30px;
+    // }
+    // .reviews__slide-next {
+    //   right: -30px;
+    // }
   }
+}
+.reviews__slider .slick-prev {
+  position: absolute;
+  left: 900px;
+  bottom: 330px;
+}
+.reviews__slider .slick-next {
+  position: absolute;
+  right: 65px;
+  bottom: 330px;
+}
+
+.reviews__slider .slick-dots {
+  position: absolute;
+  bottom: 220px;
+  left: 925px;
+    li {
+        button {
+          max-width: 1px !important;
+          height: 3px;
+        }
+    }
 }
