@@ -988,46 +988,25 @@ body {
 .reviews__slide .author__info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; }
+
+.reviews__slide .reviews__slider {
   position: relative; }
 
-.reviews__slide .reviews__slide-prev {
+.reviews__slide .reviews__slider .slick-prev {
   position: absolute;
-  width: 7px;
-  height: 10px;
-  padding: 10px;
-  border: 1px solid #fb9f18;
-  border-radius: 50%;
   left: 70px;
-  top: 30px;
-  background-image: url("../img/spritesheet.png");
-  background-position: -511px -5px;
-  background-repeat: no-repeat;
-  box-sizing: border-box; }
+  top: 120px; }
 
-.reviews__slide .reviews__slide-prev:hover {
-  border: 1px solid #00919b;
-  background-position: -538px -5px;
-  transition: border 0.2s ease-in-out 0s; }
-
-.reviews__slide .reviews__slide-next {
+.reviews__slide .reviews__slider .slick-next {
   position: absolute;
-  width: 7px;
-  height: 10px;
-  padding: 10px;
-  border: 1px solid #fb9f18;
-  border-radius: 50%;
   right: 70px;
-  top: 30px;
-  background-image: url("../img/spritesheet.png");
-  background-position: -564px -5px;
-  background-repeat: no-repeat;
-  box-sizing: border-box; }
-
-.reviews__slide .reviews__slide-next:hover {
-  border: 1px solid #00919b;
-  background-position: -591px -5px;
-  transition: border 0.2s ease-in-out 0s; }
+  top: 120px;
+  position: absolute;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent; }
 
 .reviews__slide img {
   display: block;

@@ -41,11 +41,20 @@ var menu_close = $(".page-header__menu-close");
 
 
 // Слайдер
-$('.slider').slick({
-  dots: true,
+$('.reviews__slider').slick({
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
-  arrows: true;
+  adaptiveHeight: true,
+  arrows: true
+});
+
+$('.questionnaire__form').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  arrows: false
 });
