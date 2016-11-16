@@ -38,3 +38,13 @@ var menu_close = $(".page-header__menu-close");
 //       header.classList.add("page-header__wrapper-show-menu");
 //   }
 // });
+
+
+// Слайдер
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});

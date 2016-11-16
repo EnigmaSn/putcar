@@ -42,6 +42,9 @@
         input {
           height: 40px;
         }
+        input:focus {
+          outline-color: $orange;
+        }
         select {
           height: 40px;
         }
@@ -204,6 +207,7 @@
       left: 10px;
       top: -5px;
     }
+
 }
 .questionnaire__prompt {
   margin-top: 20px;
@@ -242,6 +246,9 @@
         }
         select {
           width: 330px;
+        }
+        select:focus {
+          outline-color: $orange;
         }
         .questionnaire__year {
           max-width: 100px;
