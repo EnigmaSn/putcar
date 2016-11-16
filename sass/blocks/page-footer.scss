@@ -21,6 +21,10 @@
     color: $white;
     text-decoration: none;
   }
+  a:hover {
+    color: $gray;
+    transition: all 0.2s ease-in-out 0s;
+  }
 }
 .page-footer__menu {
   ul {
@@ -40,6 +44,10 @@
     margin-left: 55px;
     display: block;
     font-size: 15px;
+  }
+  a:hover {
+    color: $white;
+    transition: all 0.2s ease-in-out 0s;
   }
 }
 .page-footer__about {

@@ -258,6 +258,9 @@ body {
     margin-left: 55px;
     color: #ffffff;
     text-decoration: none; }
+  .page-footer__logo a:hover {
+    color: #888888;
+    transition: all 0.2s ease-in-out 0s; }
 
 .page-footer__menu ul {
   margin: 0;
@@ -276,6 +279,10 @@ body {
   margin-left: 55px;
   display: block;
   font-size: 15px; }
+
+.page-footer__menu a:hover {
+  color: #ffffff;
+  transition: all 0.2s ease-in-out 0s; }
 
 .page-footer__about {
   color: #484848;
@@ -458,12 +465,12 @@ body {
     cursor: pointer; }
   .credit-calc__wrapper input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 3px;
+    height: 2px;
     cursor: pointer;
-    background: gray;
+    background: #d0d0d0;
     border-radius: 1.3px; }
   .credit-calc__wrapper input[type=range]:focus::-webkit-slider-runnable-track {
-    background: gray; }
+    background: #d0d0d0; }
   .credit-calc__wrapper input[type=range]::-moz-range-track {
     width: 100%;
     height: 3px;
@@ -482,9 +489,9 @@ body {
     background: #fb9f18;
     border-radius: 2.6px; }
   .credit-calc__wrapper input[type=range]:focus::-ms-fill-lower {
-    background: gray; }
+    background: #d0d0d0; }
   .credit-calc__wrapper input[type=range]::-ms-fill-upper {
-    background: gray;
+    background: #d0d0d0;
     border-radius: 2.6px; }
   .credit-calc__wrapper input[type=range]:focus::-ms-fill-upper {
     background: #fb9f18; }
@@ -502,37 +509,6 @@ body {
     .credit-calc__costs {
       margin-left: 50px;
       margin-right: 50px; } }
-
-.credit-calc__cost-range-controls {
-  position: relative;
-  margin-bottom: 32px; }
-
-/* основная шкала */
-.credit-calc__cost-range-controls .credit-calc__cost-scale {
-  height: 2px;
-  background: #d0d0d0; }
-
-/* дополнительная (внутри) */
-.credit-calc__cost-range-controls .credit-calc__cost-bar {
-  width: 40%;
-  height: 2px;
-  background: #fb9f18; }
-
-.credit-calc__cost-range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  cursor: pointer;
-  border: 8px solid #fb9f18;
-  border-radius: 50%;
-  background: #fb9f18; }
-
-.credit-calc__cost-range-toggle:hover {
-  background: #ffffff; }
-
-.credit-calc__cost-range-toggle {
-  left: 40%; }
 
 .credit-calc__days {
   padding-top: 35px;
@@ -1803,6 +1779,8 @@ body {
       width: 330px; }
     .questionnaire__form div select {
       width: 330px; }
+    .questionnaire__form div .questionnaire__year {
+      max-width: 100px; }
     .questionnaire__form div button {
       position: absolute;
       top: 291px;
