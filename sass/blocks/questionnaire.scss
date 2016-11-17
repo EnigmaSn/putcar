@@ -73,6 +73,10 @@
       margin-left: auto;
       margin-right: auto;
     }
+    button:hover {
+      background-color: $rgbl;
+      transition: all 0.2s ease-in-out 0s;
+    }
 }
 .questionnaire__form-personal-data {
   padding-top: 30px;
