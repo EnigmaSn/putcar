@@ -961,8 +961,8 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
   margin-bottom: 30px;
-  max-height: 460px;
-  min-height: 460px; }
+  max-height: 480px;
+  min-height: 480px; }
   @media (min-width: 1150px) {
     .reviews__wrapper {
       width: 1150px; } }
@@ -970,8 +970,10 @@ body {
     font-size: 21px;
     line-height: 54px;
     text-transform: uppercase;
+    margin: 0;
     margin-left: 15px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    padding-top: 30px; }
     @media (min-width: 1150px) {
       .reviews__wrapper h2 {
         margin-left: 50px;
@@ -982,8 +984,9 @@ body {
 
 .reviews__slider .slick-prev {
   position: absolute;
-  right: 170px;
+  left: 70px;
   top: 275px;
+  z-index: 10;
   font-size: 0;
   border: 0;
   cursor: pointer;
@@ -1029,20 +1032,21 @@ body {
 .reviews__slider .slick-dots {
   display: inline;
   position: absolute;
-  top: -10px;
-  left: 90px; }
+  bottom: -35px;
+  left: 95px; }
   .reviews__slider .slick-dots li {
     display: inline; }
     .reviews__slider .slick-dots li button {
       font-size: 0;
       border: 0;
       cursor: pointer;
-      max-width: 1px !important;
-      height: 3px;
+      width: 6px;
+      height: 6px;
       border: 1px solid transparent;
       border-radius: 50px;
       margin-left: 5px;
-      outline: none; }
+      outline: none;
+      padding: 0; }
     .reviews__slider .slick-dots li button:focus,
     .reviews__slider .slick-dots li button:hover {
       background-color: #00919b;
@@ -1078,9 +1082,11 @@ body {
 
 @media (min-width: 1150px) {
   .reviews__wrapper {
+    min-height: 300px;
     max-height: 300px; }
     .reviews__wrapper h2 {
-      font-size: 24px; }
+      font-size: 24px;
+      padding-top: 40px; }
   .reviews__slider {
     position: relative; }
   .reviews__slide {
@@ -1094,25 +1100,22 @@ body {
     .reviews__slide .author__info {
       position: absolute;
       right: 100px;
-      bottom: 15px; } }
-
-.reviews__slider .slick-prev {
-  position: absolute;
-  left: 900px;
-  bottom: 330px; }
-
-.reviews__slider .slick-next {
-  position: absolute;
-  right: 65px;
-  bottom: 330px; }
-
-.reviews__slider .slick-dots {
-  position: absolute;
-  bottom: 220px;
-  left: 925px; }
-  .reviews__slider .slick-dots li button {
-    max-width: 1px !important;
-    height: 3px; }
+      bottom: 15px; }
+  .reviews__slider .slick-prev {
+    position: absolute;
+    left: 900px;
+    top: 50px; }
+  .reviews__slider .slick-next {
+    position: absolute;
+    right: 65px;
+    top: 50px; }
+  .reviews__slider .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    left: 925px; }
+    .reviews__slider .slick-dots li button {
+      width: 6px;
+      height: 6px; } }
 
 .profitable-terms__wrapper {
   width: 320px;
@@ -1765,6 +1768,8 @@ body {
   .questionnaire__form > div.active {
     display: block; }
   .questionnaire__form button {
+    display: block;
+    padding: 15px;
     min-width: 210px;
     max-width: 210px;
     border-radius: 50px;
@@ -1780,7 +1785,18 @@ body {
     margin-left: auto;
     margin-right: auto; }
 
+.questionnaire__form-personal-data {
+  padding-top: 30px; }
+
+.questionnaire__form-passport-data {
+  padding-top: 30px; }
+
+.questionnaire__form-auto-data {
+  padding-top: 30px; }
+
 .questionnaire__form-btn-next {
+  margin-top: 40px;
+  display: block;
   min-width: 187px;
   max-width: 187px;
   color: #ffffff;
@@ -1795,12 +1811,12 @@ body {
   font-size: 13px;
   line-height: 21px;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: -30px; }
+  margin-right: auto; }
 
 .questionnaire__form-btn-prev {
   min-width: 187px;
   max-width: 187px;
+  display: block;
   color: #ffffff;
   border-radius: 50px;
   background-color: #ffffff;
@@ -1813,7 +1829,17 @@ body {
   font-size: 13px;
   line-height: 21px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 40px; }
+
+.questionnaire__form-btn-next:hover {
+  background-color: #00919b;
+  transition: all 0.2s ease-in-out 0s; }
+
+.questionnaire__form-btn-prev:hover {
+  border-color: #00919b;
+  color: #00919b;
+  transition: all 0.2s ease-in-out 0s; }
 
 .questionnaire__form-nb {
   margin-top: 20px;
@@ -1896,8 +1922,7 @@ body {
       line-height: 21px;
       font-weight: bold;
       padding-bottom: 10px; }
-    .questionnaire__header .questionnaire__menu a:focus,
-    .questionnaire__header .questionnaire__menu a:hover {
+    .questionnaire__header .questionnaire__menu a.active {
       color: white;
       transition: all 0.2s ease-in-out 0s; }
   .questionnaire__form div {
@@ -1922,13 +1947,6 @@ body {
     max-height: 230px; }
     .questionnaire__form .questionnaire__form-inputs div {
       margin-right: 45px; }
-  .questionnaire__form-btn-next:hover {
-    background-color: #00919b;
-    transition: all 0.2s ease-in-out 0s; }
-  .questionnaire__form-btn-prev:hover {
-    border-color: #00919b;
-    color: #00919b;
-    transition: all 0.2s ease-in-out 0s; }
   .questionnaire__form-personal-data {
     position: relative;
     min-height: 380px;

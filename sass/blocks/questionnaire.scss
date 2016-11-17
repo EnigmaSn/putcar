@@ -56,30 +56,10 @@
       display: block;
     }
     button {
-      // background-color: $orange;
-      // padding: 15px;
-      // border-radius: 50px;
-      // color: $white;
-      // text-transform: uppercase;
-      // min-width: 187px;
-      // max-width: 187px;
-      // align-self: center;
-      // margin-bottom: 40px;
-
+      display: block;
+      padding: 15px;
       min-width: 210px;
       max-width: 210px;
-      // color: $white;
-      // border-radius: 50px;
-      // background-color: $orange;
-      // border: 1px solid $white;
-      // color: $white;
-      // padding: 10px;
-      // text-align: center;
-      // margin-bottom: 40px;
-      // text-transform: uppercase;
-      // font-size: 13px;
-      // line-height: 21px;
-
       border-radius: 50px;
       background-color: $orange;
       border: 1px solid $white;
@@ -94,20 +74,20 @@
       margin-right: auto;
     }
 }
-
+.questionnaire__form-personal-data {
+  padding-top: 30px;
+}
+.questionnaire__form-passport-data {
+  padding-top: 30px;
+}
+.questionnaire__form-auto-data {
+  padding-top: 30px;
+}
 .questionnaire__form-btn-next {
-  // background-color: $orange;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-  // text-align: center;
-  // border-radius: 50px;
-  // color: $white;
-  // text-transform: uppercase;
+  margin-top: 40px;
+  display: block;
   min-width: 187px;
   max-width: 187px;
-  // align-self: center;
-  // margin-bottom: 40px;
-
   color: $white;
   border-radius: 50px;
   background-color: $orange;
@@ -121,8 +101,6 @@
   line-height: 21px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -30px;
-
 }
 .questionnaire__form-btn-prev {
   // background-color: $white;
@@ -135,6 +113,7 @@
   // text-transform: uppercase;
   min-width: 187px;
   max-width: 187px;
+  display: block;
   // align-self: center;
   // margin-bottom: 40px;
 
@@ -151,8 +130,17 @@
   line-height: 21px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
-
+.questionnaire__form-btn-next:hover {
+  background-color: $rgbl;
+  transition: all 0.2s ease-in-out 0s;
+}
+.questionnaire__form-btn-prev:hover {
+  border-color: $rgbl;
+  color: $rgbl;
+  transition: all 0.2s ease-in-out 0s;
+}
 .questionnaire__form-nb {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -236,8 +224,7 @@
           font-weight: bold;
           padding-bottom: 10px;
         }
-        a:focus,
-        a:hover {
+        a.active {
           color: rgba(255,255,255,1);
           transition: all 0.2s ease-in-out 0s;
         }
@@ -276,15 +263,7 @@
       }
   }
   }
-  .questionnaire__form-btn-next:hover {
-    background-color: $rgbl;
-    transition: all 0.2s ease-in-out 0s;
-  }
-  .questionnaire__form-btn-prev:hover {
-    border-color: $rgbl;
-    color: $rgbl;
-    transition: all 0.2s ease-in-out 0s;
-  }
+
   .questionnaire__form-personal-data {
     position: relative;
     min-height: 380px;

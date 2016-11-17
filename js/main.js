@@ -47,11 +47,27 @@ $('.reviews__slider').slick({
   speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
-  arrows: true
+  arrows: true,
 });
 
 $('.questionnaire__form-btn-next').click(function(event) {
-  $(this).parent().removeClass("active").next().addClass("active");
-  return false;
+  // var i=$(this).parent().removeClass("active").next().addClass("active").index();
+  //   $('.questionnaire__menu a').removeClass('active').eq(i).addClass('active');
 
+  var i=$(this).parent().removeClass("active").next("[data-id]").addClass("active").attr("data-id");
+    $('.questionnaire__menu a').removeClass('active');
+    $(".questionnaire__menu a[data-id='"+i+"']").addClass('active');
+  return false;
 });
+
+$('.questionnaire__form-btn-prev').click(function(event) {
+  // var i=$(this).parent().removeClass("active").prev().addClass("active").index();
+  //   $('.questionnaire__menu a').removeClass('active').eq(i).addClass('active');
+  var i=$(this).parent().removeClass("active").prev("[data-id]").addClass("active").attr("data-id");
+    $('.questionnaire__menu a').removeClass('active');
+    $(".questionnaire__menu a[data-id='"+i+"']").addClass('active');
+  return false;
+});
+
+// var i=$(this).parent().removeClass("active").next().addClass("active").index();
+//   $('.questionnaire__menu a').removeClass('active').eq(i).addClass('active');

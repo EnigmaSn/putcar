@@ -2,14 +2,16 @@
   @include container;
   background-color: $white;
   margin-bottom: 30px;
-  max-height: 460px;
-  min-height: 460px;
+  max-height: 480px;
+  min-height: 480px;
 
     h2 {
       font-size: 21px;
       line-height: 54px;
       text-transform: uppercase;
+      margin: 0;
       @include side-margin;
+      padding-top: 30px;
     }
 }
 .reviews__slider {
@@ -17,8 +19,9 @@
 }
 .reviews__slider .slick-prev {
   position: absolute;
-  right: 170px;
+  left: 70px;
   top: 275px;
+  z-index: 10;
 
   font-size: 0;
   border: 0;
@@ -68,8 +71,8 @@
 .reviews__slider .slick-dots {
   display: inline;
   position: absolute;
-  top: -10px;
-  left: 90px;
+  bottom: -35px;
+  left: 95px;
     li {
       display: inline;
         button {
@@ -77,12 +80,14 @@
           border: 0;
           cursor: pointer;
 
-          max-width: 1px !important;
-          height: 3px;
+          width: 6px;
+          height: 6px;
           border: 1px solid transparent;
           border-radius: 50px;
           margin-left: 5px;
           outline: none;
+
+          padding: 0;
         }
         button:focus,
         button:hover {
@@ -128,10 +133,12 @@
 
 @media #{$desktop-widths} {
   .reviews__wrapper {
+    min-height: 300px;
     max-height: 300px;
 
       h2 {
         font-size: 24px;
+        padding-top: 40px;
       }
   }
   .reviews__slider {
@@ -158,26 +165,26 @@
     //   right: -30px;
     // }
   }
-}
-.reviews__slider .slick-prev {
-  position: absolute;
-  left: 900px;
-  bottom: 330px;
-}
-.reviews__slider .slick-next {
-  position: absolute;
-  right: 65px;
-  bottom: 330px;
-}
+  .reviews__slider .slick-prev {
+    position: absolute;
+    left: 900px;
+    top: 50px;
+  }
+  .reviews__slider .slick-next {
+    position: absolute;
+    right: 65px;
+    top: 50px;
+  }
 
-.reviews__slider .slick-dots {
-  position: absolute;
-  bottom: 220px;
-  left: 925px;
-    li {
-        button {
-          max-width: 1px !important;
-          height: 3px;
-        }
-    }
+  .reviews__slider .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    left: 925px;
+      li {
+          button {
+            width: 6px;
+            height: 6px;
+          }
+      }
+  }
 }
