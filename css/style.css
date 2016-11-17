@@ -577,9 +577,11 @@ body {
       padding-left: 15px; }
   .profit__wrapper .profit__num {
     font-size: 24px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif; }
   .profit__wrapper .profit__description {
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 28px;
     font-family: 'Roboto Condensed', sans-serif; }
 
 @media (min-width: 1150px) {
@@ -592,8 +594,13 @@ body {
       line-height: 48px;
       max-width: 400px;
       text-transform: uppercase; }
-    .profit__wrapper .profit__profits div {
-      width: 200px; } }
+    .profit__wrapper .profit__profits {
+      justify-content: space-around;
+      margin-left: -17px; }
+      .profit__wrapper .profit__profits div {
+        width: 175px; }
+      .profit__wrapper .profit__profits div:nth-child(1) {
+        width: 160px; } }
 
 .credit-calc__wrapper {
   width: 320px;
