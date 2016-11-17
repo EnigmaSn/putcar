@@ -17,8 +17,8 @@
 }
 .reviews__slider .slick-prev {
   position: absolute;
-  left: 70px;
-  bottom: 100px;
+  right: 170px;
+  top: 275px;
 
   font-size: 0;
   border: 0;
@@ -43,7 +43,7 @@
 .reviews__slider .slick-next {
   position: absolute;
   right: 70px;
-  bottom: 100px;
+  top: 275px;
 
   font-size: 0;
   border: 0;
@@ -68,7 +68,7 @@
 .reviews__slider .slick-dots {
   display: inline;
   position: absolute;
-  bottom: -10px;
+  top: -10px;
   left: 90px;
     li {
       display: inline;
