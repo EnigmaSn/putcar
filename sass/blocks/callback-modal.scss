@@ -1,16 +1,12 @@
 .callback-modal__wrapper {
-  position: relative;
+  // position: relative;
 
 }
 .callback-modal {
   width: 390px;
   margin: auto;
-  position: absolute;
-  top: 15%;
-  // transform: translateY(-50%);
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 10px $black;
+  position: relative;
+  display: none;
 
     h2 {
       background-color: $rgbl;
@@ -38,8 +34,9 @@
           height: 40px;
           margin-bottom: 20px;
           min-width: 300px;
+          outline-color: $orange;
         }
-        button {
+        a {
           display: block;
           padding: 15px;
           min-width: 210px;
@@ -50,12 +47,16 @@
           color: $white;
           padding: 10px;
           text-align: center;
-          // margin-bottom: 40px;
           text-transform: uppercase;
           font-size: 13px;
           line-height: 21px;
           margin-top: 10px;
           // margin-bottom: 40px;
+          text-decoration: none;
+        }
+        a:hover {
+          background-color: $rgbl;
+          transition: all 0.2s ease-in-out 0s;
         }
     }
 }

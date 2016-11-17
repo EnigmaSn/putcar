@@ -71,3 +71,32 @@ $('.questionnaire__form-btn-prev').click(function(event) {
 
 // var i=$(this).parent().removeClass("active").next().addClass("active").index();
 //   $('.questionnaire__menu a').removeClass('active').eq(i).addClass('active');
+
+
+// $(document).ready(function(){
+//     $(".callback-modal").fancybox();
+//     $("#callback").submit(function(){ return false; });
+//     $("#f_send").on("click", function(){
+//
+//         // тут дальнейшие действия по обработке формы
+//         // закрываем окно, как правило делать это нужно после обработки данных
+//         $("#f_contact").fadeOut("fast", function(){
+//             $(this).before("<p><strong>Ваше сообщение отправлено!</strong></p>");
+//             setTimeout("$.fancybox.close()", 1000);
+//         });
+//     });
+// });
+
+var fancyFormSettings={
+    padding: 0,
+    margin: 0,
+    minWidth: 280,
+    autoCenter: true,
+    scrollOutside:true,
+    scrolling:'no',
+    fitToView:false,
+    wrapCSS: 'fancyform-wrap',
+    closeBtn:false,
+};
+$('.page-header__call-back').fancybox(fancyFormSettings);
+$('.callback-modal__order').fancybox(fancyFormSettings);

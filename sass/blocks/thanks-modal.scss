@@ -1,5 +1,5 @@
 .thanks-modal__wrapper {
-  position: relative;
+  // position: relative;
 }
 
 .thanks-modal {
@@ -7,6 +7,9 @@
   color: $white;
   width: 390px;
   margin: auto;
+  position: relative;
+  padding-bottom: 30px;
+  display: none;
 
     h2 {
       margin: 0;
@@ -24,11 +27,11 @@
       line-height: 24px;
     }
 }
-.callback-modal__close {
+.thanks-modal__close {
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 10px;
   font-size: 0;
   border: 0;

@@ -7,6 +7,7 @@
   <title>Автоломбард</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo">
       </div>
-      <a class="page-header__call-back" href="#">Обратный звонок</a>
+      <a class="page-header__call-back" href="#callback">Обратный звонок</a>
       <div class="page-header__menu--close">
         <a href="#">
           <div class="page-header__menu-tel"></div>
@@ -462,28 +463,30 @@
     </div>
   </footer>
 
-  <div class="callback-modal">
+  <div id="callback" class="callback-modal">
     <h2>Обратный звонок</h2>
     <form action="#">
       <label for="name">Имя</label>
-      <input id="name" type="text">
+      <input id="name" type="text" required>
       <label for="phone">Домашний телефон</label>
-      <input id="phone" type="tel">
-      <button>Заказать звонок</button>
+      <input id="phone" type="tel" required>
+      <a href="#thanks" class="callback-modal__order">Заказать звонок</a>
     </form>
-    <button class="callback-modal__close" type="button" title="Закрыть">Закрыть</button>
+    <a class="callback-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>
   </div>
 
-  <div class="thanks-modal">
+  <div id="thanks" class="thanks-modal">
     <div class="thanks-modal__wrapper">
       <h2>Спасибо</h2>
       <span>Наши менеджеры свяжутся с вами в кратчайшие сроки</span>
-      <button class="thanks-modal__close" type="button" title="Закрыть">Закрыть</button>
+      <a class="thanks-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>
     </div>
   </div>
 
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/slick.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.fancybox-thumbs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
