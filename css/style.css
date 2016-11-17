@@ -987,6 +987,7 @@ body {
   left: 70px;
   top: 275px;
   z-index: 10;
+  outline: none;
   font-size: 0;
   border: 0;
   cursor: pointer;
@@ -1010,6 +1011,7 @@ body {
   position: absolute;
   right: 70px;
   top: 275px;
+  outline: none;
   font-size: 0;
   border: 0;
   cursor: pointer;
@@ -1958,7 +1960,7 @@ body {
       max-width: 150px; }
     .questionnaire__form-personal-data .questionnaire__form-btn-next {
       position: absolute;
-      top: 330px;
+      bottom: 10px;
       right: 335px; }
   .questionnaire__form-passport-data {
     position: relative;
@@ -1974,11 +1976,11 @@ body {
       max-width: 150px; }
     .questionnaire__form-passport-data .questionnaire__form-btn-next {
       position: absolute;
-      top: 300px;
+      bottom: 10px;
       right: 335px; }
     .questionnaire__form-passport-data .questionnaire__form-btn-prev {
       position: absolute;
-      top: 270px;
+      bottom: 10px;
       left: 0px; }
   .questionnaire__form-auto-data {
     min-height: 460px; }
@@ -2018,10 +2020,13 @@ body {
       position: absolute;
       top: 30px;
       left: 380px; }
-    .questionnaire__form-auto-data .questionnaire__form-btn-next {
+    .questionnaire__form-auto-data .questionnaire__form-btn-submit {
       position: absolute;
-      top: 400px;
-      right: 335px; }
+      top: 410px;
+      right: 340px;
+      display: block;
+      height: 45px;
+      padding: 10px; }
     .questionnaire__form-auto-data .questionnaire__form-btn-prev {
       position: absolute;
       top: 370px;

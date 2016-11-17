@@ -277,7 +277,7 @@
       }
       .questionnaire__form-btn-next {
         position: absolute;
-        top: 330px;
+        bottom: 10px;
         right: 335px;
       }
   }
@@ -298,12 +298,12 @@
       }
       .questionnaire__form-btn-next {
         position: absolute;
-        top: 300px;
+        bottom: 10px;
         right: 335px;
       }
       .questionnaire__form-btn-prev {
         position: absolute;
-        top: 270px;
+        bottom: 10px;
         left: 0px;
       }
   }
@@ -353,10 +353,13 @@
         top: 30px;
         left: 380px;
       }
-      .questionnaire__form-btn-next {
+      .questionnaire__form-btn-submit {
         position: absolute;
-        top: 400px;
-        right: 335px;
+        top: 410px;
+        right: 340px;
+        display: block;
+        height: 45px;
+        padding: 10px;
       }
       .questionnaire__form-btn-prev {
         position: absolute;
