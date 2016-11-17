@@ -960,7 +960,9 @@ body {
   width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  max-height: 460px;
+  min-height: 460px; }
   @media (min-width: 1150px) {
     .reviews__wrapper {
       width: 1150px; } }
@@ -976,9 +978,7 @@ body {
         margin-right: 50px; } }
 
 .reviews__slider {
-  position: relative;
-  max-height: 400px;
-  min-height: 400px; }
+  position: relative; }
 
 .reviews__slider .slick-prev {
   position: absolute;
@@ -998,6 +998,11 @@ body {
   background-repeat: no-repeat;
   box-sizing: border-box; }
 
+.reviews__slider .slick-prev:hover {
+  border: 1px solid #00919b;
+  background-position: -538px -5px;
+  transition: border 0.2s ease-in-out 0s; }
+
 .reviews__slider .slick-next {
   position: absolute;
   right: 70px;
@@ -1015,6 +1020,11 @@ body {
   background-position: -564px -5px;
   background-repeat: no-repeat;
   box-sizing: border-box; }
+
+.reviews__slider .slick-next:hover {
+  border: 1px solid #00919b;
+  background-position: -591px -5px;
+  transition: border 0.2s ease-in-out 0s; }
 
 .reviews__slider .slick-dots {
   display: inline;
@@ -1038,35 +1048,33 @@ body {
       background-color: #00919b;
       outline: none; }
 
-.reviews__slide p {
-  font-size: 13px;
-  line-height: 18px;
-  margin-left: 15px;
-  margin-right: 15px; }
-  @media (min-width: 1150px) {
-    .reviews__slide p {
-      margin-left: 50px;
-      margin-right: 50px; } }
-
-.reviews__slide .author__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.reviews__slide img {
-  display: block;
-  border-radius: 50px; }
-
-.reviews__slide span {
-  display: block;
-  font-size: 15px;
-  line-height: 21px; }
-
-.reviews__slide time {
-  display: block;
-  font-size: 13px;
-  line-height: 21px;
-  color: #7b7b7b; }
+.reviews__slide {
+  position: relative; }
+  .reviews__slide p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 15px;
+    margin-right: 15px; }
+    @media (min-width: 1150px) {
+      .reviews__slide p {
+        margin-left: 50px;
+        margin-right: 50px; } }
+  .reviews__slide .author__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .reviews__slide .author__info img {
+      display: block;
+      border-radius: 50px; }
+    .reviews__slide .author__info span {
+      display: block;
+      font-size: 15px;
+      line-height: 21px; }
+    .reviews__slide .author__info time {
+      display: block;
+      font-size: 13px;
+      line-height: 21px;
+      color: #7b7b7b; }
 
 @media (min-width: 1150px) {
   .reviews__wrapper {
