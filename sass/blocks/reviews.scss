@@ -43,7 +43,7 @@
 .reviews__slider .slick-next {
   position: absolute;
   right: 70px;
-  bottom: 0px;
+  bottom: 100px;
 
   font-size: 0;
   border: 0;
@@ -93,7 +93,6 @@
 
 }
 .reviews__slide {
-  position: relative;
     p {
       font-size: 13px;
       line-height: 18px;
@@ -135,12 +134,12 @@
       }
   }
   .reviews__slider {
-    position: relative;
+    // position: relative;
   }
   .reviews__slide {
     display: flex;
     flex-direction: row;
-    position: relative;
+    // position: relative;
     p {
       max-width: 664px;
       font-size: 15px;
