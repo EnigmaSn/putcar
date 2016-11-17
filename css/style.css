@@ -89,7 +89,7 @@ body {
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 0 10px #ffffff; }
+  box-shadow: 0 0 10px #000000; }
   .callback-modal h2 {
     background-color: #00919b;
     color: #ffffff;
