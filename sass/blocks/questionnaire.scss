@@ -1,7 +1,7 @@
 .questionnaire__wrapper {
   @include container;
   background-color: $white;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .questionnaire__header {
   background-color: $rgbl;
@@ -209,7 +209,7 @@
 }
 .questionnaire__prompt {
   margin-top: 20px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   position: relative;
 }
 @media #{$desktop-widths} {
@@ -379,5 +379,7 @@
         max-width: 265px;
       }
   }
-
+  .questionnaire__wrapper {
+    margin-bottom: 40px;
+  }
 }

@@ -2,10 +2,10 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
-// @import "global/slick-theme.scss";
 @import "global/slick.scss";
 
-
+@import "blocks/callback-modal.scss";
+@import "blocks/thanks-modal.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";

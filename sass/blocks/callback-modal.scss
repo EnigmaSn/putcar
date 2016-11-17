@@ -1,0 +1,94 @@
+.callback-modal__wrapper {
+  position: relative;
+
+}
+.callback-modal {
+  width: 390px;
+  margin: auto;
+  position: absolute;
+  top: 15%;
+  // transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px $white;
+
+    h2 {
+      background-color: $rgbl;
+      color: $white;
+      margin: 0;
+      padding-left: 40px;
+      font-size: 24px;
+      font-weight: normal;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-transform: uppercase;
+    }
+    form {
+      background-color: $white;
+      padding-left: 40px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+        label {
+          display: block;
+          font-size: 13px;
+          line-height: 13px;
+          padding-bottom: 10px;
+        }
+        input {
+          height: 40px;
+          margin-bottom: 20px;
+          min-width: 300px;
+        }
+        button {
+          display: block;
+          padding: 15px;
+          min-width: 210px;
+          max-width: 210px;
+          border-radius: 50px;
+          background-color: $orange;
+          border: 1px solid $white;
+          color: $white;
+          padding: 10px;
+          text-align: center;
+          // margin-bottom: 40px;
+          text-transform: uppercase;
+          font-size: 13px;
+          line-height: 21px;
+          margin-top: 10px;
+          // margin-bottom: 40px;
+        }
+    }
+}
+
+.callback-modal__close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+  outline: none;
+}
+
+.callback-modal__close:before,
+.callback-modal__close:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: $white;
+  border-radius: 1px;
+}
+.callback-modal__close:before {
+  transform: rotate(45deg);
+}
+.callback-modal__close:after {
+  transform: rotate(-45deg);
+}

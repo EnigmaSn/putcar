@@ -8,7 +8,9 @@
       font-size: 21px;
       line-height: 26px;
       text-transform: uppercase;
-      margin-left: 15px;
+      @include side-margin;
+      margin-right: 60px;
+      padding-top: 30px;
     }
     ul {
       display: flex;
@@ -42,7 +44,7 @@
   border-left: 1px dotted $orange;
   position: absolute;
   left: 50%;
-  top: 140px;
+  top: 160px;
 }
 .steps__num-5:after {
   content: "";
@@ -130,8 +132,11 @@
     max-height: 305px;
     padding-top: 30px;
     margin-bottom: 30px;
+    padding-bottom: 0;
       h2 {
         @include side-margin;
+        margin-top: 0;
+        padding-top: 0;
       }
       ul {
         flex-direction: row;
@@ -151,7 +156,7 @@
     border-left: none;
     border-top: 1px dotted $orange;
     left: 60px;
-    top: 205px;
+    top: 185px;
   }
   .steps__num-right:after {
     left: 0px;
