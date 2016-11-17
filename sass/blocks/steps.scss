@@ -49,13 +49,13 @@
 .steps__num-5:after {
   content: "";
   font-size: 21px;
-  padding-left: 12px;
+  padding-left: 8px;
   padding-top: 8px;
   box-sizing: border-box;
   display: block;
   width: 36px;
   height: 36px;
-  border: 1px solid $orange;
+  border: 2px solid $orange;
   background-color: $white;
   border-radius: 50%;
   position: absolute;
@@ -71,7 +71,7 @@
   display: block;
   width: 36px;
   height: 36px;
-  border: 1px solid $orange;
+  border: 2px solid $orange;
   background-color: $white;
   border-radius: 50%;
   position: absolute;
@@ -88,7 +88,7 @@
   display: block;
   width: 36px;
   height: 36px;
-  border: 1px solid $orange;
+  border: 2px solid $orange;
   background-color: $white;
   border-radius: 50%;
   position: absolute;
@@ -98,31 +98,31 @@
 .steps__num-1:after {
   content: "1";
   font-size: 21px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 8px;
 }
 .steps__num-2:after {
   content: "2";
   font-size: 21px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 8px;
 }
 .steps__num-3:after {
   content: "3";
   font-size: 21px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 8px;
 }
 .steps__num-4:after {
   content: "4";
   font-size: 21px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 8px;
 }
 .steps__num-5:after {
   content: "5";
   font-size: 21px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-top: 8px;
 }
 
@@ -159,12 +159,16 @@
     top: 185px;
   }
   .steps__num-right:after {
-    left: 0px;
+    left: -15px;
     top: 95px;
   }
   .steps__num-left:after {
-    left: 0px;
+    left: -15px;
     top: -35px;
+  }
+  .steps__num-1:after {
+    left: 0px;
+    top: 95px;
   }
   .steps__num-5:after {
     left: 90px;

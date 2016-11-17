@@ -92,10 +92,15 @@
           padding: 0;
         }
         button:focus,
-        button:hover {
+        button:hover,
+        button:active {
           background-color: $rgbl;
           outline: none;
         }
+    }
+    li.slick-active button {
+      background-color: $rgbl;
+      outline: none;
     }
 
 }
@@ -159,6 +164,15 @@
       position: absolute;
       right: 100px;
       bottom: 15px;
+    }
+    .author__info:before {
+      content: "";
+      display: block;
+      width: 17px;
+      height: 179px;
+      background-image: url("../img/line.png");
+      position: absolute;
+      left: -130px;
     }
     // .reviews__slide-prev {
     //   left: -30px;
