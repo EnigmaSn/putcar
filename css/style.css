@@ -807,14 +807,15 @@ body {
   .credit-calc__results--bold {
     background-image: url("../img/car3.png");
     background-repeat: no-repeat;
-    background-position: 20px 130px;
+    background-position: 20px 120px;
     background-size: 90%;
     min-height: 387px; }
   .credit-calc__results .credit-calc__results-middle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 30px; }
     .credit-calc__results .credit-calc__results-middle span {
       font-family: 'Roboto Condensed', sans-serif; }
   .credit-calc__results .credit-calc__results-monthly-payment {
@@ -826,7 +827,7 @@ body {
     margin-left: 30px; }
     .credit-calc__results .credit-calc__results-monthly-payment .credit-calc__results-numbers {
       color: #ffffff;
-      font-size: 24px;
+      font-size: 21px;
       line-height: 21px;
       font-weight: bold; }
     .credit-calc__results .credit-calc__results-monthly-payment .credit-calc__results-description {
@@ -846,7 +847,7 @@ body {
     .credit-calc__results .credit-calc__results-rate .credit-calc__results-numbers {
       color: #ffffff;
       font-weight: bold;
-      font-size: 24px;
+      font-size: 21px;
       line-height: 21px; }
     .credit-calc__results .credit-calc__results-rate .credit-calc__results-description {
       color: #ffffff;
@@ -884,6 +885,9 @@ body {
       font-size: 24px;
       padding-top: 35px;
       padding-bottom: 20px; }
+  .credit-calc__costs,
+  .credit-calc__days {
+    margin-left: 30px; }
   .credit-calc__inputs {
     width: 35%;
     padding-bottom: 30px; }
@@ -898,11 +902,12 @@ body {
     .credit-calc__results--normal {
       background-image: url("../img/car2.png");
       background-repeat: no-repeat;
-      background-position: 20px 220px; }
+      background-position: 30px 220px;
+      background-size: 95%; }
     .credit-calc__results--bold {
       background-image: url("../img/car3.png");
       background-repeat: no-repeat;
-      background-position: 100px 130px;
+      background-position: 120px 110px;
       background-size: 70%; }
     .credit-calc__results .credit-calc__results-about {
       max-width: none; }
