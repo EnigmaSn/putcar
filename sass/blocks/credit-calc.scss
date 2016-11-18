@@ -214,8 +214,8 @@
     &--light {
       background-image: url("../img/car1.png");
       background-repeat: no-repeat;
-      background-position: 0px 220px;
-      background-size: contain;
+      background-position: 15px 220px;
+      background-size: 90%;
       // background-color: red;
       min-height: 387px;
     }
@@ -223,8 +223,8 @@
       // display: none;
       background-image: url("../img/car2.png");
       background-repeat: no-repeat;
-      background-position: 20px 220px;
-      background-size: contain;
+      background-position: -45px 220px;
+      background-size: 130%;
 
       // background-color: red;
       min-height: 387px;
@@ -233,8 +233,8 @@
       // display: none;
       background-image: url("../img/car3.png");
       background-repeat: no-repeat;
-      background-position: 20px 220px;
-      background-size: contain;
+      background-position: 20px 130px;
+      background-size: 90%;
       // background-color: red;
       min-height: 387px;
     }
@@ -243,6 +243,9 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+        span {
+          font-family: 'Roboto Condensed', sans-serif;
+        }
     }
     .credit-calc__results-monthly-payment {
       display: flex;
@@ -314,7 +317,7 @@
       padding-bottom: 10px;
       font-size: 35px;
       line-height: 24px;
-      width: 75%;
+      // width: 75%;
       text-align: center;
     }
 }
