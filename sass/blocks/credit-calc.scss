@@ -9,6 +9,7 @@
     @include side-padding;
     padding-top: 40px;
     padding-bottom: 35px;
+    text-transform: uppercase;
 
   }
   label {
@@ -142,43 +143,6 @@
   padding-bottom: 10px;
   @include side-margin;
 }
-
-// .credit-calc__cost-range-controls {
-//   position: relative;
-//   margin-bottom: 32px;
-// }
-//
-// /* основная шкала */
-// .credit-calc__cost-range-controls .credit-calc__cost-scale {
-//   height: 2px;
-//   background: #d0d0d0;
-// }
-//
-// /* дополнительная (внутри) */
-// .credit-calc__cost-range-controls .credit-calc__cost-bar {
-//   width: 40%;
-//   height: 2px;
-//   background: $orange;
-// }
-//
-// .credit-calc__cost-range-toggle {
-// 	position: absolute;
-//   top: -9px;
-//   width: 4px;
-//   height: 4px;
-//   cursor: pointer;
-//   border: 8px solid $orange;
-//   border-radius: 50%;
-//   background: $orange;
-// }
-//
-// .credit-calc__cost-range-toggle:hover {
-//   background: $white;
-// }
-//
-// .credit-calc__cost-range-toggle {
-//   left: 40%;
-// }
 
 .credit-calc__days {
   padding-top: 35px;
@@ -333,6 +297,11 @@
     flex-direction: row;
     margin-bottom: 30px;
     margin-top: 30px;
+      h2 {
+        font-size: 24px;
+        padding-top: 35px;
+        padding-bottom: 20px;
+      }
   }
   .credit-calc__inputs {
     width: 35%;

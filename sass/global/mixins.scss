@@ -6,7 +6,8 @@
 	  //  width: 768px;
 	  // }
 	  @media #{$desktop-widths} {
-	   width: 1150px;
+	  //  width: 1150px;
+    width: 1040px;
 	  }
 }
 
@@ -16,8 +17,8 @@
 
 		@media #{$desktop-widths}
 		 {
-			padding-left: 50px;
-		 	padding-right: 50px;
+			padding-left: 30px;
+		 	padding-right: 30px;
 	  }
 }
 

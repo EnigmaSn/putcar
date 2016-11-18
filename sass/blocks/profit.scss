@@ -48,21 +48,31 @@
   .profit__wrapper {
     background-image: url(../img/car-time-desktop1.png);
     background-repeat: no-repeat;
-    background-position: 170px 80px;
+    background-position: 90px 45px;
+    max-height: 530px;
       h1 {
         font-size: 48px;
-        line-height: 48px;
+        line-height: 56px;
         max-width: 400px;
         text-transform: uppercase;
+        padding-top: 30px;
+        font-weight: 300;
       }
       .profit__profits {
         justify-content: space-around;
         margin-left: -17px;
+        margin-top: -50px;
           div {
             width: 175px;
           }
           div:nth-child(1) {
             width: 160px;
+          }
+          .profit__num {
+            padding-bottom: 10px;
+          }
+          .profit__description {
+            line-height: 21px;
           }
       }
   }
