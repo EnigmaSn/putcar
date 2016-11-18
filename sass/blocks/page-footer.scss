@@ -11,9 +11,9 @@
 }
 
 .page-footer__logo {
-  background-image: url("../img/logo-orange.png");
-  background-repeat: no-repeat;
-  background-position: 15px 40px;
+  // background-image: url("../img/logo-orange.png");
+  // background-repeat: no-repeat;
+  // background-position: 15px 40px;
   padding-top: 80px;
 
   a {
@@ -70,20 +70,23 @@
   }
   .page-footer__wrapper {
     position: relative;
+    background-position: 30px 40px;
   }
   .page-footer__logo {
     a {
       position: absolute;
-      right: 50px;
-      bottom: -90px;
+      right: 30px;
+      bottom: -70px;
+      font-size: 16px;
     }
   }
   .page-footer__menu {
     position: absolute;
-    top: -30px;
-    left: 380px;
+    top: -25px;
+    left: 310px;
     li {
       max-width: none;
+      margin-top: 15px;
     }
       ul {
         max-height: 215px;
@@ -107,8 +110,8 @@
     }
     span:nth-child(2) {
       position: absolute;
-      right: 50px;
-      bottom: -125px;
+      right: 30px;
+      bottom: -115px;
     }
   }
 }

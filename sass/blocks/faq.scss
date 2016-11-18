@@ -157,11 +157,21 @@
 
 @media #{$desktop-widths} {
   .faq__wrapper {
-    padding-top: 40px;
+    padding-top: 30px;
     margin-bottom: 40px;
     position: relative;
+    padding-bottom: 25px;
+      h2 {
+        margin-left: 30px;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
       p {
         max-width: 800px;
+        margin-left: 30px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 55px;
       }
       .faq__questions-answers-container:after {
         display: none;
@@ -171,7 +181,7 @@
       }
       .faq__questions-answers {
         max-width: none;
-        @include side-margin;
+        margin-left: 30px;
         border-bottom: 1px dotted $orange;
       }
       .faq__questions-answers:hover {
@@ -185,24 +195,34 @@
       }
   }
   .faq__questions {
-    max-width: 640px;
+    max-width: 630px;
     position: relative;
+    margin-top: 20px;
+    margin-left: 30px;
       div {
-        margin-bottom: 50px;
+        margin-bottom: -20px;
           p {
-            padding-top: 20px;
+            padding-top: 10px;
+            margin-left: 0px;
+            font-size: 15px;
           }
       }
       div:last-child {
         margin-bottom: 0px;
+          p {
+            margin-bottom: 0;
+          }
       }
 
   }
   .faq__another-question {
     position: absolute;
-    right: 30px;
-    bottom: 140px;
+    right: -60px;
+    bottom: 130px;
     border: none;
+      span {
+        font-size: 13px;
+      }
   }
   .faq__another-question:after {
     content: "";
