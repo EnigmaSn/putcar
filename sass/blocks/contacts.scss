@@ -9,19 +9,20 @@
     margin: 0;
     padding: 0;
     @include side-margin;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   p {
     font-size: 13px;
     line-height: 18px;
     @include side-margin;
+    margin-bottom: 30px;
   }
   b {
     font-size: 15px;
     line-height: 21px;
     @include side-margin;
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
   a {
     @include side-margin;
@@ -35,20 +36,22 @@
   font-size: 15px;
   line-height: 21px;
   @include side-margin;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #dcdcdc;
 }
 .contacts__phone {
   color: inherit;
   text-decoration: none;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 .contacts__name {
   font-size: 15px;
   line-height: 31px;
   @include side-margin;
   display: block;
+  margin-bottom: -5px;
+
 }
 .contacts__position {
   color: #7b7b7b;
@@ -57,11 +60,11 @@
   @include side-margin;
 }
 .contacts__write-us {
-  padding-top: 15px;
+  padding-top: 30px;
   margin-top: 10px;
   border-top: 1px solid #dcdcdc;
   @include side-margin;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
     b {
       margin: 0;
     }

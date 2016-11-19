@@ -9,12 +9,14 @@
       margin: 0;
       padding: 0;
       @include side-margin;
-      margin-bottom: 30px;
+      margin-top: -5px;
+      margin-bottom: 15px;
     }
     p {
       font-size: 15px;
       line-height: 18px;
       @include side-margin;
+      margin-bottom: 35px;
     }
 }
 .faq__questions-answers-container {
@@ -23,21 +25,21 @@
 .faq__questions-answers-container:before {
   content: "";
   display: block;
-  width: 178px;
+  width: 145px;
   height: 1px;
-  border-bottom: 1px dotted $orange;
+  border-bottom: 1px dashed $orange;
   position: absolute;
-  top: 20px;
+  top: 16px;
   left: 15px;
 }
 .faq__questions-answers-container:after {
   content: "";
   display: block;
-  width: 155px;
+  width: 125px;
   height: 1px;
-  border-bottom: 1px dotted $orange;
+  border-bottom: 1px dashed $orange;
   position: absolute;
-  top: 42px;
+  top: 35px;
   left: 15px;
 }
 .faq__questions-answers-container:hover:before {
@@ -62,7 +64,7 @@
   max-width: 200px;
   margin-left: 15px;
   position: relative;
-  font-size: 18px;
+  font-size: 15px;
   // @include side-margin;
 }
 .faq__questions-answers:after {
@@ -74,15 +76,15 @@
   border: 1px solid $orange;
   border-radius: 50%;
   box-sizing: border-box;
-  right: -50px;
-  top: 10px;
+  right: 5px;
+  top: 0px;
 }
 .faq__questions-answers:before {
   position: absolute;
   content: "";
   display: block;
-  right: -41px;
-  top: 23px;
+  right: 15px;
+  top: 15px;
   width: 14px;
   height: 8px;
   background-position: -449px -10px;
@@ -101,7 +103,7 @@
   margin-top: 30px;
   @include side-margin;
     div {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     b {
       font-size: 13px;
@@ -117,11 +119,11 @@
 .faq__another-question {
   @include side-margin;
   border: 1px solid #dcdcdc;
-  min-width: 185px;
-  max-width: 185px;
+  min-width: 150px;
+  max-width: 150px;
   padding-left: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   // padding-right: 35px;
   position: relative;
     b {
@@ -135,8 +137,8 @@
       height: 35px;
       border: 2px solid $orange;
       border-radius: 50%;
-      left: 15px;
-      top: 25px;
+      left: 20px;
+      top: 20px;
       position: absolute;
       padding-left: 10px;
       padding-top: 5px;

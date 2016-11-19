@@ -9,12 +9,17 @@
       line-height: 26px;
       text-transform: uppercase;
       @include side-margin;
-      // padding-top: 40px;
+      padding-top: 10px;
     }
     p {
-      font-size: 15px;
+      font-size: 13px;
       line-height: 21px;
       @include side-margin;
+      margin-bottom: 40px;
+    }
+    p:last-child {
+      padding-bottom: 0px;
+      margin-bottom: 0;
     }
 }
 .profitable-terms__requirements {
@@ -29,6 +34,8 @@
       font-weight: bold;
       padding-left: 10px;
       padding-top: 15px;
+      margin-top: 0;
+      margin-bottom: 10px;
     }
     ul {
       margin: 0;
@@ -38,21 +45,21 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      padding-left: 30px;
+      padding-left: 25px;
       padding-right: 30px;
       font-size: 13px;
-      line-height: 31px;
+      line-height: 21px;
       position: relative;
     }
     li:before {
       position: absolute;
       content: "";
       display: block;
-      width: 6px;
-      height: 6px;
+      width: 4px;
+      height: 4px;
       border: 2px solid $orange;
       border-radius: 50%;
-      left: 10px;
+      left: 7px;
       top: 12px;
     }
 }
@@ -68,6 +75,7 @@
       font-weight: bold;
       padding-left: 10px;
       padding-top: 15px;
+      margin-bottom: 10px;
     }
     ul {
       margin: 0;
@@ -77,21 +85,21 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      padding-left: 30px;
+      padding-left: 25px;
       padding-right: 30px;
       font-size: 13px;
-      line-height: 31px;
+      line-height: 21px;
       position: relative;
     }
     li:before {
       position: absolute;
       content: "";
       display: block;
-      width: 6px;
-      height: 6px;
+      width: 4px;
+      height: 4px;
       border: 2px solid $orange;
       border-radius: 50%;
-      left: 10px;
+      left: 7px;
       top: 12px;
     }
 }

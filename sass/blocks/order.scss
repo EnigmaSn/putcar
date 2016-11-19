@@ -14,6 +14,7 @@
 .order__now {
   background-color: $white;
   padding-bottom: 70px;
+  padding-top: 20px;
 
   h2 {
     font-size: 21px;
@@ -26,7 +27,7 @@
     @include side-margin;
     font-size: 15px;
     line-height: 21px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
   a {
     text-decoration: none;
@@ -39,6 +40,9 @@
     font-size: 13px;
     line-height: 24px;
     margin-left: 25px;
+  }
+  .order__nb {
+    margin-left: 50px;
   }
 }
 .order__questionnaire {
@@ -60,12 +64,13 @@
   background-color: $orange;
   border: 1px solid $white;
   color: $white;
-  padding: 10px;
+  padding: 7px;
   text-align: center;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 21px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 .order__questionnaire:hover {
   background-color: $rgbl;
@@ -77,12 +82,13 @@
   background-color: $white;
   border: 1px solid $orange;
   color: $orange;
-  padding: 10px;
+  padding: 7px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 21px;
+  font-weight: bold;
 }
 .order__call:hover {
   color: $rgbl;
@@ -95,6 +101,7 @@
   font-weight: bold;
   text-align: center;
   color: $black;
+  margin-bottom: 5px;
 }
 .order__tel:hover {
   color: $gray;
@@ -150,6 +157,9 @@
       margin-top: 105px;
     }
     span {
+      margin-left: 30px;
+    }
+    .order__nb {
       margin-left: 30px;
     }
   }

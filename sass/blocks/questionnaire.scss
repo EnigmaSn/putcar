@@ -6,19 +6,20 @@
 .questionnaire__header {
   background-color: $rgbl;
   color: $white;
+  padding-bottom: 20px;
     .questionnaire__menu {
       display: none;
     }
     h2 {
-      font-size: 21px;
-      line-height: 54px;
+      font-size: 18px;
+      // line-height: 54px;
       // text-align: center;
       text-transform: uppercase;
       font-weight: normal;
       margin: 0;
       padding: 0;
       padding-top: 40px;
-      margin-bottom: -25px;
+      margin-bottom: -10px;
       @include side-margin;
     }
     span {
@@ -58,8 +59,8 @@
     button {
       display: block;
       padding: 15px;
-      min-width: 210px;
-      max-width: 210px;
+      min-width: 190px;
+      max-width: 190px;
       border-radius: 50px;
       background-color: $orange;
       border: 1px solid $white;
@@ -90,8 +91,8 @@
 .questionnaire__form-btn-next {
   margin-top: 40px;
   display: block;
-  min-width: 187px;
-  max-width: 187px;
+  min-width: 170px;
+  max-width: 170px;
   color: $white;
   border-radius: 50px;
   background-color: $orange;
@@ -115,8 +116,8 @@
   // border-radius: 50px;
   // color: $orange;
   // text-transform: uppercase;
-  min-width: 187px;
-  max-width: 187px;
+  min-width: 170px;
+  max-width: 170px;
   display: block;
   // align-self: center;
   // margin-bottom: 40px;

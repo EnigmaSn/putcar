@@ -4,6 +4,7 @@
   margin-bottom: 30px;
   max-height: 480px;
   min-height: 480px;
+  padding-bottom: 60px;
 
     h2 {
       font-size: 21px;
@@ -11,7 +12,7 @@
       text-transform: uppercase;
       margin: 0;
       @include side-margin;
-      padding-top: 30px;
+      padding-top: 60px;
     }
 }
 .reviews__slider {
@@ -20,7 +21,7 @@
 .reviews__slider .slick-prev {
   position: absolute;
   left: 70px;
-  top: 275px;
+  top: 260px;
   z-index: 10;
   outline: none;
 
@@ -47,7 +48,7 @@
 .reviews__slider .slick-next {
   position: absolute;
   right: 70px;
-  top: 275px;
+  top: 260px;
   outline: none;
 
   font-size: 0;
@@ -73,7 +74,7 @@
 .reviews__slider .slick-dots {
   display: inline;
   position: absolute;
-  bottom: -35px;
+  bottom: -55px;
   left: 95px;
     li {
       display: inline;
@@ -110,11 +111,13 @@
       font-size: 13px;
       line-height: 18px;
       @include side-margin;
+      margin-top: 5px;
     }
     .author__info {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 30px;
         img {
           display: block;
           border-radius: 50px;
