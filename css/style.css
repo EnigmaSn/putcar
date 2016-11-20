@@ -1068,10 +1068,10 @@ body {
       content: "";
       display: block;
       height: 1px;
-      width: 1000px;
+      width: 915px;
       background-color: #e8e8e8;
       position: absolute;
-      left: 60px;
+      left: 45px;
       top: 53%; }
     .advantages__wrapper li {
       max-width: 180px;
@@ -1083,7 +1083,7 @@ body {
     .advantages__wrapper .advantages__item-second-line:after {
       content: "";
       display: block;
-      height: 320px;
+      height: 300px;
       width: 1px;
       background-color: #e8e8e8;
       position: absolute;
@@ -1093,7 +1093,7 @@ body {
     .advantages__wrapper .advantages__item-fird-line:after {
       content: "";
       display: block;
-      height: 320px;
+      height: 300px;
       width: 1px;
       background-color: #e8e8e8;
       position: absolute;
@@ -1103,7 +1103,7 @@ body {
     .advantages__wrapper .advantages__item-fourth-line:after {
       content: "";
       display: block;
-      height: 320px;
+      height: 300px;
       width: 1px;
       background-color: #e8e8e8;
       position: absolute;
@@ -1248,7 +1248,8 @@ body {
 @media (min-width: 1150px) {
   .reviews__wrapper {
     min-height: 300px;
-    max-height: 300px; }
+    max-height: 300px;
+    padding-bottom: 0; }
     .reviews__wrapper h2 {
       font-size: 24px;
       padding-top: 20px;
@@ -1261,15 +1262,19 @@ body {
     flex-direction: row;
     position: relative; }
     .reviews__slide p {
-      max-width: 664px;
+      max-width: 645px;
       font-size: 15px;
       line-height: 21px;
       padding-left: 0;
-      margin-left: 30px; }
+      margin-left: 30px;
+      margin-top: 20px; }
     .reviews__slide .author__info {
       position: absolute;
       right: 120px;
-      bottom: 0px; }
+      bottom: 25px;
+      height: auto; }
+      .reviews__slide .author__info span {
+        padding-top: 15px; }
     .reviews__slide .author__info:before {
       content: "";
       display: block;
@@ -1288,7 +1293,7 @@ body {
     top: 50px; }
   .reviews__slider .slick-dots {
     position: absolute;
-    bottom: -50px;
+    bottom: -55px;
     left: 800px; }
     .reviews__slider .slick-dots li button {
       width: 6px;

@@ -147,6 +147,7 @@
   .reviews__wrapper {
     min-height: 300px;
     max-height: 300px;
+    padding-bottom: 0;
 
       h2 {
         font-size: 24px;
@@ -163,16 +164,21 @@
     flex-direction: row;
     position: relative;
     p {
-      max-width: 664px;
+      max-width: 645px;
       font-size: 15px;
       line-height: 21px;
       padding-left: 0;
       margin-left: 30px;
+      margin-top: 20px;
     }
     .author__info {
       position: absolute;
       right: 120px;
-      bottom: 0px;
+      bottom: 25px;
+      height: auto;
+      span {
+        padding-top: 15px;
+      }
     }
     .author__info:before {
       content: "";
@@ -197,7 +203,7 @@
 
   .reviews__slider .slick-dots {
     position: absolute;
-    bottom: -50px;
+    bottom: -55px;
     left: 800px;
       li {
           button {
