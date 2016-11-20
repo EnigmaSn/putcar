@@ -159,7 +159,7 @@
 
 @media #{$desktop-widths} {
   .faq__wrapper {
-    padding-top: 30px;
+    padding-top: 40px;
     margin-bottom: 40px;
     position: relative;
     padding-bottom: 25px;
@@ -185,15 +185,18 @@
         max-width: none;
         margin-left: 30px;
         border-bottom: 1px dotted $orange;
+        font-size: 18px;
       }
       .faq__questions-answers:hover {
         border-bottom: 1px dotted $rgbl;
       }
       .faq__questions-answers:after {
+        left: 350px;
         top: -3px;
       }
       .faq__questions-answers:before {
         top: 10px;
+        left: 360px;
       }
   }
   .faq__questions {
@@ -219,7 +222,7 @@
   }
   .faq__another-question {
     position: absolute;
-    right: -60px;
+    right: -20px;
     bottom: 130px;
     border: none;
       span {
@@ -233,7 +236,7 @@
     height: 72px;
     background-image: url("../img/border.png");
     position: absolute;
-    top: 5px;
+    top: 0px;
     left: -20px;
   }
 }
