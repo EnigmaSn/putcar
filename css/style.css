@@ -1434,15 +1434,15 @@ body {
   .profitable-terms__requirements {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 20px;
-    width: 501px; }
+    padding-left: 20px; }
     .profitable-terms__requirements h3 {
       font-size: 15px;
       line-height: 21px;
       padding-top: 25px;
       margin-bottom: 8px; }
     .profitable-terms__requirements ul {
-      max-width: 400px; }
+      max-width: 400px;
+      padding-right: 80px; }
     .profitable-terms__requirements li {
       font-size: 15px;
       line-height: 21px;
@@ -1455,15 +1455,15 @@ body {
   .profitable-terms__docs {
     margin-left: 10px;
     margin-right: 0;
-    padding-left: 40px;
-    width: 501px; }
+    padding-left: 40px; }
     .profitable-terms__docs h3 {
       font-size: 15px;
       line-height: 21px;
       padding-top: 10px;
       margin-bottom: 8px; }
     .profitable-terms__docs ul {
-      max-width: 400px; }
+      max-width: 400px;
+      padding-right: 60px; }
     .profitable-terms__docs li {
       font-size: 15px;
       line-height: 21px;
@@ -1529,7 +1529,7 @@ body {
   content: "";
   font-size: 21px;
   padding-left: 8px;
-  padding-top: 8px;
+  padding-top: 15px;
   box-sizing: border-box;
   display: block;
   width: 36px;
@@ -1607,8 +1607,8 @@ body {
 
 @media (min-width: 1150px) {
   .steps__wrapper {
-    min-height: 305px;
-    max-height: 305px;
+    min-height: 275px;
+    max-height: 275px;
     padding-top: 30px;
     margin-bottom: 30px;
     padding-bottom: 0; }
@@ -1625,9 +1625,16 @@ body {
 @media (min-width: 1150px) {
     .steps__wrapper ul {
       flex-direction: row;
-      justify-content: space-around; }
+      justify-content: space-between;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-left: 30px; }
     .steps__wrapper li {
-      max-width: 150px; }
+      max-width: 150px;
+      text-align: left;
+      font-size: 15px;
+      line-height: 21px;
+      margin-bottom: 50px; }
     .steps__wrapper li:nth-child(2n) {
       align-self: flex-start;
       margin-top: 130px; }
@@ -1788,12 +1795,13 @@ body {
     left: -45px; }
   .order__now {
     width: 100%;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    padding-top: 15px; }
     .order__now h2 {
       font-size: 24px;
       line-height: 30px;
       max-width: 280px;
-      padding-top: 20px;
+      padding-top: 0px;
       margin-left: 30px; }
     .order__now p {
       font-size: 18px;
