@@ -219,6 +219,7 @@
       background-size: 90%;
       // background-color: red;
       min-height: 387px;
+      transition: all 0.2s ease-in-out 0s;
     }
     &--normal {
       // display: none;
@@ -230,6 +231,8 @@
       // background-color: red;
       min-height: 387px;
       //display: none;
+      transition: all 0.2s ease-in-out 0s;
+
     }
     &--bold {
       background-image: url("../img/car3.png");
@@ -239,6 +242,8 @@
       // background-color: red;
       min-height: 387px;
       //display: none;
+      transition: all 0.2s ease-in-out 0s;
+
 
     }
     .credit-calc__results-middle {

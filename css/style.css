@@ -759,19 +759,22 @@ body {
     background-repeat: no-repeat;
     background-position: 15px 220px;
     background-size: 90%;
-    min-height: 387px; }
+    min-height: 387px;
+    transition: all 0.2s ease-in-out 0s; }
   .credit-calc__results--normal {
     background-image: url("../img/car2.png");
     background-repeat: no-repeat;
     background-position: -45px 220px;
     background-size: 130%;
-    min-height: 387px; }
+    min-height: 387px;
+    transition: all 0.2s ease-in-out 0s; }
   .credit-calc__results--bold {
     background-image: url("../img/car3.png");
     background-repeat: no-repeat;
     background-position: 20px 120px;
     background-size: 90%;
-    min-height: 387px; }
+    min-height: 387px;
+    transition: all 0.2s ease-in-out 0s; }
   .credit-calc__results .credit-calc__results-middle {
     display: flex;
     flex-direction: row;
