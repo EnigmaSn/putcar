@@ -1271,7 +1271,7 @@ body {
     .reviews__slide .author__info {
       position: absolute;
       right: 120px;
-      bottom: 25px;
+      bottom: 5px;
       height: auto; }
       .reviews__slide .author__info span {
         padding-top: 15px; }
@@ -1282,7 +1282,7 @@ body {
       height: 179px;
       background-image: url("../img/line.png");
       position: absolute;
-      left: -110px; }
+      left: -105px; }
   .reviews__slider .slick-prev {
     position: absolute;
     left: 770px;
@@ -1293,7 +1293,7 @@ body {
     top: 50px; }
   .reviews__slider .slick-dots {
     position: absolute;
-    bottom: -55px;
+    bottom: -40px;
     left: 800px; }
     .reviews__slider .slick-dots li button {
       width: 6px;
@@ -1319,18 +1319,21 @@ body {
         margin-left: 50px;
         margin-right: 50px; } }
   .profitable-terms__wrapper p {
-    font-size: 13px;
-    line-height: 21px;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     @media (min-width: 1150px) {
       .profitable-terms__wrapper p {
         margin-left: 50px;
         margin-right: 50px; } }
-  .profitable-terms__wrapper p:last-child {
+  .profitable-terms__wrapper p:nth-child(2) {
+    font-size: 15px;
+    line-height: 21px; }
+  .profitable-terms__wrapper p:nth-child(3) {
     padding-bottom: 0px;
-    margin-bottom: 0; }
+    margin-bottom: 40px;
+    font-size: 13px;
+    line-height: 18px; }
 
 .profitable-terms__requirements {
   margin-left: 10px;
@@ -1405,9 +1408,25 @@ body {
 
 @media (min-width: 1150px) {
   .profitable-terms__wrapper h2 {
-    font-size: 24px; }
+    font-size: 24px;
+    margin-left: 30px;
+    padding-top: 35px; }
   .profitable-terms__wrapper p {
-    max-width: 640px; }
+    margin-top: 20px;
+    max-width: 640px;
+    margin-left: 30px;
+    padding-top: 10px; }
+  .profitable-terms__wrapper p:nth-child(2) {
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px; }
+  .profitable-terms__wrapper p:nth-child(3) {
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 30px; }
   .profitable-terms__requirements-all {
     display: flex;
     justify-content: space-between;
@@ -1415,13 +1434,45 @@ body {
   .profitable-terms__requirements {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 40px;
+    padding-left: 20px;
     width: 501px; }
+    .profitable-terms__requirements h3 {
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 25px;
+      margin-bottom: 8px; }
+    .profitable-terms__requirements ul {
+      max-width: 400px; }
+    .profitable-terms__requirements li {
+      font-size: 15px;
+      line-height: 21px;
+      margin-bottom: 10px; }
+    .profitable-terms__requirements li:last-child {
+      padding-bottom: 10px; }
+    .profitable-terms__requirements li:before {
+      left: 10px;
+      top: 6px; }
   .profitable-terms__docs {
-    margin-left: 0;
+    margin-left: 10px;
     margin-right: 0;
     padding-left: 40px;
-    width: 501px; } }
+    width: 501px; }
+    .profitable-terms__docs h3 {
+      font-size: 15px;
+      line-height: 21px;
+      padding-top: 10px;
+      margin-bottom: 8px; }
+    .profitable-terms__docs ul {
+      max-width: 400px; }
+    .profitable-terms__docs li {
+      font-size: 15px;
+      line-height: 21px;
+      margin-bottom: 10px; }
+    .profitable-terms__docs li:last-child {
+      padding-bottom: 10px; }
+    .profitable-terms__docs li:before {
+      left: 10px;
+      top: 6px; } }
 
 .steps__wrapper {
   width: 320px;

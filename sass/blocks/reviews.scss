@@ -174,7 +174,7 @@
     .author__info {
       position: absolute;
       right: 120px;
-      bottom: 25px;
+      bottom: 5px;
       height: auto;
       span {
         padding-top: 15px;
@@ -187,7 +187,7 @@
       height: 179px;
       background-image: url("../img/line.png");
       position: absolute;
-      left: -110px;
+      left: -105px;
     }
   }
   .reviews__slider .slick-prev {
@@ -203,7 +203,7 @@
 
   .reviews__slider .slick-dots {
     position: absolute;
-    bottom: -55px;
+    bottom: -40px;
     left: 800px;
       li {
           button {

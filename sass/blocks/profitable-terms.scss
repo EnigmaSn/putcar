@@ -12,14 +12,20 @@
       padding-top: 10px;
     }
     p {
-      font-size: 13px;
-      line-height: 21px;
+      // font-size: 13px;
+      // line-height: 21px;
       @include side-margin;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
-    p:last-child {
+    p:nth-child(2) {
+      font-size: 15px;
+      line-height: 21px;
+    }
+    p:nth-child(3) {
       padding-bottom: 0px;
-      margin-bottom: 0;
+      margin-bottom: 40px;
+      font-size: 13px;
+      line-height: 18px;
     }
 }
 .profitable-terms__requirements {
@@ -109,9 +115,29 @@
 
       h2 {
         font-size: 24px;
+        margin-left: 30px;
+        padding-top: 35px;
       }
       p {
+        margin-top: 20px;
         max-width: 640px;
+        // font-size: 18px;
+        // line-height: 28px;
+        margin-left: 30px;
+        padding-top: 10px;
+      }
+      p:nth-child(2) {
+        font-size: 18px;
+        line-height: 26px;
+        margin-left: 30px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+      }
+      p:nth-child(3) {
+        font-size: 15px;
+        line-height: 21px;
+        margin-top: 0;
+        margin-bottom: 30px;
       }
   }
   .profitable-terms__requirements-all {
@@ -122,13 +148,56 @@
   .profitable-terms__requirements {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 40px;
+    padding-left: 20px;
     width: 501px;
+      h3 {
+        font-size: 15px;
+        line-height: 21px;
+        padding-top: 25px;
+        margin-bottom: 8px;
+      }
+      ul {
+        max-width: 400px;
+      }
+      li {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 10px;
+      }
+      li:last-child {
+        padding-bottom: 10px;
+      }
+      li:before {
+        left: 10px;
+        top: 6px;
+      }
   }
   .profitable-terms__docs {
-    margin-left: 0;
+    margin-left: 10px;
     margin-right: 0;
     padding-left: 40px;
     width: 501px;
+
+      h3 {
+        font-size: 15px;
+        line-height: 21px;
+        padding-top: 10px;
+        margin-bottom: 8px;
+      }
+      ul {
+        max-width: 400px;
+      }
+      li {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 10px;
+      }
+      li:last-child {
+        padding-bottom: 10px;
+      }
+      li:before {
+        left: 10px;
+        top: 6px;
+      }
   }
 }
