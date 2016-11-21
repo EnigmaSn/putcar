@@ -71,6 +71,7 @@
   line-height: 21px;
   margin-bottom: 10px;
   font-weight: bold;
+  transition: all 0.2s ease-in-out 0s;
 }
 .order__questionnaire:hover {
   background-color: $rgbl;
@@ -89,6 +90,7 @@
   font-size: 13px;
   line-height: 21px;
   font-weight: bold;
+  transition: all 0.2s ease-in-out 0s;
 }
 .order__call:hover {
   color: $rgbl;
@@ -102,6 +104,7 @@
   text-align: center;
   color: $black;
   margin-bottom: 5px;
+  transition: all 0.2s ease-in-out 0s;
 }
 .order__tel:hover {
   color: $gray;

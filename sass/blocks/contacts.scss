@@ -79,6 +79,9 @@
 .contacts__e-mail:hover {
   color: $rgbl;
 }
+.contacts__map {
+  height: 320px;
+}
 
 @media #{$desktop-widths} {
   .contacts__wrapper {
@@ -145,13 +148,15 @@
       }
   }
   .contacts__map {
-    // min-width: 520px;
-    // max-width: 520px;
-
-      img {
-        // padding-left: 57px;
-        width: 100%;
-        height: 100%;
-      }
+    height: 485px;
+    width: 520px;
+    // // min-width: 520px;
+    // // max-width: 520px;
+    //
+    //   img {
+    //     // padding-left: 57px;
+    //     width: 100%;
+    //     height: 100%;
+    //   }
   }
 }

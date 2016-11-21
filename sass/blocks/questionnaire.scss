@@ -73,6 +73,8 @@
       line-height: 21px;
       margin-left: auto;
       margin-right: auto;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out 0s;
     }
     button:hover {
       background-color: $rgbl;
@@ -106,6 +108,8 @@
   line-height: 21px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
 }
 .questionnaire__form-btn-prev {
   // background-color: $white;
@@ -136,6 +140,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
 }
 .questionnaire__form-btn-next:hover {
   background-color: $rgbl;
@@ -242,6 +248,7 @@
             padding-bottom: 15px;
             padding-left: 50px;
             padding-right: 50px;
+            transition: all 0.2s ease-in-out 0s;
           }
           a.active {
             color: rgba(255,255,255,1);

@@ -29,10 +29,10 @@
         <nav class="page-header__nav">
           <ul>
             <li>
-              <a href="#">Калькулятор</a>
-              <a href="#">Условия</a>
-              <a href="#">Отзывы</a>
-              <a href="#">Вопросы и ответы</a>
+              <a href="#calc">Калькулятор</a>
+              <a href="#terms">Условия</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#faq">Вопросы и ответы</a>
             </li>
           </ul>
         </nav>
@@ -70,6 +70,7 @@
     </section>
 
     <section class="credit-calc">
+      <a name="calc"></a>
       <div class="credit-calc__wrapper">
         <div class="credit-calc__inputs">
           <h2>Кредитный калькулятор</h2>
@@ -77,12 +78,7 @@
             <div class="credit-calc__costs">
               <label>Стоимость автобомиля</label>
               <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
-              <!-- <div class="credit-calc__cost-range-controls">
-                <div class="credit-calc__cost-scale">
-                  <div class="credit-calc__cost-bar"></div>
-                </div>
-                <div class="credit-calc__cost-range-toggle"></div>
-              </div> -->
+
               <div class="credit-calc__value">
                 <span class="credit-calc__cost-min">10 000</span>
                 <span class="credit-calc__cost-max">10 000 000</span>
@@ -91,12 +87,7 @@
             <div class="credit-calc__days">
               <label>Срок кредита</label>
               <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
-              <!-- <div class="credit-calc__days-range-controls">
-                <div class="credit-calc__days-scale">
-                  <div class="credit-calc__days-bar"></div>
-                </div>
-                <div class="credit-calc__days-range-toggle"></div>
-              </div> -->
+
               <div class="credit-calc__value">
                 <span class="credit-calc__day-min">1 день</span>
                 <span class="credit-calc__day-max">365 дней</span>
@@ -123,7 +114,7 @@
                 <span class="credit-calc__results-sum">1 000 000 руб.</span>
               </div>
             </div>
-            <div class="credit-calc__results--normal">
+            <!-- <div class="credit-calc__results--normal">
               <div class="credit-calc__results-middle">
                 <div class="credit-calc__results-monthly-payment">
                   <span class="credit-calc__results-numbers">70 000 руб.</span>
@@ -140,7 +131,6 @@
                 <span class="credit-calc__results-sum">1 500 000 руб.</span>
               </div>
             </div>
-            <!-- </div> -->
             <div class="credit-calc__results--bold">
               <div class="credit-calc__results-middle">
                 <div class="credit-calc__results-monthly-payment">
@@ -158,7 +148,7 @@
                 <span class="credit-calc__results-sum">100 000 000 руб.</span>
               </div>
             </div>
-            </div>
+            </div> -->
 
 
           </div>
@@ -183,6 +173,7 @@
     </section>
 
     <section class="reviews">
+      <a name="reviews"></a>
       <div class="reviews__wrapper">
         <h2>Отзывы</h2>
         <div class="reviews__slider slider">
@@ -241,6 +232,7 @@
     </section>
 
     <section class="profitable-terms">
+      <a name="terms"></a>
       <div class="profitable-terms__wrapper">
         <h2>Выгодные условия автоломбарда</h2>
         <p>Нижнем Новгороде выдаёт кредит наличными под залог легковых и грузовых автомобилей. Принимаем иностранные и отечественные машины возрастом до 180 и 60 месяцев соответственно.</p>
@@ -302,6 +294,7 @@
     </section>
 
     <section class="faq">
+      <a name="faq"></a>
       <div class="faq__wrapper">
         <h2>Как быстро я получу деньги?</h2>
         <p>Вы можете получить займ прямо в день обращения. Заявки принимаем 24 часа в сутки. Оставьте заявку в удобное для вас время, с вами свяжется наш специалист. Мы оцениваем ва автомобиль и уже через 30 минут вы можете получить ваши деньги. Вам остается приехать к нам в офис, чтобы оформить все документы.</p>
@@ -474,10 +467,13 @@
             <a class="contacts__e-mail" href="mailto:lombardnn.avto@yandedx.ru">lombardnn.avto@yandedx.ru</a>
           </div>
         </div>
-        <picture class="contacts__map">
+        <!-- <picture class="contacts__map">
           <source media="(min-width: 1150px)" width="519" height="485" srcset="img/map-desktop.jpg">
           <img src="img/map-mob.jpg" width="319" height="240" alt="карта">
-        </picture>
+        </picture> -->
+        <div class="contacts__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=hw4kP3jBG_NUZR4P1A2eQKElCQ1HK_ei&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </div>
       </div>
     </section>
   </main>
