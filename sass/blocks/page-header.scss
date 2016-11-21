@@ -1,8 +1,12 @@
 .page-header {
-  // min-height: 63px;
+  position: relative;
 }
 .page-header__wrapper {
   @include container;
+  // position: fixed;
+  // left: auto;
+  // right: auto;
+  // margin: auto;
   background-color: $white;
   background-image: url("../img/logo-black.png");
   background-repeat: no-repeat;

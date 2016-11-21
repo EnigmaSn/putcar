@@ -17,11 +17,9 @@
       <div class="page-header__logo">
       </div>
       <a class="page-header__call-back" href="#callback">Обратный звонок</a>
-      <div class="page-header__menu--close">
-        <a href="#">
-          <div class="page-header__menu-tel"></div>
-          <div class="page-header__menu-open"></div>
-        </a>
+      <div href="#" class="page-header__menu--close">
+        <div class="page-header__menu-tel"></div>
+        <div class="page-header__menu-open"></div>
       </div>
       <div class="page-header__menu--open">
         <button class="page-header__menu-close" type="button" title="Закрыть">Закрыть</button>
@@ -69,18 +67,17 @@
       </div>
     </section>
 
-    <section class="credit-calc">
-      <a name="calc"></a>
+    <section id="calc" class="credit-calc">
       <div class="credit-calc__wrapper">
         <div class="credit-calc__inputs">
           <h2>Кредитный калькулятор</h2>
           <form action="#" class="credit-calc__data">
             <div class="credit-calc__costs">
               <label>Стоимость автобомиля</label>
-              <input id="credit-calc__cost" type="range" min="10000" max="10000000" step="5000" value="500 000">
+              <input id="credit-calc__cost" type="range" min="100000" max="10000000" step="5000" value="500000">
 
               <div class="credit-calc__value">
-                <span class="credit-calc__cost-min">10 000</span>
+                <span class="credit-calc__cost-min">100 000</span>
                 <span class="credit-calc__cost-max">10 000 000</span>
               </div>
             </div>
@@ -172,8 +169,7 @@
       </div>
     </section>
 
-    <section class="reviews">
-      <a name="reviews"></a>
+    <section id="reviews" class="reviews">
       <div class="reviews__wrapper">
         <h2>Отзывы</h2>
         <div class="reviews__slider slider">
@@ -231,8 +227,7 @@
       </div>
     </section>
 
-    <section class="profitable-terms">
-      <a name="terms"></a>
+    <section id="terms" class="profitable-terms">
       <div class="profitable-terms__wrapper">
         <h2>Выгодные условия автоломбарда</h2>
         <p>Нижнем Новгороде выдаёт кредит наличными под залог легковых и грузовых автомобилей. Принимаем иностранные и отечественные машины возрастом до 180 и 60 месяцев соответственно.</p>
@@ -284,8 +279,8 @@
           <h2>Оставьте заявку на получение займа прямо сейчас</h2>
           <p>Что бы оформить заявку, позвоните в любое удобное для вас время или заполните анкету онлайн</p>
           <div class="order__btns">
-            <a href="#" class="order__questionnaire">Заполнить анкету</a>
-            <a href="#" class="order__call">Обратный звонок</a>
+            <a href="#questionnaire" class="order__questionnaire">Заполнить анкету</a>
+            <a href="#callback" class="order__call">Обратный звонок</a>
           </div>
           <a class="order__tel" href="tel:+78312199517">+7 831 219-95-17</a>
           <span class="order__nb">Заявки принимаются круглосуточно</span>
@@ -293,13 +288,12 @@
       </div>
     </section>
 
-    <section class="faq">
-      <a name="faq"></a>
+    <section id="faq" class="faq">
       <div class="faq__wrapper">
         <h2>Как быстро я получу деньги?</h2>
         <p>Вы можете получить займ прямо в день обращения. Заявки принимаем 24 часа в сутки. Оставьте заявку в удобное для вас время, с вами свяжется наш специалист. Мы оцениваем ва автомобиль и уже через 30 минут вы можете получить ваши деньги. Вам остается приехать к нам в офис, чтобы оформить все документы.</p>
           <div class="faq__questions-answers-container">
-            <a class="faq__questions-answers">Вопросы и ответы по услугам ломбарда</a>
+            <a href="#" class="faq__questions-answers">Вопросы и ответы по услугам ломбарда</a>
           </div>
         <div class="faq__questions">
           <div>
@@ -310,15 +304,15 @@
             <b>Что может являться предметом залога?</b>
             <p>Автомобили легковые иностранного производства; автомобили легковые отечественного производства; мототехника, катера, яхты; строительная техника, спецтехника.</p>
           </div>
-        </div>
-        <div class="faq__another-question">
-          <b>Другой вопрос?</b>
-          <span>Посмотрите <a href="#">здесь</a></span>
+          <div class="faq__another-question">
+            <b>Другой вопрос?</b>
+            <span>Посмотрите <a href="#">здесь</a></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="questionnaire">
+    <section class="questionnaire" id="questionnaire">
       <div class="questionnaire__wrapper">
         <div class="questionnaire__header">
           <h2>Заполните анкету онлайн</h2>
@@ -508,7 +502,7 @@
       <input id="name" type="text" required>
       <label for="phone">Домашний телефон</label>
       <input id="phone" type="tel" required>
-      <a href="#thanks" class="callback-modal__order">Заказать звонок</a>
+      <button class="callback-modal__order" type="submit">Заказать звонок</button>
     </form>
     <a class="callback-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>
   </div>

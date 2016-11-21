@@ -36,7 +36,7 @@
           min-width: 300px;
           outline-color: $orange;
         }
-        a {
+        button {
           display: block;
           padding: 15px;
           min-width: 210px;
@@ -55,7 +55,7 @@
           text-decoration: none;
           transition: all 0.2s ease-in-out 0s;
         }
-        a:hover {
+        button:hover {
           background-color: $rgbl;
           transition: all 0.2s ease-in-out 0s;
         }

@@ -95,7 +95,7 @@
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
-  transition: all 0.2s ease-in-out 0s;
+  // transition: all 0.2s ease-in-out 0s;
 }
 .faq__questions-answers:hover:after {
   border: 1px solid $rgbl;
@@ -107,6 +107,7 @@
 .faq__questions {
   margin-top: 30px;
   @include side-margin;
+  display: none;
     div {
       margin-bottom: 20px;
     }
@@ -228,8 +229,8 @@
   }
   .faq__another-question {
     position: absolute;
-    right: -20px;
-    bottom: 130px;
+    right: -400px;
+    top: 15px;
     border: none;
       span {
         font-size: 13px;

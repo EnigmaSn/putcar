@@ -1,45 +1,10 @@
 $(function(){
-  // объявление переменной
-  // поиск по всему DOM-дереву, возврат первого значения
-  var menu_button = $(".page-header__menu--close");
-  var menu = $(".page-header__menu--open");
-  var header = $(".page-header__wrapper");
 
-  // отлавливает событие
-  menu_button.click(function(event) {
-    if (menu.hasClass("page-header__menu--open-show")) {
-        // вывод в консоль
-        console.log("клик таки");
-        // без точки, Карл, ибо этот метод работает только с классами
-        // menu.classList.remove("page-header__menu--open-show");
-    } else {
-        menu.addClass("page-header__menu--open-show");
-    }
-    return false;
-  });
-
-  // фон шапки
-  menu_button.click(function(event) {
-    header.addClass("page-header__wrapper-show-menu");
-  });
-
-
-  var menu_close = $(".page-header__menu-close");
-      menu_close.click(function(event) {
-          menu.removeClass("page-header__menu--open-show");
-          return false;
-      });
-
-
-  // menu.addEventListener("click", function(event) {
-  //   if (header.classList.contains("page-header__wrapper-show-menu")) {
-  //       header.classList.remove("page-header__wrapper-show-menu");
-  //   }
-  //   else {
-  //       header.classList.add("page-header__wrapper-show-menu");
-  //   }
-  // });
-
+$(".page-header__menu--close, .page-header__menu-close").click(function(){
+  $(".page-header__menu--open").toggleClass("page-header__menu--open-show");
+  $(".page-header__wrapper").toggleClass("page-header__wrapper-show-menu");
+  return false;
+});
 
   // Слайдер
   $('.reviews__slider').slick({
@@ -99,11 +64,10 @@ $(function(){
       wrapCSS: 'fancyform-wrap',
       closeBtn:false,
   };
-  $('.page-header__call-back').fancybox(fancyFormSettings);
-  $('.callback-modal__order').fancybox(fancyFormSettings);
+  $('.page-header__call-back, .order__call').fancybox(fancyFormSettings);
 
   // анимация калькулятора
-  $('#credit-calc__cost').change(function(){
+  $('#credit-calc__cost').on("input",function(){
    var cost=$(this).val();
    $('.credit-calc__results-sum').text(cost.toString().replace(/./g, function(c, i, a) {return i && c !== "." && !((a.length - i) % 3) ? ' ' + c : c;})+' руб.');
    if(cost>=2000000){
@@ -114,5 +78,16 @@ $(function(){
     $('.credit-calc__results--light').removeClass('credit-calc__results--bold').removeClass('credit-calc__results--normal');
    }
   });
+
+
+$('.faq__questions-answers').click(function(){
+  $('.faq__questions').slideToggle();
+  return false;
+  });
+
+$('.page-header__nav a, .order__questionnaire').click(function(){
+    $('html:not(:animated),body:not(:animated)').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
+    return false;
+});
 
 });

@@ -44,72 +44,63 @@
   .order__nb {
     margin-left: 50px;
   }
-}
-.order__questionnaire {
-  // color: $white;
-  // border-radius: 50px;
-  // background-color: $orange;
-  // display: block;
-  // // text-align: center;
-  // text-transform: uppercase;
-  // font-size: 13px;
-  // line-height: 21px;
-  // padding: 5px;
+  .order__btns {
+    .order__questionnaire {
+      display: block;
+      color: $white;
+      border-radius: 50px;
+      background-color: $orange;
+      border: 1px solid $white;
+      color: $white;
+      padding: 7px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 21px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out 0s;
+    }
+    .order__questionnaire:hover {
+      background-color: $rgbl;
+      transition: all 0.2s ease-in-out 0s;}
 
-  display: block;
-  // min-width: 187px;
-  // max-width: 187px;
-  color: $white;
-  border-radius: 50px;
-  background-color: $orange;
-  border: 1px solid $white;
-  color: $white;
-  padding: 7px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 13px;
-  line-height: 21px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out 0s;
+    .order__call {
+      color: $white;
+      border-radius: 50px;
+      background-color: $white;
+      border: 1px solid $orange;
+      color: $orange;
+      padding: 7px;
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out 0s;
+    }
+    .order__call:hover {
+      color: $rgbl;
+      border: 1px solid $rgbl;
+      transition: all 0.2s ease-in-out 0s;
+    }
+  }
+  .order__tel {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: $black;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .order__tel:hover {
+    color: $gray;
+    transition: all 0.2s ease-in-out 0s;
+  }
 }
-.order__questionnaire:hover {
-  background-color: $rgbl;
-  transition: all 0.2s ease-in-out 0s;}
 
-.order__call {
-  color: $white;
-  border-radius: 50px;
-  background-color: $white;
-  border: 1px solid $orange;
-  color: $orange;
-  padding: 7px;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-size: 13px;
-  line-height: 21px;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out 0s;
-}
-.order__call:hover {
-  color: $rgbl;
-  border: 1px solid $rgbl;
-  transition: all 0.2s ease-in-out 0s;
-}
-.order__tel {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: $black;
-  margin-bottom: 5px;
-  transition: all 0.2s ease-in-out 0s;
-}
-.order__tel:hover {
-  color: $gray;
-  transition: all 0.2s ease-in-out 0s;
-}
 
 @media #{$desktop-widths} {
   .order__wrapper {
