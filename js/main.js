@@ -1,5 +1,6 @@
 $(function(){
 
+// открытие меню
 $(".page-header__menu--close, .page-header__menu-close").click(function(){
   $(".page-header__menu--open").toggleClass("page-header__menu--open-show");
   $(".page-header__wrapper").toggleClass("page-header__wrapper-show-menu");
@@ -35,24 +36,7 @@ $(".page-header__menu--close, .page-header__menu-close").click(function(){
     return false;
   });
 
-  // var i=$(this).parent().removeClass("active").next().addClass("active").index();
-  //   $('.questionnaire__menu a').removeClass('active').eq(i).addClass('active');
-
-
-  // $(document).ready(function(){
-  //     $(".callback-modal").fancybox();
-  //     $("#callback").submit(function(){ return false; });
-  //     $("#f_send").on("click", function(){
-  //
-  //         // тут дальнейшие действия по обработке формы
-  //         // закрываем окно, как правило делать это нужно после обработки данных
-  //         $("#f_contact").fadeOut("fast", function(){
-  //             $(this).before("<p><strong>Ваше сообщение отправлено!</strong></p>");
-  //             setTimeout("$.fancybox.close()", 1000);
-  //         });
-  //     });
-  // });
-
+// модальные окна
   var fancyFormSettings={
       padding: 0,
       margin: 0,
@@ -79,17 +63,19 @@ $(".page-header__menu--close, .page-header__menu-close").click(function(){
    }
   });
 
-
+// открытие вопросов
 $('.faq__questions-answers').click(function(){
   $('.faq__questions').slideToggle();
   return false;
   });
 
-$('.page-header__nav a, .order__questionnaire').click(function(){
+// анимация до пункта меню
+$('.page-header__nav a, .order__questionnaire, .page-footer__menu a').click(function(){
     $('html:not(:animated),body:not(:animated)').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
     return false;
 });
 
+// отправка формы
 $('form').submit(function(event){
     $.ajax({
         type: "POST",
