@@ -4,7 +4,7 @@
   background-image: url(../img/car-time-mob.png);
   background-repeat: no-repeat;
   background-position: 10px 150px;
-  // padding-top: 30px;
+  padding-top: 30px;
 
     h1 {
       color: $white;
@@ -51,6 +51,7 @@
     background-repeat: no-repeat;
     background-position: 90px 45px;
     max-height: 530px;
+    padding-bottom: 0;
       h1 {
         font-size: 48px;
         line-height: 56px;

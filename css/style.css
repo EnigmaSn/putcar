@@ -218,11 +218,16 @@ body {
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   background-color: #ffffff;
   background-image: url("../img/logo-black.png");
   background-repeat: no-repeat;
   background-position: 30px 15px;
-  min-height: 63px; }
+  min-height: 63px;
+  z-index: 50; }
   @media (min-width: 1150px) {
     .page-header__wrapper {
       width: 1040px; } }
@@ -554,7 +559,8 @@ body {
   background-color: #00919b;
   background-image: url(../img/car-time-mob.png);
   background-repeat: no-repeat;
-  background-position: 10px 150px; }
+  background-position: 10px 150px;
+  padding-top: 30px; }
   @media (min-width: 1150px) {
     .profit__wrapper {
       width: 1040px; } }
@@ -605,7 +611,8 @@ body {
     background-image: url(../img/car-time-desktop1.png);
     background-repeat: no-repeat;
     background-position: 90px 45px;
-    max-height: 530px; }
+    max-height: 530px;
+    padding-bottom: 0; }
     .profit__wrapper h1 {
       font-size: 48px;
       line-height: 56px;
