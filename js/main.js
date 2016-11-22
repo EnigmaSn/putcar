@@ -90,4 +90,15 @@ $('.page-header__nav a, .order__questionnaire').click(function(){
     return false;
 });
 
+$('form').submit(function(event){
+    $.ajax({
+        type: "POST",
+        url: "/post.php",
+        data: $(this).serialize(),
+        success: function(msg){
+
+        }
+    });
+});
+
 });
