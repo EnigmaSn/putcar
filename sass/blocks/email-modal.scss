@@ -1,8 +1,8 @@
-.callback-modal__wrapper {
+.email-modal__wrapper {
   // position: relative;
 
 }
-.callback-modal {
+.email-modal {
   width: 390px;
   margin: auto;
   position: relative;
@@ -36,6 +36,9 @@
           min-width: 300px;
           outline-color: $orange;
         }
+        textarea {
+          max-width: 298px;
+        }
         button {
           display: block;
           padding: 15px;
@@ -44,17 +47,18 @@
           border-radius: 50px;
           background-color: $orange;
           border: 1px solid $white;
-          cursor: pointer;
           color: $white;
           padding: 10px;
           text-align: center;
           text-transform: uppercase;
+          cursor: pointer;
           font-size: 13px;
           line-height: 21px;
           margin-top: 10px;
           // margin-bottom: 40px;
           text-decoration: none;
           transition: all 0.2s ease-in-out 0s;
+          font-family: 'Roboto Condensed', sans-serif;
         }
         button:hover {
           background-color: $rgbl;
@@ -63,7 +67,7 @@
     }
 }
 
-.callback-modal__close {
+.email-modal__close {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -77,8 +81,8 @@
   outline: none;
 }
 
-.callback-modal__close:before,
-.callback-modal__close:after {
+.email-modal__close:before,
+.email-modal__close:after {
   content: "";
   display: block;
   position: absolute;
@@ -89,9 +93,9 @@
   background-color: $white;
   border-radius: 1px;
 }
-.callback-modal__close:before {
+.email-modal__close:before {
   transform: rotate(45deg);
 }
-.callback-modal__close:after {
+.email-modal__close:after {
   transform: rotate(-45deg);
 }

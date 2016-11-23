@@ -41,13 +41,15 @@
           line-height: 30px;
         }
         input {
-          height: 40px;
+          height: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
         }
         input:focus {
           outline-color: $orange;
         }
         select {
-          height: 40px;
+          height: 30px;
         }
     }
     >div {
@@ -57,6 +59,7 @@
       display: block;
     }
     button {
+      font-family: 'Roboto Condensed', sans-serif;
       display: block;
       padding: 15px;
       min-width: 190px;
@@ -67,7 +70,7 @@
       color: $white;
       padding: 10px;
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
       text-transform: uppercase;
       font-size: 13px;
       line-height: 21px;
@@ -91,7 +94,8 @@
   padding-top: 30px;
 }
 .questionnaire__form-btn-next {
-  margin-top: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 10px;
   display: block;
   min-width: 170px;
   max-width: 170px;
@@ -102,7 +106,7 @@
   color: $white;
   padding: 10px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 21px;
@@ -112,20 +116,10 @@
   transition: all 0.2s ease-in-out 0s;
 }
 .questionnaire__form-btn-prev {
-  // background-color: $white;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-  // text-align: center;
-  // border: 1px solid $orange;
-  // border-radius: 50px;
-  // color: $orange;
-  // text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
   min-width: 170px;
   max-width: 170px;
   display: block;
-  // align-self: center;
-  // margin-bottom: 40px;
-
   color: $white;
   border-radius: 50px;
   background-color: $white;
@@ -133,13 +127,13 @@
   color: $orange;
   padding: 10px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 21px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out 0s;
 }
@@ -311,13 +305,13 @@
       .questionnaire__form-nb {
         position: absolute;
         top: 40px;
-        right: 55px;
+        right: 20px;
         max-width: 150px;
       }
       .questionnaire__form-btn-next {
         position: absolute;
         bottom: 40px;
-        right: 235px;
+        right: 195px;
         width: 275px;
         padding-left: 0;
         padding-right: 0;
@@ -336,20 +330,20 @@
       .questionnaire__form-nb {
         position: absolute;
         top: 40px;
-        right: 55px;
+        right: 20px;
         max-width: 150px;
       }
       .questionnaire__form-btn-next {
         position: absolute;
-        bottom: -5px;
-        right: 235px;
+        bottom: 40px;
+        right: 195px;
         width: 275px;
         padding-left: 0;
         padding-right: 0;
       }
       .questionnaire__form-btn-prev {
         position: absolute;
-        bottom: -5px;
+        bottom: 40px;
         left: 0px;
         width: 275px;
         padding-left: 0;
@@ -361,7 +355,7 @@
       .questionnaire__form-nb {
         position: absolute;
         top: 40px;
-        right: 55px;
+        right: 20px;
         max-width: 150px;
       }
       .questionnaire__form-checkbox {
@@ -404,7 +398,7 @@
       }
       .questionnaire__form-btn-submit {
         position: absolute;
-        top: 380px;
+        top: 376px;
         right: 235px;
         display: block;
         // height: 45px;
@@ -416,7 +410,7 @@
       }
       .questionnaire__form-btn-prev {
         position: absolute;
-        top: 340px;
+        bottom: 30px;
         left: 0px;
         width: 275px;
         padding-left: 0;

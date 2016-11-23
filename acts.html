@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Автоломбард</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+      </div>
+      <a class="page-header__call-back" href="#callback">Обратный звонок</a>
+      <div class="page-header__adress">
+        <span>НИЖНИЙ НОВГОРОД, ул. Адмирала Нахимова, 3</span>
+      </div>
+      <div href="#" class="page-header__menu--close">
+        <div class="page-header__menu-tel"></div>
+        <div class="page-header__menu-open"></div>
+      </div>
+      <div class="page-header__menu--open">
+        <button class="page-header__menu-close" type="button" title="Закрыть">Закрыть</button>
+        <p>Деньги под залог авто за 30 минут до 10 000 000 рублей</p>
+        <nav class="page-header__nav">
+          <ul>
+            <li>
+              <a href="#calc">Калькулятор</a>
+              <a href="#terms">Условия</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#faq">Вопросы и ответы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__phone">
+          <a class="page-header__phone-number" href="tel:88005553535">8 800 555-35-35</a>
+          <a class="page-header__phone-but" href="tel:88005553535">Позвонить</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="act">
+      <div class="act__wrapper">
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <!-- лого фоном -->
+        <a href="tel:8 (800) 555-35-35">8 800 555-35-35</a>
+      </div>
+      <div class="page-footer__menu">
+        <ul>
+          <li><a href="acts.html">Законодательные акты</a></li>
+          <li><a href="#order">Кредит под залог автомобиля</a></li>
+          <li><a href="#faq">Вопросы и ответы</a></li>
+          <li><a href="#terms">Условия</a></li>
+          <li><a href="#calc">Калькулятор</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__adress">
+        <span>НИЖНИЙ НОВГОРОД</span>
+         <span>ул. Адмирала Нахимова, 3</span>
+      </div>
+      <div class="page-footer__about">
+        <span>Все права защищены &#169; 2016</span>
+        <span>Made in <a href="http://riverstart.ru/">Riverstart</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="callback" class="callback-modal">
+    <h2>Обратный звонок</h2>
+    <form action="#">
+      <label for="name">Имя</label>
+      <input id="name" type="text" required>
+      <label for="phone">Домашний телефон</label>
+      <input id="phone" type="tel" required>
+      <button class="callback-modal__order" type="submit">Заказать звонок</button>
+    </form>
+    <a class="callback-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>
+  </div>
+
+  <div id="thanks" class="thanks-modal">
+    <div class="thanks-modal__wrapper">
+      <h2>Спасибо</h2>
+      <span>Наши менеджеры свяжутся с вами в кратчайшие сроки</span>
+      <a class="thanks-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.fancybox-thumbs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

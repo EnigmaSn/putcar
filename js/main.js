@@ -1,7 +1,7 @@
 $(function(){
 
 // открытие меню
-$(".page-header__menu--close, .page-header__menu-close").click(function(){
+$(".page-header__menu-open, .page-header__menu-close").click(function(){
   $(".page-header__menu--open").toggleClass("page-header__menu--open-show");
   $(".page-header__wrapper").toggleClass("page-header__wrapper-show-menu");
   return false;
@@ -48,7 +48,7 @@ $(".page-header__menu--close, .page-header__menu-close").click(function(){
       wrapCSS: 'fancyform-wrap',
       closeBtn:false,
   };
-  $('.page-header__call-back, .order__call').fancybox(fancyFormSettings);
+  $('.page-header__call-back, .order__call, faq__mail-back').fancybox(fancyFormSettings);
 
   // анимация калькулятора
   $('#credit-calc__cost').on("input",function(){
