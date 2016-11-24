@@ -411,18 +411,15 @@ body {
   border: 1px solid #fdd9a3;
   top: -35px;
   right: 60px;
-  transition: color 0.2s ease-in-out 0s; }
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto;
+  transition: all 0.2s ease-in-out 0s; }
 
-.page-header__menu-tel:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  background-position: -743px -10px;
-  background-image: url("../img/spritesheet.png");
-  position: absolute;
-  top: 25%;
-  left: 25%;
+.page-header__menu-tel:hover {
+  border: 1px solid #00919b;
+  background-image: url("../img/phone-hover.svg");
   transition: all 0.2s ease-in-out 0s; }
 
 .page-header__menu-open {
@@ -1073,6 +1070,10 @@ body {
   font-size: 13px;
   line-height: 18px;
   position: relative; }
+  .advantages li svg {
+    position: absolute;
+    fill: #000;
+    top: -60px; }
 
 .advantages li:nth-child(2n) {
   padding-left: 20px; }
@@ -1093,105 +1094,6 @@ body {
     .advantages .advantages__item-line:after {
       margin-left: 50px;
       margin-right: 50px; } }
-
-.advantages .advantages__item--guard:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 36px;
-  background-position: -10px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--percent:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 36px;
-  background-position: -66px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--guarantor:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 36px;
-  background-position: -122px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--insurance:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 34px;
-  background-position: -178px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--insurance:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 34px;
-  background-position: -178px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--prolongation:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 36px;
-  background-position: -234px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--certificate:before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 38px;
-  background-position: -290px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--loan:before {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 36px;
-  background-position: -340px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
-
-.advantages .advantages__item--agreement:before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 34px;
-  background-position: -393px -10px;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -60px; }
 
 .advantages__wrapper {
   width: 320px;
@@ -2404,7 +2306,8 @@ body {
   flex-direction: column;
   padding-left: 40px;
   margin-left: 15px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  position: relative; }
   @media (min-width: 1150px) {
     .questionnaire__prompts {
       margin-left: 50px;
@@ -2412,24 +2315,10 @@ body {
   .questionnaire__prompts span {
     font-size: 15px;
     line-height: 21px; }
-  .questionnaire__prompts span:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -40px;
-    top: 10px;
-    width: 28px;
-    height: 27px;
-    background-position: -781px -10px;
-    background-image: url("../img/spritesheet.png"); }
-  .questionnaire__prompts .questionnaire__prompt_2:before {
-    width: 24px;
-    height: 28px;
-    background-position: -829px -10px; }
-  .questionnaire__prompts .questionnaire__prompt_3:before {
-    width: 19px;
-    height: 28px;
-    background-position: -873px -10px; }
+
+.questionnaire__form-checkbox-item {
+  display: flex;
+  flex-direction: row; }
 
 .questionnaire__form-checkbox-item {
   position: relative; }
@@ -2446,6 +2335,16 @@ body {
 .questionnaire__prompt {
   margin-top: 20px;
   position: relative; }
+  .questionnaire__prompt svg {
+    position: absolute;
+    left: -40px;
+    top: 10px; }
+
+.questionnaire__prompt:nth-child(2) svg {
+  left: -38px; }
+
+.questionnaire__prompt:nth-child(3) svg {
+  left: -36px; }
 
 @media (min-width: 1150px) {
   .questionnaire__header {

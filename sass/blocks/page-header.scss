@@ -122,22 +122,18 @@
   border: 1px solid #fdd9a3;
   top: -35px;
   right: 60px;
-
-  transition: color 0.2s ease-in-out 0s;
-}
-.page-header__menu-tel:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  background-position: -743px -10px;
-  background-image: url("../img/spritesheet.png");
-  position: absolute;
-  top: 25%;
-  left: 25%;
-
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto;
   transition: all 0.2s ease-in-out 0s;
 }
+.page-header__menu-tel:hover {
+  border: 1px solid $rgbl;
+  background-image: url("../img/phone-hover.svg");
+  transition: all 0.2s ease-in-out 0s;
+}
+
 .page-header__menu-open {
   position: absolute;
   width: 36px;

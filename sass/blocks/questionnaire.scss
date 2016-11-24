@@ -163,36 +163,16 @@
   flex-direction: column;
   padding-left: 40px;
   @include side-margin;
+  position: relative;
     span {
       font-size: 15px;
       line-height: 21px;
     }
-    span:before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: -40px;
-      top: 10px;
-      width: 28px;
-      height: 27px;
-      background-position: -781px -10px;
-      background-image: url("../img/spritesheet.png");
-    }
-    .questionnaire__prompt_2:before {
-      width: 24px;
-      height: 28px;
-      background-position: -829px -10px;
-    }
-    .questionnaire__prompt_3:before {
-      width: 19px;
-      height: 28px;
-      background-position: -873px -10px;
-    }
 }
-// .questionnaire__form-checkbox-item {
-//   display: flex;
-//   flex-direction: row;
-// }
+.questionnaire__form-checkbox-item {
+  display: flex;
+  flex-direction: row;
+}
 .questionnaire__form-checkbox-item {
   position: relative;
     label {
@@ -212,6 +192,21 @@
   margin-top: 20px;
   // margin-bottom: 30px;
   position: relative;
+    svg {
+      position: absolute;
+      left: -40px;
+      top: 10px;
+    }
+}
+.questionnaire__prompt:nth-child(2) {
+    svg {
+      left: -38px;
+    }
+}
+.questionnaire__prompt:nth-child(3) {
+    svg {
+      left: -36px;
+    }
 }
 @media #{$desktop-widths} {
   .questionnaire__header {

@@ -33,6 +33,11 @@
     font-size: 13px;
     line-height: 18px;
     position: relative;
+      svg {
+        position: absolute;
+        fill: #000;
+        top: -60px;
+      }
   }
   li:nth-child(2n) {
     padding-left: 20px;
@@ -50,105 +55,108 @@
       box-sizing: border-box;
       @include side-margin;
   }
-  .advantages__item--guard:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 36px;
-    background-position: -10px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--percent:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 36px;
-    background-position: -66px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--guarantor:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 36px;
-    background-position: -122px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--insurance:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 34px;
-    background-position: -178px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--insurance:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 34px;
-    background-position: -178px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--prolongation:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 36px;
-    background-position: -234px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--certificate:before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 38px;
-    background-position: -290px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--loan:before {
-    content: "";
-    display: block;
-    width: 33px;
-    height: 36px;
-    background-position: -340px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
-  .advantages__item--agreement:before {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 34px;
-    background-position: -393px -10px;
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -60px;
-  }
+  // .advantages__item--guard:before {
+  //   content: "";
+  //   // display: block;
+  //   width: 36px;
+  //   height: 36px;
+  //   // background-position: -10px -10px;
+  //   // background-image: url("../img/spritesheet.png");
+  //   background-image: url("../img/advantages__1.svg");
+  //   // background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--percent:before {
+  //   content: "";
+  //   display: block;
+  //   width: 36px;
+  //   height: 36px;
+  //   // background-position: -66px -10px;
+  //   // background-image: url("../img/spritesheet.png");
+  //   background-image: url("../img/advantages__2.svg");
+  //   fill: #f78c00;
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--guarantor:before {
+  //   content: "";
+  //   display: block;
+  //   width: 36px;
+  //   height: 36px;
+  //   background-position: -122px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--insurance:before {
+  //   content: "";
+  //   display: block;
+  //   width: 36px;
+  //   height: 34px;
+  //   background-position: -178px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--insurance:before {
+  //   content: "";
+  //   display: block;
+  //   width: 36px;
+  //   height: 34px;
+  //   background-position: -178px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--prolongation:before {
+  //   content: "";
+  //   display: block;
+  //   width: 36px;
+  //   height: 36px;
+  //   background-position: -234px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--certificate:before {
+  //   content: "";
+  //   display: block;
+  //   width: 30px;
+  //   height: 38px;
+  //   background-position: -290px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--loan:before {
+  //   content: "";
+  //   display: block;
+  //   width: 33px;
+  //   height: 36px;
+  //   background-position: -340px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
+  // .advantages__item--agreement:before {
+  //   content: "";
+  //   display: block;
+  //   width: 36px;
+  //   height: 34px;
+  //   background-position: -393px -10px;
+  //   background-image: url("../img/spritesheet.png");
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+  //   top: -60px;
+  // }
 }
 .advantages__wrapper {
   @include container;
