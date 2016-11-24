@@ -143,10 +143,20 @@
         line-height: 31px;
       }
       .contacts__phone {
-        // position: absolute;
-        // left: 250px;
-        // top: 305px;
-        margin-left: 30px;
+        position: absolute;
+        left: 230px;
+        top: 277px;
+        // margin-left: 30px;
+      }
+      .contacts__name {
+        position: absolute;
+        left: 250px;
+        top: 300px;
+      }
+      .contacts__position {
+        position: absolute;
+        left: 250px;
+        top: 325px;
       }
       span {
         margin-left: 30px;
