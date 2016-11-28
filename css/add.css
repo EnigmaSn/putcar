@@ -1,0 +1,68 @@
+.page-header__adress
+{
+    right: 30px;
+}
+.page-header__adress span
+{
+    font-size: 13px;
+}
+.page-header__call-back
+{
+    line-height: 36px;
+
+    display: block;
+
+    height: 36px;
+    padding: 0 15px;
+}
+.callback-modal form input
+{
+    min-width: 280px;
+    padding: 0 10px;
+}
+
+@media (max-width: 1039px)
+{
+    .page-header__call-back
+    {
+        display: none;
+    }
+}
+.page-header__call-back
+{
+    font-family: Roboto Condensed;
+    font-size: 15px;
+}
+/*
+.faq__questions{
+	max-width: initial;
+}
+.faq__questions div{
+	max-width: 630px;
+}
+.faq__another-question{
+	right: 0;
+}
+.faq__another-question b{
+	display: block;
+}*/
+.faq__another-question a
+{
+    position: relative;
+    z-index: 10;
+}
+.page-header__adress
+{
+    right: 256px;
+}
+.header_shadow
+{
+    position: absolute;
+    bottom: -16px;
+
+    width: 100%;
+    height: 16px;
+
+    background: url(../img/shadow.png) 0 0 repeat-x;
+    background-size: auto 16px;
+}

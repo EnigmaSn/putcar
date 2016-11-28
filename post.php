@@ -1,7 +1,27 @@
 <?
 
 $fields_names = array(
-    "name"=>"Имя", "site"=>"Сайт", "phone"=>"Телефон", "phone_or_email"=>"Телефон или e-mail", "message"=>"Сообщение"
+    "name"=>"Имя", 
+    "last-name"=>"Фамилия", 
+    "first-name"=>"Имя", 
+    "middle-name"=>"Отчество", 
+    "mobile-phone"=>"Мобильный телефон",     
+    "email"=>"E-mail", 
+    "phone"=>"Телефон", 
+    "check-place"=>"Место регистрации", 
+    "living-place"=>"Адрес проживания", 
+    "birthday"=>"Дата рождения", 
+    "brand"=>"Марка автомобиля", 
+    "model"=>"Модель автомобиля", 
+    "year"=>"Год выпуска", 
+    "vin"=>"VIN номер", 
+    "gov-nam"=>"Гос. номер", 
+    "news"=>"Я хочу получать информацию об акция и спецпредложениях", 
+    "agreement-1"=>"Я даю свое согласи на хранение, обработку и использование моих пресональных данных", 
+    "agreement-2"=>"Я подтверждаю свое согласие на передачу информации в электронной фоме (в том числе персональных данных) по откртым каналам связи",  
+    "site"=>"Сайт", 
+    "phone_or_email"=>"Телефон или e-mail", 
+    "message"=>"Сообщение",
 );
 
 $fields = array();
@@ -29,7 +49,7 @@ $msg = '
 
 $h  = 'MIME-Version: 1.0' . "\r\n";
 $h .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$h .= 'From: no-reply@mopatech.com' . "\r\n";
+$h .= 'From: no-reply@putcar.ru' . "\r\n";
 
 $subj = "=?utf-8?B?" . base64_encode($subj) . "?=";
 

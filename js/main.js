@@ -1,3 +1,19 @@
+GetNoun = function(number, one, two, five) {
+    number = Math.abs(number);
+    number %= 100;
+    if (number >= 5 && number <= 20) {
+        return five;
+    }
+    number %= 10;
+    if (number == 1) {
+        return one;
+    }
+    if (number >= 2 && number <= 4) {
+        return two;
+    }
+    return five;
+} 
+
 $(function(){
 
 // открытие меню
@@ -51,7 +67,7 @@ $(".page-header__menu-open, .page-header__menu-close").click(function(){
       wrapCSS: 'fancyform-wrap',
       closeBtn:false,
   };
-  $('.page-header__call-back, .order__call, faq__mail-back').fancybox(fancyFormSettings);
+  $('.page-header__call-back, .order__call, .faq__mail-back').fancybox(fancyFormSettings);
 
   // анимация калькулятора
   $('#credit-calc__cost').on("input",function(){
@@ -63,20 +79,23 @@ $(".page-header__menu-open, .page-header__menu-close").click(function(){
    }else{
     $('.credit-calc__results--light').removeClass('credit-calc__results--bold').removeClass('credit-calc__results--normal');
    }
+   $('.credit-calc__cost-max').text(cost.toString().replace(/./g, function(c, i, a) {return i && c !== "." && !((a.length - i) % 3) ? ' ' + c : c;}));
    updateCredit();
-  });
+  }).trigger('input');
   $('#credit-calc__day').on("input",function(){
+  	  var days=parseInt($('#credit-calc__day').val());  	  
+  	  $('.credit-calc__day-max').text(days+GetNoun(days,' день',' дня',' дней'));  	  
   	  updateCredit();
-  });
+  }).trigger('input');
   updateCredit();
   function updateCredit(){
   	  var cost=parseInt($('#credit-calc__cost').val());
   	  var days=parseInt($('#credit-calc__day').val());
-  	  console.log(credit);
-  	  var credit=Math.ceil(cost*((days*5/30)/100+1));
+  	  var credit=Math.ceil(cost*((days*2/30)/100+1));
   	  var permonth=Math.ceil(credit/Math.ceil(days/30));
-	  $('.credit-calc__results-sum').text(credit.toString().replace(/./g, function(c, i, a) {return i && c !== "." && !((a.length - i) % 3) ? '.' + c : c;})+' руб.');
-	  $('.credit-calc__results-permonth').text(permonth.toString().replace(/./g, function(c, i, a) {return i && c !== "." && !((a.length - i) % 3) ? '.' + c : c;})+' руб.');
+  	  
+	  $('.credit-calc__results-sum').text(cost.toString().replace(/./g, function(c, i, a) {return i && c !== "." && !((a.length - i) % 3) ? ' ' + c : c;})+' руб.');
+	  $('.credit-calc__results-permonth').text(permonth.toString().replace(/./g, function(c, i, a) {return i && c !== "." && !((a.length - i) % 3) ? ' ' + c : c;})+' руб.');
   }
 
 // открытие вопросов

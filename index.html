@@ -20,7 +20,7 @@
       </div>
       <a class="page-header__call-back" href="#callback">Обратный звонок</a>
       <div class="page-header__adress">
-        <span>НИЖНИЙ НОВГОРОД, ул. Адмирала Нахимова, 3</span>
+        <span>Н. НОВГОРОД, ул. Адмирала Нахимова, 3</span>
       </div>
       <div href="#" class="page-header__menu--close">
         <a class="page-header__phone-number" href="tel:+78312199517">
@@ -46,6 +46,7 @@
           <a class="page-header__phone-but" href="tel:+78312199517">Позвонить</a>
         </div>
       </div>
+      <div class="header_shadow"></div>
     </div>
   </header>
 
@@ -90,7 +91,7 @@
             </div>
             <div class="credit-calc__days">
               <label>Срок кредита</label>
-              <input id="credit-calc__day" type="range" min="1" max="365" step="5" value="120">
+              <input id="credit-calc__day" type="range" min="1" max="365" step="1" value="120">
 
               <div class="credit-calc__value">
                 <span class="credit-calc__day-min">1 день</span>
@@ -109,7 +110,7 @@
                   <span class="credit-calc__results-about">Ежемесячно дифференфированными платежами</span>
                 </div>
                 <div class="credit-calc__results-rate">
-                  <span class="credit-calc__results-numbers">5% в месяц</span>
+                  <span class="credit-calc__results-numbers">2% в месяц</span>
                   <span class="credit-calc__results-description">Ставка по кредиту</span>
                 </div>
               </div>
@@ -359,27 +360,27 @@
             <div class="questionnaire__form-inputs">
               <div class="questionnaire__form-last-name">
                 <label for="last-name">Фамилия<span class="questionnaire__red-point">*</span></label>
-                <input id="last-name" type="text" required>
+                <input id="last-name" type="text" required name="last-name">
               </div>
               <div class="questionnaire__form-first-name">
                 <label for="first-name">Имя<span class="questionnaire__red-point">*</span></label>
-                <input id="first-name" type="text" required>
+                <input id="first-name" type="text" required name="first-name">
               </div>
               <div class="questionnaire__form-middle-name">
                 <label for="middle-name">Отчество<span class="questionnaire__red-point">*</span></label>
-                <input id="middle-name" type="text" required>
+                <input id="middle-name" type="text" required name="middle-name">
               </div>
               <div class="questionnaire__form-mobile-phone">
                 <label for="mobile-phone">Мобильный телефон<span class="questionnaire__red-point">*</span></label>
-                <input id="mobile-phone" type="tel" required>
+                <input id="mobile-phone" type="tel" required name="mobile-phone">
               </div>
               <div class="questionnaire__form-phone">
                 <label for="phone">Телефон</label>
-                <input id="phone" type="tel">
+                <input id="phone" type="tel" name="phone">
               </div>
               <div class="questionnaire__form-email">
                 <label for="email">E-mail</label>
-                <input id="email" type="email">
+                <input id="email" type="email" name="email">
               </div>
             </div>
             <span class="questionnaire__form-nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
@@ -390,15 +391,15 @@
             <div class="questionnaire__form-inputs">
               <div class="questionnaire__form-check-place">
                 <label for="check-place">Место регистрации<span class="questionnaire__red-point">*</span></label>
-                <input id="check-place" type="text" required>
+                <input id="check-place" type="text" required name="check-place">
               </div>
               <div class="questionnaire__form-living-place">
                 <label for="living-place">Адрес проживания<span class="questionnaire__red-point">*</span></label>
-                <input id="living-place" type="text" required>
+                <input id="living-place" type="text" required name="living-place">
               </div>
               <div class="questionnaire__form-birthday">
                 <label for="birthday">Дата рождения<span class="questionnaire__red-point">*</span></label>
-                <input id="birthday" type="data" required>
+                <input id="birthday" type="data" required name="birthday">
               </div>
             </div>
             <span class="questionnaire__form-nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
@@ -410,21 +411,24 @@
             <div class="questionnaire__form-inputs">
               <div class="questionnaire__form-brand">
                 <label for="brand">Марка автомобиля<span class="questionnaire__red-point">*</span></label>
-                <select id="brand" name="Марка">
+                <input id="brand" type="text" required name="brand">
+                <!--
+                <select id="brand" name="brand">
                   <option>Lada</option>
                   <option>Lamborghini</option>
-                </select>
+                </select>-->
               </div>
               <div class="questionnaire__form-model">
                 <label for="model">Модель автомобиля<span class="questionnaire__red-point">*</span></label>
-                <select id="model" name="Марка">
+                <input id="model" type="text" required name="model">
+                <!--<select id="model" name="model">
                   <option>Granta</option>
                   <option>Седан-баклажан</option>
-                </select>
+                </select>-->
               </div>
               <div class="questionnaire__form-year">
                 <label for="year">Год выпуска<span class="questionnaire__red-point">*</span></label>
-                <select class="questionnaire__year" id="year" name="Марка">
+                <select class="questionnaire__year" id="year" name="year">
                   <option>2009</option>
                   <option>2010</option>
                   <option>2011</option>
@@ -437,11 +441,11 @@
               </div>
               <div class="questionnaire__form-vin">
                 <label for="vin">VIN номер<span class="questionnaire__red-point">*</span></label>
-                <input id="vin" type="text" required>
+                <input id="vin" type="text" required name="vin">
               </div>
               <div class="questionnaire__form-gov-nam">
                 <label for="gov-nam">Гос. номер<span class="questionnaire__red-point">*</span></label>
-                <input id="gov-nam" type="text" required>
+                <input id="gov-nam" type="text" required name="gov-nam">
               </div>
             </div>
             <span class="questionnaire__form-nb"><span class="questionnaire__red-point">*</span>&ndash; поля обязательны для заполнения</span>
@@ -449,15 +453,15 @@
             <button class="questionnaire__form-btn-submit" type="submit">Отправить</button>
             <div class="questionnaire__form-checkbox">
               <div class="questionnaire__form-checkbox-item">
-                <input id="news" type="checkbox">
-                <label for="news">Я хочу получать информацию об акция и спецпредложенияхnews</label>
+                <input id="news" type="checkbox" name="news">
+                <label for="news">Я хочу получать информацию об акция и спецпредложениях</label>
               </div>
               <div class="questionnaire__form-checkbox-item">
-                <input id="agreement-1" type="checkbox" required>
+                <input id="agreement-1" type="checkbox" required name="agreement-1">
                 <label for="agreement-1">Я даю свое согласи на хранение, обработку и использование моих пресональных данных</label>
               </div>
               <div class="questionnaire__form-checkbox-item">
-                <input id="agreement-2" type="checkbox" required>
+                <input id="agreement-2" type="checkbox" required name="agreement-2">
                 <label for="agreement-2">Я подтверждаю свое согласие на передачу информации в электронной фоме (в том числе персональных данных) по откртым каналам связи</label>
               </div>
             </div>
@@ -515,7 +519,7 @@
       </div>
       <div class="page-footer__menu">
         <ul>
-          <li><a href="acts.html">Законодательные акты</a></li>
+          <li><a href="/law.pdf" target="_blank">Законодательные акты</a></li>
           <li><a href="#order">Кредит под залог автомобиля</a></li>
           <li><a href="#faq">Вопросы и ответы</a></li>
           <li><a href="#terms">Условия</a></li>
@@ -538,9 +542,9 @@
     <h2>Обратный звонок</h2>
     <form action="#">
       <label for="name">Имя</label>
-      <input id="name" type="text" required>
+      <input id="name" type="text" required name="name">
       <label for="phone">Телефон</label>
-      <input id="phone" type="tel" required>
+      <input id="phone" type="tel" required name="phone">
       <button class="callback-modal__order" type="submit">Заказать звонок</button>
     </form>
     <a class="callback-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>
@@ -550,11 +554,11 @@
     <h2>Напишите нам</h2>
     <form action="#">
       <label for="name">Имя</label>
-      <input id="name" type="text" required>
+      <input id="name" type="text" required name="name">
       <label for="phone">Телефон</label>
-      <input id="phone" type="tel" required>
+      <input id="phone" type="tel" required name="phone">
       <label for="mail">Обратная связь</label>
-      <textarea id="mail" rows="8" cols="80"></textarea>
+      <textarea id="mail" rows="8" cols="80" name="message"></textarea>
       <button class="email-modal__order" type="submit">Отправить</button>
     </form>
     <a class="email-modal__close" href="javascript:$.fancybox.close();" title="Закрыть">Закрыть</a>

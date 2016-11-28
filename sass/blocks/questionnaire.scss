@@ -273,7 +273,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 760px;
-    max-height: 260px;
+    height: 260px;
       div {
         margin-right: 55px;
         margin-top: 5px;
@@ -320,7 +320,7 @@
       .questionnaire__form-inputs {
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 200px;
+        height: 200px;
       }
       .questionnaire__form-nb {
         position: absolute;

@@ -1,6 +1,14 @@
 .page-header {
   position: relative;
 }
+.header_shadow{
+	background: url(../img/shadow.png) 0 0 repeat-x;
+	background-size: auto 16px;
+	width: 100%;
+	position: absolute;
+	height: 16px;
+	bottom: -16px;
+}
 .page-header__wrapper {
   @include container;
   position: fixed;
@@ -20,6 +28,12 @@
     .page-header__menu--close {
       display: none;
     }
+}
+
+.page-header__wrapper.fancybox-margin {
+    margin-right: auto;
+    margin-left: auto;
+    left: -17px;
 }
 
 .page-header__logo {
@@ -174,6 +188,8 @@
   display: none;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out 0s;
+  font-family: Roboto Condensed;
+  font-size: 15px;
 }
 .page-header__call-back:hover {
   background-color: $rgbl;
@@ -261,7 +277,8 @@
     position: absolute;
     right: 79px;
     top: 79px;
-    right: 30px;
+    // right: 30px;
+    right: 256px;
       span {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 13px;
